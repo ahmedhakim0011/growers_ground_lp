@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Growers Ground",
   },
   description: siteConfig.description,
+  robots: { index: true, follow: true },
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",

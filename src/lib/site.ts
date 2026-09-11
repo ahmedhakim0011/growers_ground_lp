@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: "Growers Ground",
+  /** Canonical origin — apex domain; www redirects here on Vercel. */
   url: "https://growersground.com",
   instagram: "https://instagram.com/growers_ground_lp",
   supportEmail: "support@growersground.com",
@@ -9,6 +10,15 @@ export const siteConfig = {
     "Find private garden space near you. Connect with local hosts, garden spots, seed swaps, and growing journals.",
   themeColor: "#3D5F49",
 } as const;
+
+/** Routes included in sitemap.xml for search indexing. */
+export const indexableRoutes = [
+  { path: "/", changeFrequency: "weekly" as const, priority: 1 },
+  { path: "/privacy", changeFrequency: "monthly" as const, priority: 0.5 },
+  { path: "/terms", changeFrequency: "monthly" as const, priority: 0.5 },
+  { path: "/support", changeFrequency: "monthly" as const, priority: 0.6 },
+  { path: "/delete-account", changeFrequency: "yearly" as const, priority: 0.3 },
+] as const;
 
 export const navLinks = {
   desktop: [
