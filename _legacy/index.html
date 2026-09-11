@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growers Ground — Find Garden Space &amp; Local Gardeners Near You</title>
+    <meta
+      name="description"
+      content="Growers Ground connects gardeners with hosts who share yard space. Map-first discovery, garden spots, journals, and local growing communities. US &amp; Canada."
+    />
+    <meta name="theme-color" content="#3D5F49" />
+    <link rel="canonical" href="https://growersground.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://growersground.com/" />
+    <meta property="og:title" content="Growers Ground — Where Growers Meet Ground" />
+    <meta
+      property="og:description"
+      content="Find private garden space near you. Connect with local hosts, garden spots, seed swaps, and growing journals."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image" content="https://growersground.com/images/hero.jpg" />
+    <meta name="twitter:image" content="https://growersground.com/images/hero.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Announcement bar -->
+    <div class="announcement" role="region" aria-label="Announcement">
+      <div class="container announcement-inner">
+        <strong>NEW:</strong>
+        <span>Community Layer — Garden Spots, Journals &amp; Local Groups</span>
+        <a href="#community">Explore the community map →</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="/" aria-label="Growers Ground home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 4C11 10 8 14 8 19a8 8 0 1 0 16 0c0-5-3-9-8-15Z"
+                fill="currentColor"
+              />
+              <path
+                d="M16 22v6M12 26h8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span class="logo-text">Growers Ground</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#how-it-works">How It Works</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              Use Cases <span aria-hidden="true">▾</span>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="#gardener" role="menuitem">For Gardeners</a>
+              <a href="#host" role="menuitem">For Hosts</a>
+              <a href="#community" role="menuitem">Garden Spots</a>
+              <a href="#groups" role="menuitem">Groups &amp; Events</a>
+            </div>
+          </div>
+          <a href="https://instagram.com/growers_ground_lp" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </nav>
+
+        <div class="header-ctas">
+          <a class="btn btn-outline btn-sm" href="#waitlist">Join Waitlist</a>
+          <a class="btn btn-primary btn-sm" href="#download">Get the App</a>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile" hidden>
+        <a href="#about">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#gardener">For Gardeners</a>
+        <a href="#host">For Hosts</a>
+        <a href="#community">Garden Spots</a>
+        <a href="#groups">Groups &amp; Events</a>
+        <a href="#waitlist">Join Waitlist</a>
+        <a href="#download">Get the App</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero hero-elevated" aria-labelledby="hero-heading">
+        <div class="hero-bg" aria-hidden="true">
+          <img
+            src="images/hero.jpg"
+            alt=""
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="hero-badge">Community-First Garden Platform</p>
+            <h1 id="hero-heading">
+              One Map.<br />
+              Everyone<br />
+              Knows Where to Grow.
+            </h1>
+            <p class="hero-lead">
+              Growers Ground connects gardeners with hosts who share private yard space —
+              map-first discovery, real messaging, and a local community layer. No swipe deck.
+              No guesswork. Just ground.
+            </p>
+
+            <div class="store-buttons hero-actions" id="download">
+              <a class="btn btn-hero-primary" href="#waitlist">Join the Waitlist</a>
+              <a class="btn btn-hero-secondary" href="#how-it-works">How It Works</a>
+            </div>
+
+            <ul class="hero-trust" aria-label="Key benefits">
+              <li><span class="trust-icon" aria-hidden="true">📍</span> Map discovery — gardeners &amp; hosts</li>
+              <li><span class="trust-icon" aria-hidden="true">🔒</span> Safe profiles &amp; messaging</li>
+              <li><span class="trust-icon" aria-hidden="true">🌱</span> Rent or barter — your terms</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="phone-mock phone-mock-float">
+              <div class="phone-screen">
+                <div class="mock-status">
+                  <span class="mock-time">9:41</span>
+                  <span class="mock-title">Discover</span>
+                </div>
+                <div class="mock-map">
+                  <span class="pin pin-person"></span>
+                  <span class="pin pin-person ai"></span>
+                  <span class="pin pin-spot"></span>
+                  <span class="pin pin-spot water"></span>
+                </div>
+                <div class="mock-sheet">
+                  <span class="mock-chip">Close to you</span>
+                  <span class="mock-chip clay">Garden spot · Seed swap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats strip -->
+        <div class="stats-strip">
+          <div class="container stats-grid">
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Maps — people &amp; community spots</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">0</span>
+              <span class="stat-label">Swipe decks. Zero.</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">50+</span>
+              <span class="stat-label">Cities targeted across US &amp; Canada</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1</span>
+              <span class="stat-label">Tap to find ground near you</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photo gallery -->
+      <section class="photo-gallery" aria-label="Growers in action">
+        <div class="container">
+          <p class="section-eyebrow">Where growers meet ground</p>
+          <h2 class="photo-gallery-title">Growing together, block by block</h2>
+          <div class="photo-gallery-grid">
+            <figure class="gallery-card gallery-card-wide">
+              <img
+                src="images/neighborhood.jpg"
+                alt="Aerial view of a leafy suburban neighborhood with green backyards"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="gallery-caption">
+                <span class="gallery-badge">Portland, OR · Backyard Harvest</span>
+              </figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-medium">
+              <img
+                src="images/hero-gardener.jpg"
+                alt="Gardener sitting in a sunny yard with baskets of freshly picked vegetables"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="gallery-caption">
+                <span class="gallery-badge">Austin, TX · Raised Bed Plot</span>
+              </figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-detail">
+              <img
+                src="images/pexels-natalia-sevruk-636238602-30371404.jpg"
+                alt="Hands carefully transplanting tomato seedlings into garden soil"
+                width="600"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="gallery-caption">
+                <span class="gallery-badge">Toronto, ON · Community Seedling Swap</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Three capabilities -->
+      <section class="capabilities" id="about" aria-labelledby="capabilities-heading">
+        <div class="container">
+          <p class="section-eyebrow">Why Growers Ground</p>
+          <h2 id="capabilities-heading">Three Core Capabilities</h2>
+          <p class="section-lead">One platform. Two audiences. Community built in — not bolted on.</p>
+
+          <div class="cap-grid">
+            <article class="cap-card">
+              <div class="cap-icon discover" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+              </div>
+              <h3>Map-First Discovery</h3>
+              <p>
+                AI-ranked pins surface the most relevant hosts or gardeners near you — with
+                transparent "why this match" chips. Tap a pin, view a profile, connect.
+              </p>
+            </article>
+            <article class="cap-card">
+              <div class="cap-icon community" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                  <path d="M9 12h6M12 9v6" />
+                </svg>
+              </div>
+              <h3>Community Garden Spots</h3>
+              <p>
+                Pin seed swaps, compost sites, water access, and community plots — confirmed by
+                local growers. Public-good content, separate from private host listings.
+              </p>
+            </article>
+            <article class="cap-card">
+              <div class="cap-icon connect" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" />
+                </svg>
+              </div>
+              <h3>Connect &amp; Grow Together</h3>
+              <p>
+                Real-time messaging, growing journals, neighborhood groups, seasonal events, and
+                local Q&amp;A — everything tied to where you actually garden.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="how-it-works" id="how-it-works" aria-labelledby="how-heading">
+        <div class="container">
+          <p class="section-eyebrow">Simple by Design</p>
+          <h2 id="how-heading">How Growers Ground Works</h2>
+          <p class="section-lead">Three steps to ground. No training required.</p>
+
+          <ol class="steps-grid">
+            <li class="step-card">
+              <span class="step-num">1</span>
+              <h3>Download &amp; Create Your Profile</h3>
+              <p>
+                Sign up as a gardener or host. Add photos, your growing experience, and what
+                you're looking for — or what ground you have to offer.
+              </p>
+            </li>
+            <li class="step-card">
+              <span class="step-num">2</span>
+              <h3>Discover on the Map</h3>
+              <p>
+                Browse AI-ranked matches in your area. Filter by distance, save favourites, and
+                explore community garden spots on a separate map layer.
+              </p>
+            </li>
+            <li class="step-card">
+              <span class="step-num">3</span>
+              <h3>Connect &amp; Start Growing</h3>
+              <p>
+                Message, agree on rent or barter terms, and join the community — journals, groups,
+                seed swaps, and local events.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Spotlight: Gardener -->
+      <section class="spotlight spotlight-split spotlight-gardener" id="gardener" aria-labelledby="gardener-heading">
+        <div class="container spotlight-split-inner">
+          <div class="spotlight-copy">
+            <div class="spotlight-badge">For Gardeners</div>
+            <h2 id="gardener-heading">No plot? No problem. Find ground in your neighborhood.</h2>
+            <p>
+              Community gardens have waitlists. Balconies have limits. Browse a map of nearby hosts,
+              see why each match fits, message before you commit, and start growing — rent or barter.
+            </p>
+            <div class="spotlight-actions">
+              <a class="btn btn-primary" href="#waitlist">Join as a Gardener</a>
+              <a class="btn btn-outline" href="#how-it-works">How matching works</a>
+            </div>
+            <ul class="badge-row badge-row-cap" aria-label="Gardener benefits">
+              <li>Map-ranked hosts</li>
+              <li>AI match reasons</li>
+              <li>Safe messaging</li>
+              <li>Growing journals</li>
+            </ul>
+          </div>
+          <figure class="spotlight-media">
+            <img
+              src="images/pexels-natalia-sevruk-636238602-30371404.jpg"
+              alt="Hands planting tomato seedlings in rich garden soil"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Spotlight: Host -->
+      <section class="spotlight spotlight-split spotlight-host" id="host" aria-labelledby="host-heading">
+        <div class="container spotlight-split-inner">
+          <div class="spotlight-copy">
+            <div class="spotlight-badge clay">For Hosts</div>
+            <h2 id="host-heading">Unused yard? Turn your ground into opportunity.</h2>
+            <p>
+              List one or multiple garden spots. Set seasonal rent or a share of the harvest.
+              Interview gardeners, agree on terms — no daily supervision required.
+            </p>
+            <div class="spotlight-actions">
+              <a class="btn btn-primary" href="#waitlist">List Your Ground</a>
+              <a class="btn btn-outline" href="#comparison">Why not just rent on Craigslist?</a>
+            </div>
+            <ul class="badge-row badge-row-cap" aria-label="Host benefits">
+              <li>Passive income</li>
+              <li>Multiple plots</li>
+              <li>You choose who gardens</li>
+              <li>Simple agreements</li>
+            </ul>
+          </div>
+          <figure class="spotlight-media">
+            <img
+              src="images/pexels-helenalopes-27176056.jpg"
+              alt="Gardener planting a seedling in a sunny raised garden bed"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Use cases -->
+      <section class="use-cases" aria-labelledby="usecases-heading">
+        <div class="container">
+          <p class="section-eyebrow">Real-World Use Cases</p>
+          <h2 id="usecases-heading">Who Uses Growers Ground</h2>
+          <p class="section-lead">From urban renters to suburban hosts — one app serves every grower.</p>
+
+          <div class="use-grid">
+            <article class="use-card">
+              <span class="use-num">01</span>
+              <h3>Urban Gardeners</h3>
+              <p>Find a backyard plot when apartment life won't let you grow tomatoes.</p>
+              <a href="#waitlist">Learn more →</a>
+            </article>
+            <article class="use-card">
+              <span class="use-num">02</span>
+              <h3>Suburban Hosts</h3>
+              <p>Monetize unused lawn space with vetted gardeners — seasonal rent or harvest share.</p>
+              <a href="#waitlist">Learn more →</a>
+            </article>
+            <article class="use-card">
+              <span class="use-num">03</span>
+              <h3>Community Gardeners</h3>
+              <p>Discover spots, seed swaps, and compost sites pinned by locals — confirmed by the community.</p>
+              <a href="#community">Learn more →</a>
+            </article>
+            <article class="use-card">
+              <span class="use-num">04</span>
+              <h3>First-Time Growers</h3>
+              <p>Match with experienced hosts, follow public journals, and ask local Q&amp;A.</p>
+              <a href="#waitlist">Learn more →</a>
+            </article>
+            <article class="use-card">
+              <span class="use-num">05</span>
+              <h3>Seed Swappers</h3>
+              <p>Find swap corners, events, and fellow growers trading heirlooms in your zone.</p>
+              <a href="#groups">Learn more →</a>
+            </article>
+            <article class="use-card">
+              <span class="use-num">06</span>
+              <h3>Garden Clubs</h3>
+              <p>Run neighborhood groups, shared spot collections, and planting-day events in-app.</p>
+              <a href="#groups">Learn more →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community: spots, journals & groups -->
+      <section class="community-block" id="community" aria-labelledby="community-heading">
+        <div class="community-intro spotlight spotlight-community">
+          <div class="container spotlight-grid centered">
+            <div class="spotlight-badge lavender">New · Community Layer</div>
+            <h2 id="community-heading">Garden spots. Journals. Groups. All on the map.</h2>
+            <p>
+              Komoot-style community built for growers — pin public-good spots, track seasons in
+              photo journals, join local clubs, and RSVP to seed swaps. Two maps, one calm app.
+            </p>
+            <a class="btn btn-primary" href="#waitlist">Get Early Access</a>
+          </div>
+        </div>
+        <div class="community-detail feature-band" id="groups" aria-labelledby="groups-heading">
+          <div class="container feature-band-inner">
+            <div class="feature-band-copy">
+              <p class="section-eyebrow light">Local Community</p>
+              <h2 id="groups-heading">Groups, Events &amp; Growing Journals</h2>
+              <p>
+                Follow seasonal journals, join neighborhood clubs, RSVP to seed swaps and planting
+                days — all tied to your growing zone. Offline access for when you're actually in the garden.
+              </p>
+              <ul class="check-list">
+                <li>Photo timelines per season</li>
+                <li>Group feeds &amp; announcements</li>
+                <li>Local pest &amp; soil Q&amp;A</li>
+                <li>Achievement badges for contributors</li>
+              </ul>
+            </div>
+            <div class="feature-band-visual" aria-hidden="true">
+              <div class="journal-stack">
+                <div class="journal-card">First harvest 🍅</div>
+                <div class="journal-card">Week 6 — peppers</div>
+                <div class="journal-card">Seed swap Saturday</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison -->
+      <section class="comparison" id="comparison" aria-labelledby="comparison-heading">
+        <div class="container">
+          <p class="section-eyebrow">Growers Ground vs. The Alternatives</p>
+          <h2 id="comparison-heading">A Fair Comparison</h2>
+          <p class="section-lead">Built for finding ground and growing community — not just plant care.</p>
+
+          <div class="table-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">Growers Ground</th>
+                  <th scope="col">Community Garden Waitlist</th>
+                  <th scope="col">Generic Plant Apps</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Private yard space</td>
+                  <td class="win">Hosts list backyard plots</td>
+                  <td>Municipal plots only</td>
+                  <td>Not available</td>
+                </tr>
+                <tr>
+                  <td>Map discovery</td>
+                  <td class="win">AI-ranked gardeners &amp; hosts</td>
+                  <td>City website PDF</td>
+                  <td>Plant ID only</td>
+                </tr>
+                <tr>
+                  <td>Messaging</td>
+                  <td class="win">In-app chat before you commit</td>
+                  <td>Email coordinator</td>
+                  <td>Community forums</td>
+                </tr>
+                <tr>
+                  <td>Community spots</td>
+                  <td class="win">Seed swaps, compost, water access</td>
+                  <td>Single garden only</td>
+                  <td>Not available</td>
+                </tr>
+                <tr>
+                  <td>Terms</td>
+                  <td class="win">Rent or barter — you decide</td>
+                  <td>Fixed annual fee</td>
+                  <td>N/A</td>
+                </tr>
+                <tr>
+                  <td>Wait time</td>
+                  <td class="win">Browse available ground now</td>
+                  <td>6–24 month waitlists</td>
+                  <td>N/A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mobile cards -->
+          <div class="compare-cards" aria-label="Comparison on mobile">
+            <article class="compare-card-item">
+              <h3>Private yard space</h3>
+              <p><strong>Growers Ground:</strong> Hosts list backyard plots</p>
+              <p><strong>Waitlist:</strong> Municipal plots only</p>
+            </article>
+            <article class="compare-card-item">
+              <h3>Map discovery</h3>
+              <p><strong>Growers Ground:</strong> AI-ranked matches</p>
+              <p><strong>Plant apps:</strong> Plant ID only</p>
+            </article>
+            <article class="compare-card-item">
+              <h3>Wait time</h3>
+              <p><strong>Growers Ground:</strong> Browse available ground now</p>
+              <p><strong>Waitlist:</strong> 6–24 month waitlists</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+          <p class="section-eyebrow">Growing Together</p>
+          <h2 id="testimonials-heading">What Growers Are Saying</h2>
+
+          <div class="testimonial-grid">
+            <blockquote class="testimonial-card">
+              <p>"I've been on a community garden waitlist for two years. Found a host three blocks away in a week."</p>
+              <footer>— Urban gardener, Portland</footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p>"We had 400 sq ft of lawn doing nothing. Now it earns and our neighbor grows our summer vegetables."</p>
+              <footer>— Host, Austin</footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p>"The garden spots map showed me a seed swap I never knew existed two streets over."</p>
+              <footer>— Community grower, Toronto</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Waitlist / Pricing -->
+      <section class="pricing" id="waitlist" aria-labelledby="waitlist-heading">
+        <div class="container">
+          <p class="section-eyebrow">Early Access</p>
+          <h2 id="waitlist-heading">Join the Waitlist</h2>
+          <p class="section-lead">Rolling out city by city across the US &amp; Canada. Be first in your area.</p>
+
+          <div class="pricing-grid">
+            <article class="price-card featured">
+              <span class="price-badge">Free to join</span>
+              <h3>Waitlist</h3>
+              <p class="price-amount">$0</p>
+              <p class="price-period">— early access when we launch in your city</p>
+              <ul class="price-features">
+                <li>First to know when we open</li>
+                <li>Launch updates &amp; growing tips</li>
+                <li>Founding member perks</li>
+                <li>No spam — unsubscribe anytime</li>
+              </ul>
+              <form class="waitlist-form" id="waitlist-form" novalidate>
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  autocomplete="email"
+                  required
+                  aria-describedby="form-status"
+                />
+                <button type="submit" class="btn btn-primary btn-block">Join Waitlist</button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+              </form>
+            </article>
+
+            <article class="price-card">
+              <h3>Gardener</h3>
+              <p class="price-amount">Soon</p>
+              <p class="price-period">Find ground &amp; connect near you</p>
+              <ul class="price-features">
+                <li>Map discovery &amp; AI ranking</li>
+                <li>Messaging with hosts</li>
+                <li>Community spots &amp; journals</li>
+                <li>Local groups &amp; events</li>
+              </ul>
+              <a class="btn btn-outline btn-block" href="#download">Notify Me</a>
+            </article>
+
+            <article class="price-card">
+              <h3>Host</h3>
+              <p class="price-amount">Soon</p>
+              <p class="price-period">List your ground &amp; earn</p>
+              <ul class="price-features">
+                <li>Visible on Discover map</li>
+                <li>Interview gardeners in-app</li>
+                <li>Multiple plot listings</li>
+                <li>Rent or barter terms</li>
+              </ul>
+              <a class="btn btn-outline btn-block" href="#download">Notify Me</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="final-cta" aria-labelledby="final-cta-heading">
+        <div class="container final-cta-inner">
+          <h2 id="final-cta-heading">Your Growing Community Starts Here.</h2>
+          <p>
+            Join gardeners and hosts building local food, shared ground, and real community —
+            one plot at a time.
+          </p>
+          <div class="final-cta-actions">
+            <a class="btn btn-primary btn-lg" href="#waitlist">Join Waitlist</a>
+            <a
+              class="btn btn-outline-light btn-lg"
+              href="https://instagram.com/growers_ground_lp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Follow @growers_ground_lp
+            </a>
+          </div>
+          <div class="store-buttons store-buttons-center">
+            <a class="store-btn store-btn-dark" href="#waitlist">
+              <span class="store-label">Coming soon</span>
+              <span class="store-name">App Store</span>
+            </a>
+            <a class="store-btn store-btn-dark" href="#waitlist">
+              <span class="store-label">Coming soon</span>
+              <span class="store-name">Google Play</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">Growers Ground</span>
+          <p>
+            Where growers meet ground. Map-first discovery for gardeners and hosts — plus
+            community spots, journals, and local groups. US &amp; Canada.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#gardener">For Gardeners</a>
+          <a href="#host">For Hosts</a>
+          <a href="#community">Garden Spots</a>
+          <a href="#groups">Groups &amp; Events</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="#about">About</a>
+          <a href="https://instagram.com/growers_ground_lp" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="mailto:support@growersground.com">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="mailto:support@growersground.com">Support</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Growers Ground. All rights reserved.</p>
+        <p id="privacy" class="footer-note">
+          Privacy-first. Your location is only shared when you choose to connect.
+        </p>
+        <p id="terms" class="footer-note">
+          Terms of Service — full policy at launch.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
