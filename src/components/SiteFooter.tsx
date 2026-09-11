@@ -38,6 +38,7 @@ export function SiteFooter() {
           <h3>Legal</h3>
           <a href="#privacy">Privacy Policy</a>
           <a href="#terms">Terms of Service</a>
+          <a href="/delete-account">Delete account</a>
           <a href={`mailto:${siteConfig.supportEmail}`}>Support</a>
         </div>
       </div>
