@@ -6,12 +6,14 @@ import { Logo } from "./Logo";
 type LegalPageShellProps = {
   title: string;
   lastUpdated: string;
+  eyebrow?: string;
   children: ReactNode;
 };
 
 export function LegalPageShell({
   title,
   lastUpdated,
+  eyebrow = "Legal",
   children,
 }: LegalPageShellProps) {
   return (
@@ -27,7 +29,7 @@ export function LegalPageShell({
 
       <main className="legal-main">
         <div className="container legal-content">
-          <p className="section-eyebrow">Legal</p>
+          <p className="section-eyebrow">{eyebrow}</p>
           <h1>{title}</h1>
           <p className="legal-updated">Last updated: {lastUpdated}</p>
           <div className="legal-body">{children}</div>
@@ -40,9 +42,13 @@ export function LegalPageShell({
             &copy; {new Date().getFullYear()} {siteConfig.name}.{" "}
             <Link href="/">Home</Link>
             {" · "}
-            <Link href="/delete-account">Delete account</Link>
+            <Link href="/privacy">Privacy</Link>
             {" · "}
-            <a href={`mailto:${siteConfig.supportEmail}`}>Support</a>
+            <Link href="/terms">Terms</Link>
+            {" · "}
+            <Link href="/support">Support</Link>
+            {" · "}
+            <Link href="/delete-account">Delete account</Link>
           </p>
         </div>
       </footer>

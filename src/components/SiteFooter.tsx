@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 
 export function SiteFooter() {
@@ -32,23 +33,20 @@ export function SiteFooter() {
           >
             Instagram
           </a>
-          <a href={`mailto:${siteConfig.supportEmail}`}>Contact</a>
+          <Link href="/support">Contact</Link>
         </div>
         <div className="footer-col">
           <h3>Legal</h3>
-          <a href="#privacy">Privacy Policy</a>
-          <a href="#terms">Terms of Service</a>
-          <a href="/delete-account">Delete account</a>
-          <a href={`mailto:${siteConfig.supportEmail}`}>Support</a>
+          <Link href="/privacy">Privacy Policy</Link>
+          <Link href="/terms">Terms of Service</Link>
+          <Link href="/delete-account">Delete account</Link>
+          <Link href="/support">Support</Link>
         </div>
       </div>
       <div className="container footer-bottom">
         <p>&copy; {year} {siteConfig.name}. All rights reserved.</p>
-        <p id="privacy" className="footer-note">
+        <p className="footer-note">
           Privacy-first. Your location is only shared when you choose to connect.
-        </p>
-        <p id="terms" className="footer-note">
-          Terms of Service — full policy at launch.
         </p>
       </div>
     </footer>

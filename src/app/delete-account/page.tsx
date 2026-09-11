@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { LegalPageShell } from "@/components/LegalPageShell";
+import { legalLastUpdated } from "@/lib/legal-content";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function DeleteAccountPage() {
   return (
-    <LegalPageShell title="Delete your account" lastUpdated="September 11, 2026">
+    <LegalPageShell title="Delete your account" lastUpdated={legalLastUpdated}>
       <p>
         You can permanently delete your {siteConfig.name} account at any time.
         Deletion removes your profile from Discover and Community, signs you out
