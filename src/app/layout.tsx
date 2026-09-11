@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     template: "%s | Growers Ground",
   },
   description: siteConfig.description,
+  verification: {
+    google: "Ge2Bp1irNhRHzfAAJUs-Ctkxfkk0VP2H2sq1OEhwm6I",
+  },
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
   openGraph: {
