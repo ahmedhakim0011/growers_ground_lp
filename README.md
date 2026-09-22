@@ -1,6 +1,6 @@
 # Growers Ground Landing Page
 
-Next.js (App Router) marketing site with **Sprout & Soil** design tokens.
+Next.js (App Router) marketing site with **Growers Ground** design tokens.
 
 **Live domain:** growersground.com  
 **Instagram:** [@growers_ground_lp](https://instagram.com/growers_ground_lp)

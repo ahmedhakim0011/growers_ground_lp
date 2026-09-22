@@ -1,5 +1,7 @@
 export const siteConfig = {
   name: "Growers Ground",
+  /** Square logo for favicon, Open Graph, and JSON-LD (min 48×48 for Google). */
+  logoPath: "/images/logo.png",
   /** Canonical origin — apex domain; www redirects here on Vercel. */
   url: "https://growersground.com",
   instagram: "https://instagram.com/growers_ground_lp",
