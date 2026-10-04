@@ -23,8 +23,26 @@ function slugifyTitle(title) {
     .replace(/^-|-$/g, "");
 }
 
+const metroIndexOut = path.join(lpRoot, "src/data/metro-index.json");
+
 if (!fs.existsSync(metrosPath)) {
-  console.error("Missing launch-content at", lcRoot);
+  const hasCommittedBundle =
+    fs.existsSync(metroIndexOut) &&
+    fs.existsSync(outCitiesDir) &&
+    fs.readdirSync(outCitiesDir).some((f) => f.endsWith(".json"));
+
+  if (hasCommittedBundle) {
+    console.warn(
+      `launch-content not found at ${lcRoot} — using committed metro/city JSON (standalone deploy).`,
+    );
+    process.exit(0);
+  }
+
+  console.error(
+    "Missing launch-content at",
+    lcRoot,
+    "and no committed public/data/cities + src/data/metro-index.json.",
+  );
   process.exit(1);
 }
 
