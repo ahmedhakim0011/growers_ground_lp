@@ -5,8 +5,13 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="site-footer">
-      <div className="container footer-grid">
+    <footer className="site-footer site-footer-zernio">
+      <div
+        className="container footer-grid-zernio"
+        data-reveal-stagger
+        data-motion-stagger="0.08"
+        data-motion-y="32"
+      >
         <div className="footer-brand">
           <span className="logo-text">{siteConfig.name}</span>
           <p>
@@ -14,18 +19,27 @@ export function SiteFooter() {
             hosts — plus community spots, journals, and local groups. US &amp;
             Canada.
           </p>
+          <div className="footer-cta-row">
+            <a className="btn btn-accent btn-sm" href="#waitlist">
+              Join waitlist
+            </a>
+            <Link className="text-link" href="/support">
+              Contact support
+            </Link>
+          </div>
         </div>
         <div className="footer-col">
           <h3>Product</h3>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#gardener">For Gardeners</a>
-          <a href="#host">For Hosts</a>
-          <a href="#community">Garden Spots</a>
-          <a href="#groups">Groups &amp; Events</a>
+          <a href="#app-screenshots">Features</a>
+          <Link href="/cities">Cities</Link>
+          <Link href="/guides">Growing guides</Link>
+          <a href="#discover">Directory</a>
+          <a href="#app-screenshots">Community layer</a>
+          <a href="#faq">FAQ</a>
         </div>
         <div className="footer-col">
           <h3>Company</h3>
-          <a href="#about">About</a>
+          <a href="#waitlist">Early access</a>
           <a
             href={siteConfig.instagram}
             target="_blank"
@@ -43,7 +57,7 @@ export function SiteFooter() {
           <Link href="/support">Support</Link>
         </div>
       </div>
-      <div className="container footer-bottom">
+      <div className="container footer-bottom footer-bottom-zernio">
         <p>&copy; {year} {siteConfig.name}. All rights reserved.</p>
         <p className="footer-note">
           Privacy-first. Your location is only shared when you choose to connect.

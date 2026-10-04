@@ -1,0 +1,785 @@
+{
+  "generatedAt": "2026-10-04T21:53:52.731Z",
+  "metros": [
+    {
+      "slug": "detroit",
+      "cityLabel": "Detroit",
+      "countryCode": "US",
+      "regionCode": "US-DET",
+      "gardenCount": 150,
+      "bbox": {
+        "south": 42.255192,
+        "west": -83.287959,
+        "north": 42.4503959,
+        "east": -82.9104391
+      }
+    },
+    {
+      "slug": "seattle",
+      "cityLabel": "Seattle",
+      "countryCode": "US",
+      "regionCode": "US-SEA",
+      "gardenCount": 102,
+      "bbox": {
+        "south": 47.4810022,
+        "west": -122.459696,
+        "north": 47.7341503,
+        "east": -122.224433
+      }
+    },
+    {
+      "slug": "ottawa-gatineau",
+      "cityLabel": "Ottawa-Gatineau",
+      "countryCode": "CA",
+      "regionCode": "CA-YOW",
+      "gardenCount": 94,
+      "bbox": {
+        "south": 44.9617738,
+        "west": -76.3555857,
+        "north": 45.5376502,
+        "east": -75.2465783
+      }
+    },
+    {
+      "slug": "philadelphia",
+      "cityLabel": "Philadelphia",
+      "countryCode": "US",
+      "regionCode": "US-PHL",
+      "gardenCount": 80,
+      "bbox": {
+        "south": 39.867005,
+        "west": -75.280266,
+        "north": 40.1379593,
+        "east": -74.9558314
+      }
+    },
+    {
+      "slug": "chicago",
+      "cityLabel": "Chicago",
+      "countryCode": "US",
+      "regionCode": "US-CHI",
+      "gardenCount": 67,
+      "bbox": {
+        "south": 41.644531,
+        "west": -87.9400876,
+        "north": 42.0230529,
+        "east": -87.5241243
+      }
+    },
+    {
+      "slug": "toronto",
+      "cityLabel": "Toronto",
+      "countryCode": "CA",
+      "regionCode": "CA-YYZ",
+      "gardenCount": 64,
+      "bbox": {
+        "south": 43.5796082,
+        "west": -79.6392832,
+        "north": 43.8554425,
+        "east": -79.1132193
+      }
+    },
+    {
+      "slug": "montreal",
+      "cityLabel": "Montreal",
+      "countryCode": "CA",
+      "regionCode": "CA-YUL",
+      "gardenCount": 62,
+      "bbox": {
+        "south": 45.4100756,
+        "west": -73.9741567,
+        "north": 45.7047897,
+        "east": -73.4742952
+      }
+    },
+    {
+      "slug": "vancouver",
+      "cityLabel": "Vancouver",
+      "countryCode": "CA",
+      "regionCode": "CA-YVR",
+      "gardenCount": 57,
+      "bbox": {
+        "south": 49.1989306,
+        "west": -123.2249611,
+        "north": 49.3161714,
+        "east": -123.0232419
+      }
+    },
+    {
+      "slug": "boston",
+      "cityLabel": "Boston",
+      "countryCode": "US",
+      "regionCode": "US-BOS",
+      "gardenCount": 56,
+      "bbox": {
+        "south": 42.2279149,
+        "west": -71.1912442,
+        "north": 42.3969775,
+        "east": -70.8044881
+      }
+    },
+    {
+      "slug": "baltimore",
+      "cityLabel": "Baltimore",
+      "countryCode": "US",
+      "regionCode": "US-BWI",
+      "gardenCount": 49,
+      "bbox": {
+        "south": 39.1972328,
+        "west": -76.7112977,
+        "north": 39.3719992,
+        "east": -76.5296757
+      }
+    },
+    {
+      "slug": "milwaukee",
+      "cityLabel": "Milwaukee",
+      "countryCode": "US",
+      "regionCode": "US-MKE",
+      "gardenCount": 49,
+      "bbox": {
+        "south": 42.920816,
+        "west": -88.0710611,
+        "north": 43.1949437,
+        "east": -87.8627124
+      }
+    },
+    {
+      "slug": "portland",
+      "cityLabel": "Portland",
+      "countryCode": "US",
+      "regionCode": "US-PDX",
+      "gardenCount": 47,
+      "bbox": {
+        "south": 45.432536,
+        "west": -122.8367489,
+        "north": 45.6528812,
+        "east": -122.4720252
+      }
+    },
+    {
+      "slug": "st-louis",
+      "cityLabel": "St. Louis",
+      "countryCode": "US",
+      "regionCode": "US-STL",
+      "gardenCount": 35,
+      "bbox": {
+        "south": 38.5318587,
+        "west": -90.3206525,
+        "north": 38.7743018,
+        "east": -90.1641941
+      }
+    },
+    {
+      "slug": "minneapolis-st-paul",
+      "cityLabel": "Minneapolis-St. Paul",
+      "countryCode": "US",
+      "regionCode": "US-MSP",
+      "gardenCount": 34,
+      "bbox": {
+        "south": 44.8906175,
+        "west": -93.329125,
+        "north": 45.0512498,
+        "east": -93.193859
+      }
+    },
+    {
+      "slug": "charlotte",
+      "cityLabel": "Charlotte",
+      "countryCode": "US",
+      "regionCode": "US-CLT",
+      "gardenCount": 30,
+      "bbox": {
+        "south": 35.0105195,
+        "west": -81.0116951,
+        "north": 35.4002508,
+        "east": -80.6348755
+      }
+    },
+    {
+      "slug": "san-jose",
+      "cityLabel": "San Jose",
+      "countryCode": "US",
+      "regionCode": "US-SJC",
+      "gardenCount": 30,
+      "bbox": {
+        "south": 37.1231596,
+        "west": -122.046227,
+        "north": 37.4691477,
+        "east": -121.5858438
+      }
+    },
+    {
+      "slug": "kansas-city",
+      "cityLabel": "Kansas City",
+      "countryCode": "US",
+      "regionCode": "US-MCI",
+      "gardenCount": 27,
+      "bbox": {
+        "south": 38.827176,
+        "west": -94.765917,
+        "north": 39.356662,
+        "east": -94.385522
+      }
+    },
+    {
+      "slug": "winnipeg",
+      "cityLabel": "Winnipeg",
+      "countryCode": "CA",
+      "regionCode": "CA-YWG",
+      "gardenCount": 27,
+      "bbox": {
+        "south": 49.7135538,
+        "west": -97.3491505,
+        "north": 49.9940075,
+        "east": -96.9565293
+      }
+    },
+    {
+      "slug": "quebec-city",
+      "cityLabel": "Quebec City",
+      "countryCode": "CA",
+      "regionCode": "CA-YQB",
+      "gardenCount": 26,
+      "bbox": {
+        "south": 46.7277099,
+        "west": -71.5492175,
+        "north": 46.9806797,
+        "east": -71.1336606
+      }
+    },
+    {
+      "slug": "washington",
+      "cityLabel": "Washington",
+      "countryCode": "US",
+      "regionCode": "US-WAS",
+      "gardenCount": 25,
+      "bbox": {
+        "south": 38.7916303,
+        "west": -77.1197949,
+        "north": 38.995968,
+        "east": -76.909366
+      }
+    },
+    {
+      "slug": "denver",
+      "cityLabel": "Denver",
+      "countryCode": "US",
+      "regionCode": "US-DEN",
+      "gardenCount": 24,
+      "bbox": {
+        "south": 39.6143008,
+        "west": -105.1098845,
+        "north": 39.9142087,
+        "east": -104.5996997
+      }
+    },
+    {
+      "slug": "austin",
+      "cityLabel": "Austin",
+      "countryCode": "US",
+      "regionCode": "US-AUS",
+      "gardenCount": 24,
+      "bbox": {
+        "south": 30.0985133,
+        "west": -97.9367663,
+        "north": 30.5166255,
+        "east": -97.5605288
+      }
+    },
+    {
+      "slug": "los-angeles",
+      "cityLabel": "Los Angeles",
+      "countryCode": "US",
+      "regionCode": "US-LAX",
+      "gardenCount": 20,
+      "bbox": {
+        "south": 33.659541,
+        "west": -118.6681798,
+        "north": 34.337306,
+        "east": -118.1552983
+      }
+    },
+    {
+      "slug": "calgary",
+      "cityLabel": "Calgary",
+      "countryCode": "CA",
+      "regionCode": "CA-YYC",
+      "gardenCount": 20,
+      "bbox": {
+        "south": 50.842526,
+        "west": -114.3157587,
+        "north": 51.2125013,
+        "east": -113.8600018
+      }
+    },
+    {
+      "slug": "kitchener-cambridge-waterloo",
+      "cityLabel": "Kitchener-Cambridge-Waterloo",
+      "countryCode": "CA",
+      "regionCode": "CA-KWC",
+      "gardenCount": 20,
+      "bbox": {
+        "south": 43.3538756,
+        "west": -80.5734577,
+        "north": 43.5068282,
+        "east": -80.3784145
+      }
+    },
+    {
+      "slug": "new-york",
+      "cityLabel": "New York",
+      "countryCode": "US",
+      "regionCode": "US-NYC",
+      "gardenCount": 18,
+      "bbox": {
+        "south": 40.476578,
+        "west": -74.258843,
+        "north": 40.91763,
+        "east": -73.700233
+      }
+    },
+    {
+      "slug": "san-francisco",
+      "cityLabel": "San Francisco Bay Area",
+      "countryCode": "US",
+      "regionCode": "US-SFO",
+      "gardenCount": 17,
+      "bbox": {
+        "south": 37.6403143,
+        "west": -123.173825,
+        "north": 37.9296678,
+        "east": -122.2814578
+      }
+    },
+    {
+      "slug": "nashville",
+      "cityLabel": "Nashville",
+      "countryCode": "US",
+      "regionCode": "US-BNA",
+      "gardenCount": 15,
+      "bbox": {
+        "south": 35.967785,
+        "west": -87.054766,
+        "north": 36.405496,
+        "east": -86.515588
+      }
+    },
+    {
+      "slug": "salt-lake-city",
+      "cityLabel": "Salt Lake City",
+      "countryCode": "US",
+      "regionCode": "US-SLC",
+      "gardenCount": 14,
+      "bbox": {
+        "south": 40.6999263,
+        "west": -112.1013916,
+        "north": 40.8533905,
+        "east": -111.7404843
+      }
+    },
+    {
+      "slug": "edmonton",
+      "cityLabel": "Edmonton",
+      "countryCode": "CA",
+      "regionCode": "CA-YEG",
+      "gardenCount": 13,
+      "bbox": {
+        "south": 53.3372558,
+        "west": -113.7138411,
+        "north": 53.7162646,
+        "east": -113.2714783
+      }
+    },
+    {
+      "slug": "hamilton",
+      "cityLabel": "Hamilton",
+      "countryCode": "CA",
+      "regionCode": "CA-YHM",
+      "gardenCount": 12,
+      "bbox": {
+        "south": 43.0505073,
+        "west": -80.2485579,
+        "north": 43.4706805,
+        "east": -79.6221146
+      }
+    },
+    {
+      "slug": "cleveland",
+      "cityLabel": "Cleveland",
+      "countryCode": "US",
+      "regionCode": "US-CLE",
+      "gardenCount": 11,
+      "bbox": {
+        "south": 41.390628,
+        "west": -81.8790937,
+        "north": 41.604436,
+        "east": -81.532744
+      }
+    },
+    {
+      "slug": "cincinnati",
+      "cityLabel": "Cincinnati",
+      "countryCode": "US",
+      "regionCode": "US-CVG",
+      "gardenCount": 10,
+      "bbox": {
+        "south": 39.0520565,
+        "west": -84.71239,
+        "north": 39.2210368,
+        "east": -84.3695773
+      }
+    },
+    {
+      "slug": "san-diego",
+      "cityLabel": "San Diego",
+      "countryCode": "US",
+      "regionCode": "US-SAN",
+      "gardenCount": 7,
+      "bbox": {
+        "south": 32.5347979,
+        "west": -117.3098161,
+        "north": 33.114194,
+        "east": -116.9057417
+      }
+    },
+    {
+      "slug": "providence",
+      "cityLabel": "Providence",
+      "countryCode": "US",
+      "regionCode": "US-PVD",
+      "gardenCount": 7,
+      "bbox": {
+        "south": 41.7724345,
+        "west": -71.472667,
+        "north": 41.8618007,
+        "east": -71.3737355
+      }
+    },
+    {
+      "slug": "san-antonio",
+      "cityLabel": "San Antonio",
+      "countryCode": "US",
+      "regionCode": "US-SAT",
+      "gardenCount": 4,
+      "bbox": {
+        "south": 29.1862572,
+        "west": -98.8131865,
+        "north": 29.7309623,
+        "east": -98.2230029
+      }
+    },
+    {
+      "slug": "columbus",
+      "cityLabel": "Columbus",
+      "countryCode": "US",
+      "regionCode": "US-CMH",
+      "gardenCount": 4,
+      "bbox": {
+        "south": 39.8086936,
+        "west": -83.2101797,
+        "north": 40.1573082,
+        "east": -82.7713119
+      }
+    },
+    {
+      "slug": "louisville",
+      "cityLabel": "Louisville",
+      "countryCode": "US",
+      "regionCode": "US-SDF",
+      "gardenCount": 4,
+      "bbox": {
+        "south": 37.9971,
+        "west": -85.9470644,
+        "north": 38.3801391,
+        "east": -85.4051
+      }
+    },
+    {
+      "slug": "houston",
+      "cityLabel": "Houston",
+      "countryCode": "US",
+      "regionCode": "US-HOU",
+      "gardenCount": 3,
+      "bbox": {
+        "south": 29.5370705,
+        "west": -95.9097419,
+        "north": 30.1103506,
+        "east": -95.0120525
+      }
+    },
+    {
+      "slug": "phoenix",
+      "cityLabel": "Phoenix",
+      "countryCode": "US",
+      "regionCode": "US-PHX",
+      "gardenCount": 3,
+      "bbox": {
+        "south": 33.2904827,
+        "west": -112.3240289,
+        "north": 33.9183794,
+        "east": -111.9255304
+      }
+    },
+    {
+      "slug": "pittsburgh",
+      "cityLabel": "Pittsburgh",
+      "countryCode": "US",
+      "regionCode": "US-PIT",
+      "gardenCount": 3,
+      "bbox": {
+        "south": 40.36152,
+        "west": -80.095517,
+        "north": 40.5012021,
+        "east": -79.865728
+      }
+    },
+    {
+      "slug": "sacramento",
+      "cityLabel": "Sacramento",
+      "countryCode": "US",
+      "regionCode": "US-SAC",
+      "gardenCount": 3,
+      "bbox": {
+        "south": 38.437714,
+        "west": -121.56012,
+        "north": 38.685506,
+        "east": -121.36274
+      }
+    },
+    {
+      "slug": "buffalo",
+      "cityLabel": "Buffalo",
+      "countryCode": "US",
+      "regionCode": "US-BUF",
+      "gardenCount": 3,
+      "bbox": {
+        "south": 42.826006,
+        "west": -78.9223535,
+        "north": 42.966449,
+        "east": -78.795121
+      }
+    },
+    {
+      "slug": "riverside-san-bernardino",
+      "cityLabel": "Riverside-San Bernardino",
+      "countryCode": "US",
+      "regionCode": "US-RSB",
+      "gardenCount": 2,
+      "bbox": {
+        "south": 33.8726114,
+        "west": -117.5237612,
+        "north": 34.0194489,
+        "east": -117.278804
+      }
+    },
+    {
+      "slug": "tampa-st-petersburg",
+      "cityLabel": "Tampa-St. Petersburg",
+      "countryCode": "US",
+      "regionCode": "US-TPA",
+      "gardenCount": 2,
+      "bbox": {
+        "south": 27.8126539,
+        "west": -82.64882,
+        "north": 28.1713602,
+        "east": -82.2538678
+      }
+    },
+    {
+      "slug": "indianapolis",
+      "cityLabel": "Indianapolis",
+      "countryCode": "US",
+      "regionCode": "US-IND",
+      "gardenCount": 2,
+      "bbox": {
+        "south": 39.6321626,
+        "west": -86.3281207,
+        "north": 39.9275253,
+        "east": -85.9380401
+      }
+    },
+    {
+      "slug": "raleigh",
+      "cityLabel": "Raleigh",
+      "countryCode": "US",
+      "regionCode": "US-RDU",
+      "gardenCount": 2,
+      "bbox": {
+        "south": 35.7082575,
+        "west": -78.8189744,
+        "north": 35.970736,
+        "east": -78.4707917
+      }
+    },
+    {
+      "slug": "dallas-fort-worth",
+      "cityLabel": "Dallas-Fort Worth",
+      "countryCode": "US",
+      "regionCode": "US-DFW",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 32.613216,
+        "west": -97.000482,
+        "north": 33.0239366,
+        "east": -96.4636317
+      }
+    },
+    {
+      "slug": "atlanta",
+      "cityLabel": "Atlanta",
+      "countryCode": "US",
+      "regionCode": "US-ATL",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 33.6479187,
+        "west": -84.550854,
+        "north": 33.886823,
+        "east": -84.28956
+      }
+    },
+    {
+      "slug": "jacksonville",
+      "cityLabel": "Jacksonville",
+      "countryCode": "US",
+      "regionCode": "US-JAX",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 30.103748,
+        "west": -82.0493895,
+        "north": 30.5862095,
+        "east": -81.316712
+      }
+    },
+    {
+      "slug": "oklahoma-city",
+      "cityLabel": "Oklahoma City",
+      "countryCode": "US",
+      "regionCode": "US-OKC",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 35.290695,
+        "west": -97.830948,
+        "north": 35.6748662,
+        "east": -97.124718
+      }
+    },
+    {
+      "slug": "memphis",
+      "cityLabel": "Memphis",
+      "countryCode": "US",
+      "regionCode": "US-MEM",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 34.9941528,
+        "west": -90.308366,
+        "north": 35.263879,
+        "east": -89.637089
+      }
+    },
+    {
+      "slug": "richmond",
+      "cityLabel": "Richmond",
+      "countryCode": "US",
+      "regionCode": "US-RIC",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 37.4467305,
+        "west": -77.6011728,
+        "north": 37.6028099,
+        "east": -77.385513
+      }
+    },
+    {
+      "slug": "hartford",
+      "cityLabel": "Hartford",
+      "countryCode": "US",
+      "regionCode": "US-BDL",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 41.7236703,
+        "west": -72.7180372,
+        "north": 41.8074191,
+        "east": -72.6422873
+      }
+    },
+    {
+      "slug": "birmingham",
+      "cityLabel": "Birmingham",
+      "countryCode": "US",
+      "regionCode": "US-BHM",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 33.3842122,
+        "west": -87.1226449,
+        "north": 33.6785907,
+        "east": -86.5783119
+      }
+    },
+    {
+      "slug": "rochester",
+      "cityLabel": "Rochester",
+      "countryCode": "US",
+      "regionCode": "US-ROC",
+      "gardenCount": 1,
+      "bbox": {
+        "south": 43.10336,
+        "west": -77.701505,
+        "north": 43.2676496,
+        "east": -77.53251
+      }
+    },
+    {
+      "slug": "miami",
+      "cityLabel": "Miami",
+      "countryCode": "US",
+      "regionCode": "US-MIA",
+      "gardenCount": 0,
+      "bbox": {
+        "south": 25.7090517,
+        "west": -80.31976,
+        "north": 25.8557827,
+        "east": -80.139157
+      }
+    },
+    {
+      "slug": "orlando",
+      "cityLabel": "Orlando",
+      "countryCode": "US",
+      "regionCode": "US-MCO",
+      "gardenCount": 0,
+      "bbox": {
+        "south": 28.3480634,
+        "west": -81.5075377,
+        "north": 28.614283,
+        "east": -81.1241435
+      }
+    },
+    {
+      "slug": "virginia-beach-norfolk",
+      "cityLabel": "Virginia Beach-Norfolk",
+      "countryCode": "US",
+      "regionCode": "US-ORF",
+      "gardenCount": 0,
+      "bbox": {
+        "south": 36.8207991,
+        "west": -76.3448722,
+        "north": 36.9697231,
+        "east": -76.1767248
+      }
+    },
+    {
+      "slug": "new-orleans",
+      "cityLabel": "New Orleans",
+      "countryCode": "US",
+      "regionCode": "US-MSY",
+      "gardenCount": 0,
+      "bbox": {
+        "south": 29.8654809,
+        "west": -90.1399307,
+        "north": 30.1994687,
+        "east": -89.6251763
+      }
+    }
+  ]
+}

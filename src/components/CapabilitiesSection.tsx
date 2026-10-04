@@ -38,15 +38,18 @@ const capabilities = [
 
 export function CapabilitiesSection() {
   return (
-    <section className="capabilities" id="about" aria-labelledby="capabilities-heading">
+    <section className="capabilities capabilities-zernio" aria-labelledby="capabilities-heading">
       <div className="container">
-        <p className="section-eyebrow">Why Growers Ground</p>
-        <h2 id="capabilities-heading">Three Core Capabilities</h2>
-        <p className="section-lead">
-          One platform. Two audiences. Community built in — not bolted on.
-        </p>
+        <div data-reveal data-motion-y="36">
+          <p className="section-kicker">Why choose Growers Ground?</p>
+          <h2 id="capabilities-heading">The map-first way to meet ground</h2>
+          <p className="section-lead">
+            One calm app for gardeners, hosts, and neighbors — community built in,
+            not bolted on.
+          </p>
+        </div>
 
-        <div className="cap-grid">
+        <div className="cap-grid" data-reveal-stagger data-motion-stagger="0.11">
           {capabilities.map((cap) => (
             <article key={cap.title} className="cap-card">
               <div className={`cap-icon ${cap.iconClass}`} aria-hidden="true">

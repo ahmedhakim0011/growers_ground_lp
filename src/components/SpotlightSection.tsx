@@ -39,10 +39,10 @@ export function SpotlightSection({
           <h2 id={`${id}-heading`}>{heading}</h2>
           <p>{description}</p>
           <div className="spotlight-actions">
-            <a className="btn btn-primary" href={primaryCta.href}>
+            <a className="btn btn-accent" href={primaryCta.href}>
               {primaryCta.label}
             </a>
-            <a className="btn btn-outline" href={secondaryCta.href}>
+            <a className="btn btn-surface" href={secondaryCta.href}>
               {secondaryCta.label}
             </a>
           </div>

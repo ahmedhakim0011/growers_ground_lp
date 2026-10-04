@@ -28,7 +28,7 @@ export function LegalPageShell({
       </header>
 
       <main className="legal-main">
-        <div className="container legal-content">
+        <div className="container legal-content" data-reveal data-motion-y="32">
           <p className="section-eyebrow">{eyebrow}</p>
           <h1>{title}</h1>
           <p className="legal-updated">Last updated: {lastUpdated}</p>

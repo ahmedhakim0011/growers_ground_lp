@@ -4,7 +4,7 @@ export const siteConfig = {
   logoPath: "/images/logo.png",
   /** Canonical origin — apex domain; www redirects here on Vercel. */
   url: "https://growersground.com",
-  instagram: "https://instagram.com/growers_ground_lp",
+  instagram: "https://www.instagram.com/growersgroundapp/",
   supportEmail: "support@growersground.com",
   description:
     "Growers Ground connects gardeners with hosts who share yard space. Map-first discovery, garden spots, journals, and local growing communities. US & Canada.",
@@ -25,22 +25,20 @@ export const indexableRoutes = [
 export const navLinks = {
   desktop: [
     { href: "#top", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#how-it-works", label: "How It Works" },
+    { href: "/cities", label: "Cities" },
+    { href: "/guides", label: "Guides" },
+    { href: "#discover", label: "Directory" },
   ],
   dropdown: [
-    { href: "#gardener", label: "For Gardeners" },
-    { href: "#host", label: "For Hosts" },
-    { href: "#community", label: "Garden Spots" },
-    { href: "#groups", label: "Groups & Events" },
+    { href: "#discover", label: "Browse profiles" },
+    { href: "#app-screenshots", label: "Community layer" },
+    { href: "#waitlist", label: "Early access" },
   ],
   mobile: [
-    { href: "#about", label: "About" },
-    { href: "#how-it-works", label: "How It Works" },
-    { href: "#gardener", label: "For Gardeners" },
-    { href: "#host", label: "For Hosts" },
-    { href: "#community", label: "Garden Spots" },
-    { href: "#groups", label: "Groups & Events" },
+    { href: "#app-screenshots", label: "Features" },
+    { href: "#discover", label: "Directory" },
+    { href: "#app-screenshots", label: "Community layer" },
+    { href: "#faq", label: "FAQ" },
     { href: "#waitlist", label: "Join Waitlist" },
     { href: "#download", label: "Get the App" },
   ],

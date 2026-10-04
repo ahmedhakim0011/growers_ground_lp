@@ -1,0 +1,73 @@
+{
+  "guides": [
+    {
+      "slug": "starting-seeds-indoors-in-toronto",
+      "citySlug": "toronto",
+      "cityLabel": "Toronto",
+      "title": "Starting seeds indoors in Toronto",
+      "summary": "Timing, light, and hardening off for a short spring window.",
+      "season": "spring",
+      "readMinutes": 8,
+      "sections": [
+        {
+          "title": "When to start",
+          "body": "Tomatoes and peppers: 6–8 weeks before last frost (late May in Toronto). Hardy greens: 4 weeks. Check your balcony or plot microclimate — lake effect can delay frost."
+        },
+        {
+          "title": "Light and airflow",
+          "body": "Use a full-spectrum grow light 12–14 hours daily. Run a small fan on low for sturdy stems. Thin seedlings so leaves are not touching."
+        }
+      ]
+    },
+    {
+      "slug": "community-plot-etiquette",
+      "citySlug": "toronto",
+      "cityLabel": "Toronto",
+      "title": "Community plot etiquette",
+      "summary": "Shared beds, shared tools — how to be a good plot neighbor.",
+      "season": "summer",
+      "readMinutes": 5,
+      "sections": [
+        {
+          "title": "Paths and borders",
+          "body": "Keep aisles clear. Mark your bed corners if the site allows. Compost weeds in designated bins only."
+        },
+        {
+          "title": "Water windows",
+          "body": "Many sites restrict hose hours. Water deeply less often rather than a daily sprinkle."
+        }
+      ]
+    }
+  ],
+  "plantingCalendar": [
+    {
+      "monthNumber": 4,
+      "tasks": [
+        "Start tomatoes/peppers indoors",
+        "Direct sow peas and spinach"
+      ]
+    },
+    {
+      "monthNumber": 5,
+      "tasks": [
+        "Harden off seedlings",
+        "Plant potatoes and onions"
+      ]
+    },
+    {
+      "monthNumber": 6,
+      "tasks": [
+        "Transplant heat-lovers after frost",
+        "Mulch beds"
+      ]
+    },
+    {
+      "monthNumber": 9,
+      "tasks": [
+        "Plant garlic",
+        "Sow cover crops on empty beds"
+      ]
+    }
+  ],
+  "zoneLabel": "Zone 6b"
+}

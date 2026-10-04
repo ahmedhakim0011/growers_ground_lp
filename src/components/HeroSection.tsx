@@ -1,106 +1,91 @@
+"use client";
+
 import Image from "next/image";
+import { HeroDeviceScreens } from "./HeroDeviceScreens";
+import { HeroFloatingChip } from "./HeroFloatingChip";
+import { HeroTrustBadge } from "./HeroTrustBadge";
+import { StoreBadges } from "./StoreBadges";
 
 export function HeroSection() {
   return (
-    <section className="hero hero-elevated" aria-labelledby="hero-heading">
-      <div className="hero-bg" aria-hidden="true">
-        <Image
-          src="/images/hero.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          style={{ objectFit: "cover", objectPosition: "72% center" }}
-        />
-      </div>
-      <div className="hero-scrim" aria-hidden="true" />
+    <section className="hero-cal" aria-labelledby="hero-heading">
+      <div className="shell-full hero-cal-inner">
+        <div
+          className="hero-cal-copy"
+          data-hero-reveal
+          data-motion-y="36"
+          data-motion-duration="1"
+        >
+          <HeroTrustBadge />
 
-      <div className="container hero-inner">
-        <div className="hero-content">
-          <p className="hero-badge">Community-First Garden Platform</p>
           <h1 id="hero-heading">
-            One Map.
-            <br />
-            Everyone
-            <br />
-            Knows Where to Grow.
+            Meet Growers Ground{" "}
+            <span className="hero-cal-headline-accent">
+              Find Garden Space on a Map
+            </span>
           </h1>
-          <p className="hero-lead">
-            Growers Ground connects gardeners with hosts who share private yard
-            space — map-first discovery, real messaging, and a local community
-            layer. No swipe deck. No guesswork. Just ground.
+          <p className="hero-cal-lead">
+            Meet Growers Ground, the map-first app for gardeners who need ground
+            and hosts who share yard space. Browse verified profiles, message
+            before you commit, and discover community spots on a second layer.
           </p>
 
-          <div className="store-buttons hero-actions" id="download">
-            <a className="btn btn-hero-primary" href="#waitlist">
-              Join the Waitlist
-            </a>
-            <a className="btn btn-hero-secondary" href="#how-it-works">
-              How It Works
+          <div className="hero-cal-download" id="download">
+            <StoreBadges prominence="hero" />
+            <a className="hero-cal-waitlist-link" href="#waitlist">
+              Join the waitlist for early access →
             </a>
           </div>
-
-          <ul className="hero-trust" aria-label="Key benefits">
-            <li>
-              <span className="trust-icon" aria-hidden="true">
-                📍
-              </span>{" "}
-              Map discovery — gardeners &amp; hosts
-            </li>
-            <li>
-              <span className="trust-icon" aria-hidden="true">
-                🔒
-              </span>{" "}
-              Safe profiles &amp; messaging
-            </li>
-            <li>
-              <span className="trust-icon" aria-hidden="true">
-                🌱
-              </span>{" "}
-              Rent or barter — your terms
-            </li>
-          </ul>
         </div>
 
-        <div className="hero-visual" aria-hidden="true">
-          <div className="phone-mock phone-mock-float">
-            <div className="phone-screen">
-              <div className="mock-status">
-                <span className="mock-time">9:41</span>
-                <span className="mock-title">Discover</span>
-              </div>
-              <div className="mock-map">
-                <span className="pin pin-person" />
-                <span className="pin pin-person ai" />
-                <span className="pin pin-spot" />
-                <span className="pin pin-spot water" />
-              </div>
-              <div className="mock-sheet">
-                <span className="mock-chip">Close to you</span>
-                <span className="mock-chip clay">Garden spot · Seed swap</span>
-              </div>
+        <div className="hero-cal-visual">
+          <div className="hero-cal-phones">
+            <div
+              className="hero-phone hero-phone-left"
+              data-hero-reveal
+              data-motion-y="40"
+              data-motion-delay="0.22"
+              data-motion-duration="0.95"
+            >
+              <HeroDeviceScreens variant="discover" />
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div className="stats-strip">
-        <div className="container stats-grid">
-          <div className="stat">
-            <span className="stat-num">2</span>
-            <span className="stat-label">Maps — people &amp; community spots</span>
-          </div>
-          <div className="stat">
-            <span className="stat-num">0</span>
-            <span className="stat-label">Swipe decks. Zero.</span>
-          </div>
-          <div className="stat">
-            <span className="stat-num">50+</span>
-            <span className="stat-label">Cities targeted across US &amp; Canada</span>
-          </div>
-          <div className="stat">
-            <span className="stat-num">1</span>
-            <span className="stat-label">Tap to find ground near you</span>
+            <Image
+              className="hero-cal-flow-arrow"
+              data-hero-reveal
+              data-motion-y="24"
+              data-motion-delay="0.34"
+              data-motion-duration="0.85"
+              src="/images/arrow.png"
+              alt=""
+              width={500}
+              height={500}
+              aria-hidden
+              priority
+            />
+
+            <div
+              className="hero-phone hero-phone-right"
+              data-hero-reveal
+              data-motion-y="40"
+              data-motion-delay="0.28"
+              data-motion-duration="0.95"
+            >
+              <HeroDeviceScreens variant="profile" />
+              <HeroFloatingChip
+                className="hero-float-chip-glass hero-float-chip-acres"
+                pointer="left"
+              >
+                2.5 Acres Land
+              </HeroFloatingChip>
+              <HeroFloatingChip
+                className="hero-float-chip-glass hero-float-chip-water"
+                pointer="right"
+              >
+                <span className="hero-float-status-dot" aria-hidden />
+                Water Access Confirmed
+              </HeroFloatingChip>
+            </div>
           </div>
         </div>
       </div>

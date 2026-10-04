@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { PageMotion } from "@/components/motion/PageMotion";
 import { SiteJsonLd } from "@/components/SiteJsonLd";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -59,7 +60,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
-      <body suppressHydrationWarning>
+      <body className="lp-calai" suppressHydrationWarning>
+        <PageMotion />
         <SiteJsonLd />
         {children}
       </body>

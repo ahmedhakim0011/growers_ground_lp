@@ -4,13 +4,13 @@ import { siteConfig } from "@/lib/site";
 
 export function Logo() {
   return (
-    <Link className="logo" href="/" aria-label="Growers Ground home">
+    <Link className="logo logo-cal" href="/" aria-label="Growers Ground home">
       <span className="logo-mark" aria-hidden="true">
         <Image
           src={siteConfig.logoPath}
           alt=""
-          width={36}
-          height={36}
+          width={28}
+          height={28}
           priority
           className="logo-img"
         />
