@@ -10,6 +10,13 @@ export const metadata: Metadata = {
   title: "Community gardens by city — US & Canada",
   description:
     "Browse mapped community gardens and allotment sites in 60 metros. OpenStreetMap data with free map previews — discover hosts and plots in the Growers Ground app.",
+  alternates: { canonical: "/cities" },
+  openGraph: {
+    title: "Community gardens by city — US & Canada",
+    description:
+      "Browse mapped community gardens and allotment sites in 60 metros across the US and Canada.",
+    url: "/cities",
+  },
 };
 
 export default function CitiesIndexPage() {

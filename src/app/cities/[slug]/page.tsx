@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CityPageJsonLd } from "@/components/CityPageJsonLd";
 import { GardenMapPreview } from "@/components/GardenMapPreview";
 import { OsmDataNotice } from "@/components/OsmDataNotice";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -25,10 +26,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const metro = getMetroBySlug(slug);
   if (!metro) return { title: "City not found" };
+  const path = `/cities/${slug}`;
   return {
     title: metroSeoTitle(metro),
     description: metroSeoDescription(metro),
+    alternates: { canonical: path },
     openGraph: {
+      title: `Community gardens in ${metro.cityLabel}`,
+      description: metroSeoDescription(metro),
+      url: path,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
       title: `Community gardens in ${metro.cityLabel}`,
       description: metroSeoDescription(metro),
     },
@@ -50,6 +60,7 @@ export default async function CityPage({ params }: PageProps) {
 
   return (
     <>
+      <CityPageJsonLd metro={metro} />
       <SiteHeader />
       <main id="main" className="city-page">
         <div className="container city-page-header" data-reveal data-motion-y="40">

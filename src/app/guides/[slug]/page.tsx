@@ -15,9 +15,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
   if (!guide) return { title: "Guide not found" };
+  const path = `/guides/${slug}`;
   return {
     title: `${guide.title} — ${guide.cityLabel} growing guide`,
     description: guide.summary,
+    alternates: { canonical: path },
+    openGraph: {
+      title: guide.title,
+      description: guide.summary,
+      url: path,
+      type: "article",
+    },
   };
 }
 

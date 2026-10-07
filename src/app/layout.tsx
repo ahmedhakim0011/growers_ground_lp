@@ -20,10 +20,24 @@ export const metadata: Metadata = {
     template: "%s | Growers Ground",
   },
   description: siteConfig.description,
+  keywords: [
+    "Growers Ground",
+    "garden space",
+    "community garden",
+    "find garden plot",
+    "backyard garden rental",
+    "gardeners near me",
+    "allotment map",
+    "urban gardening",
+  ],
   verification: {
     google: "Ge2Bp1irNhRHzfAAJUs-Ctkxfkk0VP2H2sq1OEhwm6I",
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
   alternates: { canonical: "/" },
   icons: {
     icon: [

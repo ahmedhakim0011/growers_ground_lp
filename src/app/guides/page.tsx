@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: "Free regional growing guides",
   description:
     "Planting times, plot etiquette, and seasonal tips from Growers Ground — free on the web. See gardens near you in the app.",
+  alternates: { canonical: "/guides" },
+  openGraph: {
+    title: "Free regional growing guides | Growers Ground",
+    description:
+      "Planting times, plot etiquette, and seasonal tips — free on the web.",
+    url: "/guides",
+  },
 };
 
 export default function GuidesIndexPage() {

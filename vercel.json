@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "growersground.com" }],
+      "destination": "https://www.growersground.com/:path*",
+      "permanent": true
+    }
+  ]
+}

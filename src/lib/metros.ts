@@ -55,7 +55,7 @@ export function getMetrosForPicker(): MetroSummary[] {
 }
 
 export function metroSeoTitle(metro: MetroSummary): string {
-  return `Community gardens near me — ${metro.cityLabel} | Growers Ground`;
+  return `Community gardens in ${metro.cityLabel} — map & allotments`;
 }
 
 export function metroSeoDescription(metro: MetroSummary): string {
