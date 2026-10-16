@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { PageMotion } from "@/components/motion/PageMotion";
 import { SiteJsonLd } from "@/components/SiteJsonLd";
+import { siteLogoSocialImage } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -53,13 +54,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: "Growers Ground — Where Growers Meet Ground",
     description: siteConfig.ogDescription,
-    images: [{ url: "/images/hero.jpg", width: 1920, height: 1080 }],
+    images: [siteLogoSocialImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Growers Ground — Where Growers Meet Ground",
     description: siteConfig.ogDescription,
-    images: ["/images/hero.jpg"],
+    images: [siteLogoSocialImage.url],
   },
 };
 

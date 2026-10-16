@@ -14,6 +14,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { WaitlistSection } from "@/components/WaitlistSection";
+import { siteLogoSocialImage } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -22,6 +23,13 @@ export const metadata: Metadata = {
     title: "Growers Ground — Find Garden Space & Local Gardeners Near You",
     description: siteConfig.ogDescription,
     url: siteConfig.url,
+    images: [siteLogoSocialImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Growers Ground — Find Garden Space & Local Gardeners Near You",
+    description: siteConfig.ogDescription,
+    images: [siteLogoSocialImage.url],
   },
 };
 
