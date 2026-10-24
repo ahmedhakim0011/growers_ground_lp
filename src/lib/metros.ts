@@ -1,4 +1,5 @@
 import metroIndex from "@/data/metro-index.json";
+import { MIN_INDEXABLE_GARDENS } from "@/lib/seo";
 
 export type MetroBbox = {
   south: number;
@@ -63,3 +64,9 @@ export function metroSeoDescription(metro: MetroSummary): string {
   const n = count === 1 ? "1 mapped garden" : `${count} mapped community gardens`;
   return `Explore ${n} and allotment-style spaces in ${metro.cityLabel}. OpenStreetMap data, free map preview — full discovery in the Growers Ground app.`;
 }
+
+export function isMetroIndexable(metro: MetroSummary): boolean {
+  return metro.gardenCount >= MIN_INDEXABLE_GARDENS;
+}
+
+export const metroIndexGeneratedAt = new Date(metroIndex.generatedAt);

@@ -17,14 +17,6 @@ export function SiteJsonLd() {
         description: siteConfig.description,
         publisher: { "@id": `${siteConfig.url}/#organization` },
         inLanguage: "en-US",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${absoluteUrl("/cities")}?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
       },
       {
         "@type": "Organization",
@@ -39,18 +31,6 @@ export function SiteJsonLd() {
           height: 500,
         },
         image: logoUrl,
-      },
-      {
-        "@type": "MobileApplication",
-        name: siteConfig.name,
-        operatingSystem: "iOS, Android",
-        applicationCategory: "LifestyleApplication",
-        description: siteConfig.description,
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-        },
       },
     ],
   };

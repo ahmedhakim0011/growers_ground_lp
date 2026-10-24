@@ -42,7 +42,7 @@ export default function SupportPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              @growers_ground_lp
+              @growersgroundapp
             </a>
           </p>
           <p className="support-meta">Updates, tips, and community news.</p>

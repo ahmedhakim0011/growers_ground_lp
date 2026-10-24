@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { PageMotion } from "@/components/motion/PageMotion";
 import { SiteJsonLd } from "@/components/SiteJsonLd";
-import { siteLogoSocialImage } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -21,16 +20,6 @@ export const metadata: Metadata = {
     template: "%s | Growers Ground",
   },
   description: siteConfig.description,
-  keywords: [
-    "Growers Ground",
-    "garden space",
-    "community garden",
-    "find garden plot",
-    "backyard garden rental",
-    "gardeners near me",
-    "allotment map",
-    "urban gardening",
-  ],
   verification: {
     google: "Ge2Bp1irNhRHzfAAJUs-Ctkxfkk0VP2H2sq1OEhwm6I",
   },
@@ -52,15 +41,13 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Growers Ground — Where Growers Meet Ground",
+    title: "Growers Ground — Find Garden Space & Local Gardeners Near You",
     description: siteConfig.ogDescription,
-    images: [siteLogoSocialImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growers Ground — Where Growers Meet Ground",
+    title: "Growers Ground — Find Garden Space & Local Gardeners Near You",
     description: siteConfig.ogDescription,
-    images: [siteLogoSocialImage.url],
   },
 };
 

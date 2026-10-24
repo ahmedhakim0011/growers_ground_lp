@@ -1,0 +1,37 @@
+{
+  "guides": [
+    {
+      "slug": "how-yard-sharing-works",
+      "title": "How yard sharing works: a guide for hosts and gardeners",
+      "summary": "Yard sharing connects people who have unused growing space with people who want to garden. Here is how the arrangement works, what to agree on up front, and how to start safely.",
+      "readMinutes": 6,
+      "publishedAt": "2026-10-24",
+      "sections": [
+        {
+          "title": "What yard sharing is",
+          "body": "Yard sharing (also called garden sharing) is an informal arrangement between two people: a host who has a yard, side lot, or garden bed they are not using, and a gardener who wants somewhere to grow. The gardener grows food or flowers on the host's land, and both sides agree in advance on what the host receives in return.\n\nIt is a different thing from a municipal community garden plot or an allotment. Those are run by a city, a nonprofit, or a garden association, often with waitlists and fixed rules. A yard share is a private agreement between neighbors, so the terms are whatever the two of you settle on."
+        },
+        {
+          "title": "Common ways to structure it",
+          "body": "There is no single standard, but most arrangements fall into a few patterns:\n\nHarvest share: the gardener keeps most of the crop and gives the host an agreed portion, for example a weekly basket in season.\n\nSeasonal contribution: the gardener pays an agreed amount for the season. In Growers Ground, hosts can set seasonal rent, a harvest share, or a barter arrangement, and both people agree on it in the app before anyone gardens.\n\nBarter or help: the gardener trades labor, such as mowing, weeding, or tidying the rest of the yard, for the right to grow.\n\nWhichever you choose, write it down, even as a short message thread. A clear record prevents most disagreements."
+        },
+        {
+          "title": "What to agree on before the first seed goes in",
+          "body": "Talk through the practical details first. How much space is included, and where do the boundaries sit? Which days and times is the gardener welcome? Who supplies tools, compost, and water, and who pays for the water? Are there restrictions such as no pesticides, no trees removed, or no structures? What happens at the end of the season, and how much notice does either side give if they want to stop?\n\nAlso check the rules that apply to you. Renters usually need their landlord's permission before sharing space, and some homeowners' associations or local bylaws restrict what can be grown or built. Local rules about liability and insurance vary, so ask your insurer or your city or county before you start rather than assuming."
+        },
+        {
+          "title": "Staying safe and comfortable",
+          "body": "Meet in a public or low-pressure setting first, then do a short walk-through of the space together. Keep early communication in writing. Share only what you need to: Growers Ground shows approximate locations on the map until you choose to connect with someone, so your exact address is not published.\n\nIf something feels off, you do not have to continue. The app includes tools to block and report other users."
+        },
+        {
+          "title": "How to find a match",
+          "body": "You can ask neighbors, local gardening clubs, or community boards, or use a map-based app. Growers Ground is built around the map: gardeners and hosts appear as pins, you can read a profile, and you can message someone before agreeing to anything. The app is not yet available in the app stores; you can join the waitlist on our home page to be notified when your area opens. We are launching city by city across the US and Canada."
+        },
+        {
+          "title": "Frequently asked questions",
+          "body": "Do I need to pay to be a host or gardener? Yard-share terms between a host and gardener are agreed between the two of them. Growers Ground itself uses a subscription for Discover and messaging, so check the app for current plan details once it launches in your area.\n\nCan I share just part of a yard? Yes. Many hosts offer a single bed, a corner, or a front strip, and that is often the easiest way to start.\n\nWhat if it is not working out? Agree on a notice period at the start. If you cannot resolve a problem by talking, it is reasonable to end the arrangement at the end of the season."
+        }
+      ]
+    }
+  ]
+}

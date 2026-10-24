@@ -11,6 +11,7 @@ import { loadCityPins } from "@/lib/city-data.server";
 import { getGuidesForCity } from "@/lib/guides";
 import {
   getAllMetros,
+  isMetroIndexable,
   getMetroBySlug,
   metroSeoDescription,
   metroSeoTitle,
@@ -31,6 +32,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: metroSeoTitle(metro),
     description: metroSeoDescription(metro),
     alternates: { canonical: path },
+    robots: isMetroIndexable(metro)
+      ? undefined
+      : { index: false, follow: true },
     openGraph: {
       title: `Community gardens in ${metro.cityLabel}`,
       description: metroSeoDescription(metro),

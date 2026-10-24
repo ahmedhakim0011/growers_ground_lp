@@ -15,3 +15,9 @@ export function absoluteUrl(path = "/"): string {
   const normalized = path.startsWith("/") ? path : `/${path}`;
   return `${base}${normalized}`;
 }
+
+/** Metros with fewer mapped gardens than this are noindex'd and left out of the sitemap (thin page). */
+export const MIN_INDEXABLE_GARDENS = 10;
+
+/** Guides under this word count are noindex'd and left out of the sitemap (thin content). */
+export const MIN_INDEXABLE_GUIDE_WORDS = 300;

@@ -3,9 +3,13 @@ import Link from "next/link";
 import { OsmDataNotice } from "@/components/OsmDataNotice";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { getAllGuides } from "@/lib/guides";
+import { getAllGuides, isGuideIndexable } from "@/lib/guides";
+
+// Keep the index out of search unless at least one guide is substantial enough to index.
+const hasIndexableGuide = getAllGuides().some(isGuideIndexable);
 
 export const metadata: Metadata = {
+  robots: hasIndexableGuide ? undefined : { index: false, follow: true },
   title: "Free regional growing guides",
   description:
     "Planting times, plot etiquette, and seasonal tips from Growers Ground — free on the web. See gardens near you in the app.",
@@ -28,8 +32,8 @@ export default function GuidesIndexPage() {
         <div className="container guides-index-header" data-reveal data-motion-y="36">
           <h1>Free growing guides</h1>
           <p className="section-lead">
-            Regional tips for real plots — planting windows, shared-bed etiquette,
-            and seasonal tasks. More cities coming as we launch.
+            Practical guides to yard sharing, finding a place to grow, and
+            regional tips for real plots. More coming as we launch city by city.
           </p>
         </div>
         <div
@@ -40,18 +44,26 @@ export default function GuidesIndexPage() {
           {guides.map((guide) => (
             <article key={guide.slug} className="guides-index-card">
               <p className="guides-index-meta">
-                {guide.cityLabel} · {guide.season} · {guide.readMinutes} min
+                {[guide.cityLabel, guide.season, `${guide.readMinutes} min`]
+                  .filter(Boolean)
+                  .join(" · ")}
               </p>
               <h2>
                 <Link href={`/guides/${guide.slug}`}>{guide.title}</Link>
               </h2>
               <p>{guide.summary}</p>
-              <Link
-                className="guides-index-cta"
-                href={`/cities/${guide.citySlug}`}
-              >
-                See gardens near you in {guide.cityLabel} →
-              </Link>
+              {guide.citySlug ? (
+                <Link
+                  className="guides-index-cta"
+                  href={`/cities/${guide.citySlug}`}
+                >
+                  See gardens near you in {guide.cityLabel} →
+                </Link>
+              ) : (
+                <Link className="guides-index-cta" href="/#waitlist">
+                  Join the waitlist →
+                </Link>
+              )}
             </article>
           ))}
         </div>

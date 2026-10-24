@@ -3,7 +3,7 @@
 Next.js (App Router) marketing site with **Growers Ground** design tokens.
 
 **Live domain:** growersground.com  
-**Instagram:** [@growers_ground_lp](https://instagram.com/growers_ground_lp)
+**Instagram:** [@growersgroundapp](https://www.instagram.com/growersgroundapp/)
 
 ## Stack
 
