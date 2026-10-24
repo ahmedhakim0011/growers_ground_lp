@@ -32,6 +32,72 @@
           "body": "Do I need to pay to be a host or gardener? Yard-share terms between a host and gardener are agreed between the two of them. Growers Ground itself uses a subscription for Discover and messaging, so check the app for current plan details once it launches in your area.\n\nCan I share just part of a yard? Yes. Many hosts offer a single bed, a corner, or a front strip, and that is often the easiest way to start.\n\nWhat if it is not working out? Agree on a notice period at the start. If you cannot resolve a problem by talking, it is reasonable to end the arrangement at the end of the season."
         }
       ]
+    },
+    {
+      "slug": "how-to-find-a-community-garden",
+      "title": "How to find a community garden near you",
+      "summary": "A practical way to find community gardens in your area, what to ask before you join, and what to do when the garden you want has a waitlist.",
+      "readMinutes": 6,
+      "publishedAt": "2026-10-24",
+      "sections": [
+        {
+          "title": "Start with the directories",
+          "body": "The quickest route is a directory search. The American Community Gardening Association keeps a national Find-a-Garden database you can search by ZIP code. Many cities and horticultural societies also publish their own maps, such as the Pennsylvania Horticultural Society's community garden locator for Philadelphia, a city garden map for Rochester, NY, and community garden listings for Metro Vancouver.\n\nSearch your city or county name together with \"community garden\" and check the parks and recreation department's website, since many cities run or list garden programs there. Directories are not always current, so treat a listing as a lead, not a confirmation."
+        },
+        {
+          "title": "Look beyond official lists",
+          "body": "Many gardens are run by a church, school, library, housing complex, or neighborhood association and never appear in a directory. Ask at your local library or community center, check neighborhood message boards, and look at local gardening club pages. On a map, look for fenced green lots with raised beds, then look for a sign with a contact name.\n\nGrowers Ground maps community gardens in 33 US and Canadian metros using OpenStreetMap data. Browse the city pages on this site for a preview. These pins come from public map data, so confirm details with the garden before you visit."
+        },
+        {
+          "title": "What to ask before you join",
+          "body": "Contact the coordinator and ask: Are plots available now, and how long is the waitlist? What does a plot cost per season, and are there volunteer hours? What size are the plots, and are tools, water, and compost provided? Which crops or practices are restricted? When does the season start and end? Is the garden accessible, and is there a shared area if you do not want your own plot?\n\nAsk to visit before committing. A walk-through shows you how well the garden is kept and how the members get along."
+        },
+        {
+          "title": "If there is a waitlist",
+          "body": "Waitlists are common, and their length varies by garden and city, so ask each garden directly instead of assuming. While you wait, you can put your name on more than one list, volunteer at a shared bed (many gardens welcome helpers), or look for an informal option such as a neighbor who is willing to share part of a yard. You can also ask about a shared plot with another gardener, which some gardens allow."
+        },
+        {
+          "title": "Another option: a neighbor's yard",
+          "body": "If no community garden has room, yard sharing can fill the gap: a homeowner with unused space and a gardener who needs it agree on terms directly. Our guide to how yard sharing works explains how to structure it safely."
+        },
+        {
+          "title": "Finding people, not just plots",
+          "body": "A garden is also a group of people. Growers Ground is a map-first app for finding gardeners and hosts nearby, with local groups, growing journals, and community spots such as seed swaps and compost sites that anyone can add to the map. The app is not yet in the app stores. Join the waitlist on our home page and we will let you know when your area opens. We are launching city by city across the US and Canada."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-start-a-community-garden",
+      "title": "How to start a community garden: a step-by-step guide",
+      "summary": "The main steps to start a community garden, from finding people and land to agreeing on rules and running your first season.",
+      "readMinutes": 7,
+      "publishedAt": "2026-10-24",
+      "sections": [
+        {
+          "title": "Start with people, not soil",
+          "body": "A community garden succeeds or fails on the people running it. Before you look at land, talk to neighbors, a nearby school, a faith group, a library, or a tenants' association, and find out who is interested and who will actually show up. Hold a short first meeting, write down who can help with which jobs, and aim for a small core group of committed people, not a long list of maybes.\n\nIf your area has a gardening club, a master gardener program, or a local garden network, ask them for advice. Experienced people can save you from common mistakes."
+        },
+        {
+          "title": "Find suitable land and permission",
+          "body": "A good site gets at least six hours of direct sun in the growing season, has a nearby water source, is reasonably flat, and is accessible to the people who will use it. Possible owners include a city parks department, a school or church, a housing authority, a utility, or a private owner.\n\nGet permission in writing before you start. Ask for a lease or license that says how long you can use the land, who is responsible for insurance, and what happens if the owner needs it back. Rules differ by city and owner, so check with your local government and ask a local attorney or nonprofit if you are unsure."
+        },
+        {
+          "title": "Test the soil",
+          "body": "Urban land can contain lead or other contaminants from past use. Have the soil tested before growing food, through a university extension office or a commercial lab. If results show a problem, raised beds with clean soil and a barrier underneath are a common solution. Do not skip this step."
+        },
+        {
+          "title": "Plan the layout and the rules",
+          "body": "Decide how the garden will work: individual plots, shared beds, or a mix. Agree on plot size, fees if any, how members get a plot, expected volunteer hours, and what happens to abandoned plots. Write simple rules covering water use, pesticides, tools, weeds and compost, and how disagreements are resolved. Keep the rules short enough that people will read them.\n\nSet up a small decision-making structure, even if it is just two or three coordinators and a monthly meeting."
+        },
+        {
+          "title": "Budget and resources",
+          "body": "Typical costs include beds or soil, water access or hoses, tools, a shed or storage box, signs, and insurance if the owner requires it. Funding can come from member fees, local grants, a neighborhood association, donations, or a fundraiser. Many gardens also get free or low-cost compost, mulch, or seedlings from local programs, so ask around."
+        },
+        {
+          "title": "Run your first season",
+          "body": "Start small and expand. Build the beds, hold a planting day, and share a simple calendar of workdays. Keep a shared contact list or group chat so everyone hears about watering schedules and workdays. At the end of the season, hold a short review meeting on what worked and what to change.\n\nOnce a garden is running, tools help keep it organized. In Growers Ground, local gardening groups give a garden or club its own feed and chat, growing journals let members track a plot over a season, and garden spots put the site on the community map so nearby people can find it. The app is not yet in the app stores; join the waitlist on our home page to hear when your area opens."
+        }
+      ]
     }
   ]
 }
