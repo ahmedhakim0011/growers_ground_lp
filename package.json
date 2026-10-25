@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "indexnow": "node scripts/indexnow.mjs",
     "sync-content": "node scripts/sync-launch-content.mjs",
     "prebuild": "node scripts/sync-launch-content.mjs",
     "build": "next build",
