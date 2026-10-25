@@ -39,6 +39,7 @@ export function SiteFooter() {
         </div>
         <div className="footer-col">
           <h3>Company</h3>
+          <Link href="/about">About Growers Ground</Link>
           <a href="#waitlist">Early access</a>
           <a
             href={siteConfig.instagram}
@@ -46,6 +47,12 @@ export function SiteFooter() {
             rel="noopener noreferrer"
           >
             Instagram
+          </a>
+          <a href={siteConfig.facebook} target="_blank" rel="noopener noreferrer">
+            Facebook
+          </a>
+          <a href={siteConfig.tiktok} target="_blank" rel="noopener noreferrer">
+            TikTok
           </a>
           <Link href="/support">Contact</Link>
         </div>

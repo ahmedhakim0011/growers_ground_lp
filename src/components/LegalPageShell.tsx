@@ -42,6 +42,8 @@ export function LegalPageShell({
             &copy; {new Date().getFullYear()} {siteConfig.name}.{" "}
             <Link href="/">Home</Link>
             {" · "}
+            <Link href="/about">About</Link>
+            {" · "}
             <Link href="/privacy">Privacy</Link>
             {" · "}
             <Link href="/terms">Terms</Link>

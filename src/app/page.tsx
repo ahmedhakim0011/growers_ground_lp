@@ -7,6 +7,7 @@ import { CommunityDirectorySection } from "@/components/CommunityDirectorySectio
 import { MapTeaserSection } from "@/components/MapTeaserSection";
 import { FaqSection } from "@/components/FaqSection";
 import { FinalCtaSection } from "@/components/FinalCtaSection";
+import { GuidesTeaserSection } from "@/components/GuidesTeaserSection";
 import { HeroSection } from "@/components/HeroSection";
 import { QuoteCarouselSection } from "@/components/QuoteCarouselSection";
 import { RatingsSection } from "@/components/RatingsSection";
@@ -46,6 +47,7 @@ export default function HomePage() {
         <AppScreenshotsSection />
         <CapabilitiesSection />
         <CityPickerSection />
+        <GuidesTeaserSection />
         <MapTeaserSection />
         <CommunityDirectorySection />
         <TestimonialsSection />

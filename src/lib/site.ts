@@ -5,6 +5,15 @@ export const siteConfig = {
   /** Canonical origin — must match Vercel primary domain (apex redirects to www). */
   url: "https://www.growersground.com",
   instagram: "https://www.instagram.com/growersgroundapp/",
+  /** Official profiles for Organization.sameAs — add each new brand profile here (Facebook, LinkedIn, X, TikTok, YouTube, Crunchbase, store listings). */
+  sameAs: [
+    "https://www.instagram.com/growersgroundapp/",
+    "https://www.facebook.com/people/Growers-Ground/61595561339790/",
+    "https://www.tiktok.com/@growersground",
+  ],
+  facebook: "https://www.facebook.com/people/Growers-Ground/61595561339790/",
+  tiktok: "https://www.tiktok.com/@growersground",
+  alternateNames: ["GrowersGround", "Growers Ground app"],
   supportEmail: "support@growersground.com",
   description:
     "Growers Ground connects gardeners with hosts who share yard space. Map-first discovery, garden spots, journals, and local growing communities. US & Canada.",
@@ -18,6 +27,7 @@ export const indexableRoutes = [
   { path: "/", changeFrequency: "weekly" as const, priority: 1 },
   { path: "/privacy", changeFrequency: "monthly" as const, priority: 0.5 },
   { path: "/terms", changeFrequency: "monthly" as const, priority: 0.5 },
+  { path: "/about", changeFrequency: "monthly" as const, priority: 0.8 },
   { path: "/support", changeFrequency: "monthly" as const, priority: 0.6 },
   { path: "/delete-account", changeFrequency: "yearly" as const, priority: 0.3 },
 ] as const;
@@ -27,6 +37,7 @@ export const navLinks = {
     { href: "#top", label: "Home" },
     { href: "/cities", label: "Cities" },
     { href: "/guides", label: "Guides" },
+    { href: "/about", label: "About" },
     { href: "#discover", label: "Directory" },
   ],
   dropdown: [
