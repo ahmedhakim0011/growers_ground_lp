@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GuideJsonLd } from "@/components/GuideJsonLd";
+import { GuideRichText } from "@/components/GuideRichText";
+import { GuideVisual } from "@/components/GuideVisual";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getAllGuides, getGuideBySlug, isGuideIndexable } from "@/lib/guides";
@@ -61,11 +63,25 @@ export default async function GuidePage({ params }: PageProps) {
           {guide.sections.map((section) => (
             <section key={section.title} className="guide-article-section">
               <h2>{section.title}</h2>
-              {section.body.split("\n\n").map((para) => (
-                <p key={para}>{para}</p>
-              ))}
+              <GuideRichText body={section.body} />
+              {section.visual ? <GuideVisual visual={section.visual} /> : null}
             </section>
           ))}
+
+          {guide.sources?.length ? (
+            <section className="guide-article-section guide-article-sources">
+              <h2>Sources</h2>
+              <ul>
+                {guide.sources.map((s) => (
+                  <li key={s.href}>
+                    <a href={s.href} rel="noopener noreferrer" target="_blank">
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
           <div className="guide-article-cta">
             {guide.citySlug ? (

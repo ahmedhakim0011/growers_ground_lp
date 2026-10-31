@@ -98,6 +98,742 @@
           "body": "Start small and expand. Build the beds, hold a planting day, and share a simple calendar of workdays. Keep a shared contact list or group chat so everyone hears about watering schedules and workdays. At the end of the season, hold a short review meeting on what worked and what to change.\n\nOnce a garden is running, tools help keep it organized. In Growers Ground, local gardening groups give a garden or club its own feed and chat, growing journals let members track a plot over a season, and garden spots put the site on the community map so nearby people can find it. The app is not yet in the app stores; join the waitlist on our home page to hear when your area opens."
         }
       ]
+    },
+    {
+      "slug": "how-to-find-a-place-to-grow-vegetables",
+      "title": "How to find a place to grow vegetables when you don't have a yard",
+      "summary": "No yard, a long community garden waitlist, or a lease that says no digging? Compare your real options for growing food, see how long waitlists run in actual cities, and start growing this season anyway.",
+      "readMinutes": 7,
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "sections": [
+        {
+          "title": "The short answer",
+          "body": "You have more options than a backyard or a plot with a two-year waitlist. Most people who want to grow food without their own land end up combining two or three of the routes below: a community garden waitlist for the long term, a yard share or container garden for this season, and a little volunteering to get a foot in the door.",
+          "visual": {
+            "type": "checklist",
+            "title": "Routes to growing space, roughly from fastest to slowest",
+            "items": [
+              "Containers on a balcony, stoop, or windowsill: start this week",
+              "A yard share with a neighbor who has unused space: weeks, once you find a match",
+              "Land run by a school, church, or other institution: depends on who you ask",
+              "A community garden plot: months to years, depending on the city"
+            ]
+          }
+        },
+        {
+          "title": "Your options, side by side",
+          "body": "The right choice depends on how fast you want to start, how much control you need, and how much space you want. This comparison is deliberately general, because rules differ by city and by garden.",
+          "visual": {
+            "type": "compare",
+            "cornerLabel": "Option",
+            "columns": [
+              "How you get in",
+              "Typical wait",
+              "Who sets the rules",
+              "Watch out for"
+            ],
+            "rows": [
+              {
+                "label": "Community garden plot",
+                "cells": [
+                  "Apply or join a waitlist with the city, a nonprofit, or the garden group",
+                  "Months to years; some gardens are full for the season",
+                  "The garden and its operator",
+                  "Residency rules, fees, volunteer hours"
+                ]
+              },
+              {
+                "label": "Yard share",
+                "cells": [
+                  "Agree directly with a host who has unused space",
+                  "Weeks, once you find a match",
+                  "You and the host, in a written agreement",
+                  "Unclear terms; sunlight and water access"
+                ]
+              },
+              {
+                "label": "School, church, or institution land",
+                "cells": [
+                  "Ask the organization or the garden coordinator",
+                  "Varies widely",
+                  "The landowner",
+                  "Permission and liability need to be in writing"
+                ]
+              },
+              {
+                "label": "Containers",
+                "cells": [
+                  "Buy or reuse pots and bags",
+                  "None",
+                  "You, plus any lease or building rules",
+                  "Limited root space; frequent watering"
+                ]
+              }
+            ],
+            "caption": "Check each program's own page for current terms; this table describes common patterns, not any one city."
+          }
+        },
+        {
+          "title": "How long are community garden waitlists, really?",
+          "body": "It varies enormously, which is why it is worth checking your own city before you plan. These are real examples from the official pages we read for our [city pages](/cities):\n\n- [Seattle](/cities/seattle): the city's P-Patch gardens use interest lists. Individual garden pages list waits from roughly 6 to 12 months at some gardens and 1 to 2 years at others.\n- [San Francisco](/cities/san-francisco): residents can join the waitlist for a specific garden, and the city's page for Golden Gate Park lists a wait of multiple years.\n- [Winnipeg](/cities/winnipeg): at the time of our last check, every city allotment plot was listed as full for the 2026 season.\n- [Quebec City](/cities/quebec-city): all municipal gardens share one waiting list, open to city residents, with one registration per address.\n\nThe pattern is consistent: the sooner you get on a list, the sooner you move up it. Most cities let you join more than one garden's list, and Seattle, for example, allows two at a time.",
+          "visual": {
+            "type": "callout",
+            "tone": "tip",
+            "title": "Join the list today, even if you also have a plan B",
+            "text": "A waitlist costs little or nothing and the clock starts when you sign up. Add yourself now and keep growing in containers or a yard share while you wait."
+          }
+        },
+        {
+          "title": "Five questions to choose your route",
+          "body": "If you are not sure where to start, work through these in order.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              {
+                "title": "When do you want to start?",
+                "text": "This season points to containers or a yard share. Next year or later also opens up a plot waitlist."
+              },
+              {
+                "title": "How much do you want to grow?",
+                "text": "A few herbs and salad greens fit in pots. Tomatoes, squash, and a real harvest need ground or deep beds."
+              },
+              {
+                "title": "Do you rent?",
+                "text": "Check your lease and ask your landlord before changing anything outdoors, and look at what building rules say about balconies."
+              },
+              {
+                "title": "How far will you travel?",
+                "text": "A garden you can reach in a few minutes gets watered. One that is a long trip tends to get neglected."
+              },
+              {
+                "title": "Do you want to garden alone or with others?",
+                "text": "Community gardens are social by design. A yard share is usually one-on-one."
+              }
+            ]
+          }
+        },
+        {
+          "title": "What to do while you wait",
+          "body": "A long waitlist does not have to mean a lost season. These steps help you learn, meet people, and move up faster.",
+          "visual": {
+            "type": "cards",
+            "items": [
+              {
+                "tag": "This week",
+                "title": "Start a container garden",
+                "text": "Greens, herbs, radishes, and bush beans do well in pots with drainage. Use fresh potting mix, not soil dug from a lot."
+              },
+              {
+                "tag": "This month",
+                "title": "Volunteer at a garden",
+                "text": "Many gardens welcome volunteers on workdays. You learn local conditions and meet the people who hear about open plots first."
+              },
+              {
+                "tag": "This season",
+                "title": "Look for a yard share",
+                "text": "Ask neighbors, local clubs, and community boards, or browse hosts near you in an app like Growers Ground."
+              },
+              {
+                "tag": "Ongoing",
+                "title": "Check your waitlist position",
+                "text": "Some programs ask you to confirm each year that you are still interested. Missing the reply can remove you."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Test the soil before you eat from it",
+          "body": "Urban and older residential land can contain lead and other contaminants from past use. Before growing food in the ground, have the soil tested through a university extension office or a commercial lab. If there is a problem, raised beds with clean soil and a barrier underneath are the usual fix. A host who offers you a spot should be happy to talk about what the land was used for."
+        },
+        {
+          "title": "Where Growers Ground fits in",
+          "body": "Growers Ground is a map-first garden sharing app. Gardeners and hosts appear as pins, you can read a profile and message someone before agreeing to anything, and locations stay approximate until you choose to connect. The app is not yet in the app stores, and we are launching city by city across the US and Canada; you can join the waitlist on the home page. To see mapped community gardens near you right now, browse the [city directory](/cities). For the host side of the story, read [how yard sharing works](/guides/how-yard-sharing-works) and [how to find a community garden near you](/guides/how-to-find-a-community-garden)."
+        },
+        {
+          "title": "Frequently asked questions",
+          "body": "Can I grow vegetables if I rent? Often yes, in containers, and sometimes in the ground with your landlord's written permission. Ask first and keep the reply.\n\nHow much space does a vegetable garden need? Much less than people expect to start. A couple of beds or a handful of large containers is a realistic first season; you can add more once you know how much time you have.\n\nIs a yard share legal? A yard share is a private agreement between two people on private land, so the main questions are your lease, any HOA or local rules, and insurance. Ask your landlord, HOA, or insurer rather than assuming.\n\nWhat if my city has no community garden program? Look for gardens run by nonprofits, schools, and faith groups, and consider a yard share or starting a garden with neighbors: see [how to start a community garden](/guides/how-to-start-a-community-garden)."
+        }
+      ]
+    },
+    {
+      "slug": "share-your-yard-as-a-garden-host",
+      "title": "Share your yard as a garden host: a first-timer's checklist",
+      "summary": "Thinking about letting a neighbor garden on your unused space? A practical checklist for hosts: is your yard suitable, what to confirm first, what to put in writing, and how to meet a gardener safely.",
+      "readMinutes": 7,
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "sections": [
+        {
+          "title": "What being a garden host means",
+          "body": "A garden host is someone with a yard, side lot, rooftop, or unused bed who lets another person grow there. Hosts get a tidier, more productive space, sometimes a share of the harvest, and often a friendlier street. It is a private arrangement between you and the gardener, so it only works if you both know what you are agreeing to. This guide walks you through the decisions in the order you will meet them. If you want the bigger picture first, start with [how yard sharing works](/guides/how-yard-sharing-works)."
+        },
+        {
+          "title": "Step 1: Is your space suitable?",
+          "body": "You do not need a perfect yard, but a gardener will need a few basics. Walk the space at different times of day before you offer it.",
+          "visual": {
+            "type": "checklist",
+            "title": "A quick suitability check",
+            "items": [
+              "Sunlight: a spot that gets direct sun for much of the day in the growing season",
+              "Water: a tap or hose within reach, and a clear idea of who pays for it",
+              "Access: a path to the garden that does not run through your private areas",
+              "Soil: you know what the land has been used for; test it if it is unclear",
+              "Separation: pets, children, lawn care, and any chemicals are accounted for",
+              "Size: enough room for a couple of beds, even if it is a small corner"
+            ]
+          }
+        },
+        {
+          "title": "Step 2: Check permissions before you promise anything",
+          "body": "Before you tell anyone yes, confirm that you are allowed to share the space.\n\n- If you rent, ask your landlord for permission in writing.\n- If you have a homeowners' association, read what it says about gardens, structures, and visitors.\n- Check any local bylaws about what can be grown or built in a front or side yard.\n- Ask your home insurer how a gardener on your property is treated. Rules and coverage differ by place and by policy, so get the answer from the insurer, not from a guide.",
+          "visual": {
+            "type": "callout",
+            "tone": "warning",
+            "title": "Do not skip insurance and lease questions",
+            "text": "We are not able to give legal or insurance advice, and the rules depend on where you live. A five-minute call to your landlord, HOA, or insurer is the cheapest protection you can buy."
+          }
+        },
+        {
+          "title": "Step 3: Decide what you want in return",
+          "body": "Hosts ask for different things, and many ask for nothing. Common patterns are a share of the harvest, help with a chore in the rest of the yard, a seasonal contribution, or simply having the space cared for. In Growers Ground, hosts can describe their arrangement on their profile, and both people agree on it before anyone gardens. Whatever you choose, keep it simple enough that it is easy to follow when you are both busy.",
+          "visual": {
+            "type": "cards",
+            "items": [
+              {
+                "tag": "Common",
+                "title": "Harvest share",
+                "text": "The gardener keeps most of the crop and gives you an agreed portion in season."
+              },
+              {
+                "tag": "Common",
+                "title": "Help in exchange",
+                "text": "Weeding, mowing, or tidying part of the yard in return for growing space."
+              },
+              {
+                "tag": "Optional",
+                "title": "Seasonal contribution",
+                "text": "An agreed amount for the season, which should be written down like any other term."
+              },
+              {
+                "tag": "Also fine",
+                "title": "Nothing at all",
+                "text": "Some hosts just want the space used and looked after."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Questions to ask a gardener",
+          "body": "A short conversation tells you more than a profile does. You are not interviewing someone for a job, but it is reasonable to ask about their experience and what they hope to grow. Questions that help:\n\n- What do you want to grow, and how much space do you need?\n- How often will you be here, and at what times of day?\n- Have you gardened before, and what do you do about pests and weeds?\n- Do you need access to a tap, a tool shed, or storage?\n- Are you comfortable with the boundaries and house rules we have discussed?\n\nTake note of how the person responds. Someone who listens, asks questions of their own, and respects the limits you set is likely to be a good fit."
+        },
+        {
+          "title": "Step 4: Put the agreement in writing",
+          "body": "A short written agreement, even a message thread both of you confirm, prevents most disagreements. It does not need to be formal. It does need to be specific.",
+          "visual": {
+            "type": "checklist",
+            "title": "What to cover",
+            "items": [
+              "Exactly which part of the yard is included, and where the boundaries sit",
+              "Days and times the gardener may be there, and whether to message first",
+              "Who supplies tools, compost, and water, and who pays for the water",
+              "What may and may not be done: pesticides, structures, digging, trees",
+              "How the harvest, or any contribution, is shared",
+              "Start and end dates, and how much notice either side gives to stop",
+              "What happens to the beds and any leftover plants at the end of the season",
+              "Who to talk to first if something goes wrong"
+            ]
+          }
+        },
+        {
+          "title": "Step 5: Meet safely and trust your instincts",
+          "body": "Take your time before anyone is in your yard. The steps below are a sensible order for a first match.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              {
+                "title": "Message first",
+                "text": "Keep early conversations in writing so you both have a record of what was said."
+              },
+              {
+                "title": "Meet somewhere easy",
+                "text": "A coffee shop or the street outside is fine. You do not need to invite anyone in yet."
+              },
+              {
+                "title": "Walk the space together",
+                "text": "Do a short walk-through in daylight and talk through the checklist above."
+              },
+              {
+                "title": "Start small",
+                "text": "Agree on a trial for the first few weeks and review how it is going."
+              },
+              {
+                "title": "Step back if it feels off",
+                "text": "You never have to continue. Say no politely, or end the arrangement using the notice you agreed on."
+              }
+            ]
+          }
+        },
+        {
+          "title": "What good hosting looks like",
+          "body": "The most successful hosts treat the arrangement as a small ongoing relationship. They check in early in the season, say what is working, and ask for what they need. They also respect the gardener's work: a bed that has been planted is not a place to park a lawnmower or throw a party. If you are unsure whether something affects the garden, ask first. For their part, good gardeners keep the space tidy, harvest on time, and tell you if they need to stop. When both people do this, the arrangement tends to last."
+        },
+        {
+          "title": "Your privacy as a host",
+          "body": "In Growers Ground, locations are approximate on the map until you choose to connect with someone, so your exact address is not published. You decide who you message, and the app includes tools to block and report other users. Share your address only when you are comfortable.",
+          "visual": {
+            "type": "image",
+            "src": "/images/app_ss_host_profile1.png",
+            "alt": "A host profile screen in the Growers Ground app",
+            "width": 392,
+            "height": 636,
+            "caption": "A host profile in the Growers Ground app, which is rolling out city by city."
+          }
+        },
+        {
+          "title": "Your first season, month by month",
+          "body": "Expect an adjustment period. Most arrangements settle once you have both seen how the space actually gets used.",
+          "visual": {
+            "type": "timeline",
+            "items": [
+              {
+                "label": "Before the season",
+                "text": "Confirm permissions, agree on terms, and walk the space together."
+              },
+              {
+                "label": "First few weeks",
+                "text": "Check in often. Fix small problems, like gate access or water, before they grow."
+              },
+              {
+                "label": "Mid-season",
+                "text": "Review the arrangement. Is the harvest share working? Does anything need to change?"
+              },
+              {
+                "label": "End of the season",
+                "text": "Clear dead plants, decide what stays, and talk about whether to continue next year."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Frequently asked questions",
+          "body": "Do I need to charge anything? No. Many hosts ask for a share of the harvest or some help in the yard, and some ask for nothing. If money is involved, write it down.\n\nWhat if it does not work out? That is why you agreed on notice up front. Use the notice you both agreed to and end it kindly.\n\nCan I share a rented yard? Only with your landlord's permission, ideally in writing.\n\nWhere can I find a gardener? Ask neighbors and local clubs, or look for gardeners near you in an app like Growers Ground. If you are a gardener looking for space, read [how to find a place to grow vegetables](/guides/how-to-find-a-place-to-grow-vegetables)."
+        }
+      ]
+    },
+    {
+      "slug": "gardening-with-neighbors",
+      "title": "Gardening with neighbors: 7 ways to start, from a shared bed to a garden club",
+      "summary": "You do not need a big plan to garden alongside the people on your street. Seven low-effort ways to start, how to approach a neighbor, and how to keep things friendly when plans change.",
+      "readMinutes": 7,
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "sections": [
+        {
+          "title": "Why neighbors are your best garden resource",
+          "body": "The people closest to you often have what you are missing: sunny ground, a spare shovel, a surplus of zucchini, or years of local knowledge about when frost actually arrives. Gardening together does not have to mean a big organized project. It can start with a conversation over a fence. The seven ideas below are ordered from lowest to highest commitment, so you can pick the one that fits the time and trust you already have."
+        },
+        {
+          "title": "Seven ways to start",
+          "body": "Start with the first one or two. Most of these grow naturally into the next.",
+          "visual": {
+            "type": "cards",
+            "items": [
+              {
+                "tag": "Easy",
+                "title": "1. Share the surplus",
+                "text": "Leave extra tomatoes, herbs, or flowers with a note. It opens the door without asking for anything."
+              },
+              {
+                "tag": "Easy",
+                "title": "2. Swap seeds and seedlings",
+                "text": "Trade extra starts and saved seed in spring. Our seed swap guide explains what to bring."
+              },
+              {
+                "tag": "Easy",
+                "title": "3. Share tools",
+                "text": "A shared wheelbarrow, hose, or set of tools saves everyone money and gives you a reason to chat."
+              },
+              {
+                "tag": "Medium",
+                "title": "4. Garden a neighbor's unused space",
+                "text": "A yard share lets you grow in a bed or corner that is sitting empty. Agree on terms first."
+              },
+              {
+                "tag": "Medium",
+                "title": "5. Plant a shared bed",
+                "text": "A street-side or courtyard bed that two or three households tend together, with a simple watering schedule."
+              },
+              {
+                "tag": "Bigger",
+                "title": "6. Start a gardening group",
+                "text": "A monthly workday or a group chat for questions, swaps, and watering help while people travel."
+              },
+              {
+                "tag": "Bigger",
+                "title": "7. Organize a community garden",
+                "text": "If enough neighbors are interested and land is available, read how to start a community garden."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Start with a shared task, not a shared bed",
+          "body": "The easiest first project is one where nobody has to give up any ground. Offer to water while a neighbor travels, set up a rotating tool box, or plan a swap day in spring where everyone brings extra seedlings. These small exchanges build trust, show you how each person likes to garden, and tell you quickly whether a bigger project would work. If a neighbor already has a thriving garden, ask what they would do differently, and then listen. Gardeners enjoy being asked.\n\nA good rule of thumb is to grow commitment at the same pace as trust. A season of friendly swaps is a strong foundation for sharing a bed. A season of sharing a bed is a strong foundation for starting a group. For a seed-specific starting point, read our guide to [seed swaps](/guides/seed-swaps)."
+        },
+        {
+          "title": "How to approach a neighbor",
+          "body": "Most people say yes to a small, specific, low-pressure ask. The trick is to make it easy to decline without awkwardness.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              {
+                "title": "Start with something you notice",
+                "text": "A bed they planted, a tree that fruits, a compliment about the yard."
+              },
+              {
+                "title": "Offer something first",
+                "text": "A handful of extra seedlings or a jar of something you made goes a long way."
+              },
+              {
+                "title": "Make one small, clear ask",
+                "text": "For example: could we share a hose this summer, or would you be open to me growing in the corner you are not using?"
+              },
+              {
+                "title": "Give them an easy out",
+                "text": "Say you completely understand if it is not a good fit. Then really mean it."
+              },
+              {
+                "title": "Follow up in writing",
+                "text": "If they say yes, send a short message confirming what you agreed."
+              }
+            ]
+          }
+        },
+        {
+          "title": "A message you can borrow",
+          "body": "If you prefer to write first, a short note works.",
+          "visual": {
+            "type": "callout",
+            "tone": "tip",
+            "title": "Sample note",
+            "text": "Hi, I'm in number 14. I've been admiring your front garden. I'm looking for a bit of growing space this year and noticed the side bed isn't being used. If you'd ever be open to sharing it, I'd happily share the harvest and look after it. No pressure either way, and thanks for reading."
+          }
+        },
+        {
+          "title": "What to share, and what to keep separate",
+          "body": "Sharing works best when everyone is clear about what is communal and what is personal. Tools, compost, and watering duties are easy to share. Individual beds, favorite varieties, and the food people grow for their families usually are not, unless you decide otherwise. If you share a harvest, decide up front how to split it, and if someone wants to keep their own plot, respect that. Where several households garden together, a short written list of agreements on a gate, a fridge, or in a shared note keeps everyone on the same page."
+        },
+        {
+          "title": "Agree on the basics, even when it is friendly",
+          "body": "Good relationships survive on clear expectations. For anything beyond a swap, agree on a few things up front: who waters and when, what happens to the harvest, whether pesticides or new structures are allowed, and what happens if one of you moves or loses interest. If you rent, ask your landlord first, and if you have an HOA, check its rules. For anything involving someone else's land, our guide for hosts has a fuller checklist: [share your yard as a garden host](/guides/share-your-yard-as-a-garden-host)."
+        },
+        {
+          "title": "Keeping it friendly",
+          "body": "Most conflicts in shared gardens come from a few predictable places. Naming them early makes them easier to talk about.\n\n- Water: who pays and who remembers.\n- Boundaries: where one bed ends and another begins.\n- Weeds and pests: one neglected patch can affect everyone.\n- Time: life gets busy, and seasons end.\n\nWhen something goes wrong, talk early and in person or by phone, not by leaving notes. Assume the best, say what you need, and agree on one small change. It also helps to review the arrangement at the end of each season rather than letting resentment build."
+        },
+        {
+          "title": "When it is not working",
+          "body": "Not every arrangement lasts, and that is fine. If it is not working, say so kindly, use the notice you agreed on, and leave the space tidy. Thank them, give back anything borrowed, and keep the door open. A graceful ending makes it much more likely the next neighbor, or the same one next year, will say yes."
+        },
+        {
+          "title": "Finding neighbors who garden",
+          "body": "If you do not know who nearby gardens, look for clues: raised beds, trellises, compost bins. Check a local community board, a library, a school, or a nearby community garden, which often have notice boards and workdays. Apps can help too. Growers Ground is a map-first app where gardeners and hosts appear as pins and you can message before agreeing to anything; it is rolling out city by city, and you can join the waitlist on the [home page](/). To see community gardens already mapped near you, browse the [city directory](/cities), and for the formal route see [how to find a community garden near you](/guides/how-to-find-a-community-garden)."
+        }
+      ]
+    },
+    {
+      "slug": "benefits-of-community-gardening",
+      "title": "Benefits of community gardening: what the research actually shows",
+      "summary": "Community gardens are often credited with better diets, mental health, and stronger neighborhoods. Here is what the studies actually found, how strong the evidence is, and where claims go further than the data.",
+      "readMinutes": 8,
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "sections": [
+        {
+          "title": "The honest summary",
+          "body": "Community gardening is linked to better wellbeing, more vegetables, more physical activity, and stronger social ties. That is the encouraging part. The careful part is that most of the evidence comes from surveys and interviews, where people who choose to garden may already differ from people who do not. Only one randomized trial has tested the effect, and its results were modest. This guide goes through the main studies, says what each one can and cannot show, and links every source so you can read them yourself.",
+          "visual": {
+            "type": "cards",
+            "items": [
+              {
+                "tag": "Randomized trial",
+                "title": "Modest gains",
+                "text": "Gardeners ate a little more fibre and were a little more active. No effect on fruit and vegetable intake or BMI."
+              },
+              {
+                "tag": "Surveys",
+                "title": "More vegetables",
+                "text": "Community gardeners report eating more fruit and vegetables than non-gardeners, but the studies cannot show cause."
+              },
+              {
+                "tag": "Meta-analysis",
+                "title": "Better wellbeing",
+                "text": "Pooled studies link gardening with lower depression and anxiety, and higher quality of life."
+              },
+              {
+                "tag": "Interviews",
+                "title": "Stronger neighborhoods",
+                "text": "Gardeners describe social ties that may build collective efficacy. Descriptive, not proof."
+              }
+            ]
+          }
+        },
+        {
+          "title": "What kind of evidence is this?",
+          "body": "Not all studies carry the same weight. A randomized controlled trial assigns people by chance to gardening or a waiting list, which makes the comparison fair. A cross-sectional survey asks different people about their habits at one moment, which shows association but not cause. A qualitative study interviews people to understand their experience. A meta-analysis combines many studies, but it is only as strong as the studies it includes. We use these labels below.",
+          "visual": {
+            "type": "compare",
+            "cornerLabel": "Study type",
+            "columns": [
+              "What it can show",
+              "What it cannot show"
+            ],
+            "rows": [
+              {
+                "label": "Randomized trial",
+                "cells": [
+                  "Whether gardening itself changed an outcome",
+                  "Long-term effects, or whether results hold in other cities"
+                ]
+              },
+              {
+                "label": "Cross-sectional survey",
+                "cells": [
+                  "That gardeners and non-gardeners differ",
+                  "Why they differ; gardeners may already eat well"
+                ]
+              },
+              {
+                "label": "Qualitative interviews",
+                "cells": [
+                  "How gardeners describe their experience",
+                  "How common those experiences are"
+                ]
+              },
+              {
+                "label": "Meta-analysis",
+                "cells": [
+                  "A pattern across many studies",
+                  "Quality beyond that of the studies it pools"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "1. The strongest evidence: a randomized trial in Denver and Aurora",
+          "body": "In the Community Activation for Prevention Study (CAPS), 291 adults who had not gardened in the previous two years and were on waiting lists for Denver Urban Gardens plots were randomly assigned. 145 received a garden plot and 146 stayed on the waiting list as a comparison group. The trial ran from 2017 to 2019. Data collected after the start of the COVID-19 pandemic was excluded.\n\nIt found modest benefits. Gardeners ate about 1.4 grams more fibre a day and did about 5.8 more minutes a day of moderate to vigorous physical activity, which works out to roughly 40 minutes a week by press coverage of the study. Perceived stress and anxiety also fell more in the garden group. There was no significant effect on fruit and vegetable intake, the Healthy Eating Index, sedentary time, BMI, or waist circumference.\n\nThe authors describe the effects as modest and the evidence as suggestive, and the confidence intervals for fibre and physical activity were wide. Treat it as encouraging, not as proof that community gardening transforms health. The study was published in Lancet Planetary Health in 2023 by Litt, Alaimo and colleagues."
+        },
+        {
+          "title": "2. Vegetables and fruit: gardeners report eating more",
+          "body": "Two older surveys found that community gardeners reported eating more produce.\n\nIn Flint, Michigan, a 2003 telephone survey of 766 adults found that people in households with a community garden participant ate fruits and vegetables about 1.4 more times a day and, by the paper's measure, were about 3.5 times more likely to eat them at least five times daily. In Denver, a 2006 to 2007 survey of 436 residents found that community gardeners reported 5.7 servings a day, compared with 4.6 for home gardeners and 3.9 for non-gardeners. About 56 percent of community gardeners met the five-a-day guideline, against 37 percent of home gardeners and 25 percent of non-gardeners.\n\nBoth were surveys of self-reported eating at one point in time, so they show association, not cause. People who sign up for a garden may already care more about food. The Denver trial above is a good reminder: when the comparison was randomized, the effect on fruit and vegetable intake was not significant."
+        },
+        {
+          "title": "3. Wellbeing and mental health",
+          "body": "A 2016 meta-analysis by Soga, Gaston and Yamaura pooled 22 studies, including 76 comparisons of gardeners or pre-gardening groups with controls. It found that gardening was linked with lower depression and anxiety, lower BMI, and higher life satisfaction, quality of life, and sense of community. The authors adjusted for publication bias and the result held, although the authors also note the bias exists.\n\nTwo cautions. Many of the pooled studies were not randomized. And the studies cover gardening in general, including horticultural therapy, not only community plots. A fair reading is that gardening is associated with better wellbeing, and that community gardens are one place it happens."
+        },
+        {
+          "title": "4. Neighbors and community",
+          "body": "In interviews with Denver community gardeners, Teig and colleagues found that gardeners described social processes that could build collective efficacy, meaning neighbors' shared confidence that they can work together to improve where they live. The authors frame this as a possible way gardens might strengthen neighborhoods and health, and they also point out that the evidence for gardens as a health strategy is limited. This is the kind of study that generates good questions rather than final answers."
+        },
+        {
+          "title": "5. What the research does not tell us",
+          "body": "A few claims about community gardens go further than the evidence supports, so we have left them out.\n\n- We have not cited a figure for how much money gardeners save. We could not find a reliable per-household number.\n- We have not cited pounds of food grown in cities. Published estimates from secondary sources disagree, and we could not verify the original figures.\n- We have not claimed that gardens cool neighborhoods or reduce crime. We did not review that research for this guide.\n- Most studies are from a few places, notably Denver and Flint, and rely on self-reported diet.",
+          "visual": {
+            "type": "callout",
+            "tone": "tip",
+            "title": "How to read garden health claims",
+            "text": "Look for the words \"associated with\" and \"may help\". Be cautious of anything that says community gardens \"cause\" or \"prove\" a health result. The strongest study so far found small, real gains, and other studies found larger differences that may partly reflect who chooses to garden."
+          }
+        },
+        {
+          "title": "What this means if you are deciding whether to garden with others",
+          "body": "You do not need a study to know that growing food outdoors, with other people, can be good for you. The research supports a realistic version of that: expect a bit more time outside, some extra produce and fibre, a lift in how you feel, and a few new people to know. If you want to try it, see [how to find a community garden near you](/guides/how-to-find-a-community-garden), [how to find a place to grow vegetables](/guides/how-to-find-a-place-to-grow-vegetables) without a yard, or [how yard sharing works](/guides/how-yard-sharing-works) if you would rather garden one-on-one."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Litt et al. (2023), Lancet Planetary Health: CAPS randomised controlled trial (PubMed)",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/36608945/"
+        },
+        {
+          "label": "CAPS trial full text (PubMed Central)",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9936951"
+        },
+        {
+          "label": "Alaimo et al. (2008), Flint, Michigan community garden survey (PubMed)",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18314085/"
+        },
+        {
+          "label": "Litt et al. (2011), American Journal of Public Health, Denver survey (DOI)",
+          "href": "https://doi.org/10.2105/AJPH.2010.300111"
+        },
+        {
+          "label": "Soga, Gaston and Yamaura (2016), Preventive Medicine Reports meta-analysis (PubMed)",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/27981022/"
+        },
+        {
+          "label": "Teig et al. (2009), Health & Place, collective efficacy in Denver gardens (PubMed)",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/19577947/"
+        }
+      ]
+    },
+    {
+      "slug": "seed-swaps",
+      "title": "Seed swaps: how they work, what to bring, and how to find one",
+      "summary": "A seed swap is a free way to try new varieties and share the ones you have saved. How a swap runs, what to bring and how to label it, what not to swap, what the rules say, and how to find one near you.",
+      "readMinutes": 7,
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "sections": [
+        {
+          "title": "What a seed swap is",
+          "body": "A seed swap is a gathering where gardeners trade or share seed. People bring seed they saved from their own plants, leftover packets they will not use, or seed donated by companies, then browse tables of other people's offerings and take what they want to try. Organizers or experienced seed savers are often on hand to answer questions and keep track of how much seed is changing hands. Swaps are a good way to get varieties that grow well in your area, meet gardeners nearby, and avoid buying a whole packet for a handful of plants.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              {
+                "title": "Gather your seed",
+                "text": "Collect saved seed, leftover packets, and anything you have too much of."
+              },
+              {
+                "title": "Label every packet",
+                "text": "Write what it is, the variety, and when and where it was grown."
+              },
+              {
+                "title": "Bring it to the swap",
+                "text": "Sign in, set your seed on a table, and look around."
+              },
+              {
+                "title": "Take what you will grow",
+                "text": "Ask questions, take small amounts, and share your growing notes."
+              },
+              {
+                "title": "Share the results",
+                "text": "Next year, report back and save seed from what worked."
+              }
+            ]
+          }
+        },
+        {
+          "title": "What to bring, and how to label it",
+          "body": "Good labels make a swap work. Seed Savers Exchange, which publishes a guide to organizing swaps, recommends labelling the crop type, common name, variety, the year the seed was collected, and where it was grown, plus any notes on how it performed. At a minimum, South Dakota State University Extension suggests the variety and the year collected. Swap organizers often post a sign saying that germination is not guaranteed, because stored seed loses viability over time. A quick sprout test on a damp paper towel is a simple way to check whether old seed is still alive before you share it.",
+          "visual": {
+            "type": "checklist",
+            "title": "A good seed label",
+            "items": [
+              "Crop and common name (for example, bean)",
+              "Variety name, if you know it",
+              "Year the seed was collected",
+              "Where it was grown, even just the neighborhood",
+              "A short note: flavour, vigor, days to harvest, how you grew it"
+            ]
+          }
+        },
+        {
+          "title": "What not to bring",
+          "body": "Seed Savers Exchange lists several kinds of seed that do not belong at a swap, and South Dakota State University Extension's guide agrees: illegal plants, genetically engineered plants, poisonous or noxious plants, patented varieties, F1 hybrids, and unidentified seed from volunteer plants. F1 hybrids do not grow true from saved seed, so what comes up next year will not match what you shared. If a packet came with a patent or plant-variety-protection notice, do not swap it.",
+          "visual": {
+            "type": "callout",
+            "tone": "warning",
+            "title": "Skip invasive plants",
+            "text": "Some swaps refuse seeds from plants on local invasive or noxious weed lists. If you are not sure, ask the organizer or your local extension office before you bring something that spreads easily."
+          }
+        },
+        {
+          "title": "Saving seed that is worth sharing",
+          "body": "Quality starts in the garden. Save seed from healthy plants that grew well for you, and label as you go so you do not lose track of varieties. Beans, peas, and tomatoes mostly pollinate themselves, which makes them the easiest crops for beginners. Squash, cucumbers, and melons cross easily with other varieties of the same kind, so seed from a garden with several types may not come true. If you are unsure, say so on the label. An honest note such as \"may have crossed with a neighbor's squash\" is more useful than a confident guess.\n\nStore seed cool, dry, and dark, and label the year. Most seed is best used within a few years, although this varies by crop."
+        },
+        {
+          "title": "Is it legal?",
+          "body": "Sharing seed informally between gardeners is a long-standing practice, but seed laws mostly regulate selling seed, and the details differ by place. A few examples of what we could confirm.\n\nIn the United States, seed regulation is mostly handled by states. Seed libraries have run into trouble with state seed laws before. In Pennsylvania, a library was told in 2014 that its seed lending violated the state Seed Act. The state agriculture department later said non-commercial seed libraries and exchanges that do not sell seed fall outside the Act's licensing, labelling, and testing rules, according to a legal advocacy group's account of the decision. Other states have taken other approaches, so check your own state department of agriculture before you organize a large swap or lend seed through a library. South Dakota State University Extension notes that small-scale sharing is generally fine when no seed is sold, but that moving seed across state lines is regulated and that federal noxious weeds must not be moved.\n\nIn Canada, the Canadian Food Inspection Agency says the Seeds Regulations apply to seed that is sold, imported, or exported, and to seed released into the environment. Its page does not mention swaps, so we cannot say officially that swaps are exempt. If you plan something beyond a small swap among friends, confirm with the CFIA.\n\nThis is general information, not legal advice. Two other rules matter for gardeners. Patented varieties cannot be saved for seed, and many plant varieties have plant-variety-protection rights, so check packets for notices. And seed marked with the Open Source Seed Initiative pledge can be used freely, provided you pass the pledge on to anyone you share it with.",
+          "visual": {
+            "type": "cards",
+            "items": [
+              {
+                "tag": "Always",
+                "title": "Do not sell at a swap",
+                "text": "Free swapping is the common case that the rules treat differently from selling."
+              },
+              {
+                "tag": "Check",
+                "title": "Your state or province",
+                "text": "Contact your state department of agriculture or the CFIA before organizing a big swap."
+              },
+              {
+                "tag": "Avoid",
+                "title": "Patented or protected varieties",
+                "text": "Look for patent or plant-variety-protection notices on the packet."
+              },
+              {
+                "tag": "Look for",
+                "title": "Open Source Seed Initiative",
+                "text": "Pledged seed can be used freely if you pass the pledge on."
+              }
+            ]
+          }
+        },
+        {
+          "title": "When swaps happen, and how to find one",
+          "body": "Swaps often run from January to March, ahead of spring planting, and are usually held at libraries, markets, garden festivals, and community gardens. National Seed Swap Day falls on the last Saturday of January, and Seed Savers Exchange points to its events page for upcoming swaps. Other places to look:\n\n- Your public library, which often has a seed library or hosts swaps.\n- Your local extension or Master Gardener program.\n- A nearby community garden, which may hold a swap or know of one. See [how to find a community garden near you](/guides/how-to-find-a-community-garden).\n- The Seed Library Network's map of seed libraries.\n- In Canada, the Seeds of Diversity events listing, which you can filter by province. Local volunteers run the individual Seedy Saturday and Seedy Sunday events.\n- Neighbors who garden. See [gardening with neighbors](/guides/gardening-with-neighbors).",
+          "visual": {
+            "type": "timeline",
+            "items": [
+              {
+                "label": "Late summer to fall",
+                "text": "Harvest and save seed from your best plants. Dry it fully before storing."
+              },
+              {
+                "label": "Winter",
+                "text": "Sort and label your seed, and look for swaps near you."
+              },
+              {
+                "label": "January to March",
+                "text": "Peak swap season, including National Seed Swap Day in late January."
+              },
+              {
+                "label": "Spring",
+                "text": "Plant what you traded and keep notes to share next year."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Start a small swap with your neighbors",
+          "body": "You do not need an event. A shelf at a community garden, a table at a neighborhood gathering, or a box on a porch with envelopes, a pencil, and a sign-in sheet is enough. Set a few simple rules: label what you bring, take small amounts, and leave leftovers for the garden or a seed library. If you want to organize something bigger, Seed Savers Exchange's guide to organizing a swap is a good place to start. And if you are looking for people to swap with, Growers Ground is a map-first garden sharing app where nearby gardeners and hosts appear as pins; it is rolling out city by city and you can join the waitlist on the [home page](/)."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Seed Savers Exchange: How to organize a seed swap",
+          "href": "https://seedsavers.org/how-to-organize-a-seed-swap/"
+        },
+        {
+          "label": "South Dakota State University Extension: How to organize a seed swap",
+          "href": "https://extension.sdstate.edu/how-organize-seed-swap"
+        },
+        {
+          "label": "Public Interest Law: seed libraries in Pennsylvania allowed to engage in free seed exchange",
+          "href": "https://pubintlaw.org/cases-and-projects/seed-libraries-in-pennsylvania-allowed-to-engage-in-free-seed-exchange/"
+        },
+        {
+          "label": "CFIA: Seeds Regulations frequently asked questions",
+          "href": "https://inspection.canada.ca/en/about-cfia/acts-and-regulations/list-acts-and-regulations/faq-seeds-regulations"
+        },
+        {
+          "label": "Open Source Seed Initiative",
+          "href": "https://osseeds.org/"
+        },
+        {
+          "label": "Seed Library Network",
+          "href": "http://seedlibraries.weebly.com/"
+        },
+        {
+          "label": "Seeds of Diversity: events",
+          "href": "https://seeds.ca/events/"
+        }
+      ]
     }
   ]
 }

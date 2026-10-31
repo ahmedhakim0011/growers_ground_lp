@@ -21,7 +21,7 @@ export function GuideJsonLd({ guide }: { guide: GrowingGuide }) {
         description: guide.summary,
         mainEntityOfPage: url,
         ...(guide.publishedAt
-          ? { datePublished: guide.publishedAt, dateModified: guide.publishedAt }
+          ? { datePublished: guide.publishedAt, dateModified: guide.updatedAt ?? guide.publishedAt }
           : {}),
         author: { "@id": `${siteConfig.url}/#organization` },
         publisher: { "@id": `${siteConfig.url}/#organization` },
