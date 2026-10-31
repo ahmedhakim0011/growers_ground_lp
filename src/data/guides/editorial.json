@@ -254,7 +254,21 @@
           "title": "Frequently asked questions",
           "body": "Can I grow vegetables if I rent? Often yes, in containers, and sometimes in the ground with your landlord's written permission. Ask first and keep the reply.\n\nHow much space does a vegetable garden need? Much less than people expect to start. A couple of beds or a handful of large containers is a realistic first season; you can add more once you know how much time you have.\n\nIs a yard share legal? A yard share is a private agreement between two people on private land, so the main questions are your lease, any HOA or local rules, and insurance. Ask your landlord, HOA, or insurer rather than assuming.\n\nWhat if my city has no community garden program? Look for gardens run by nonprofits, schools, and faith groups, and consider a yard share or starting a garden with neighbors: see [how to start a community garden](/guides/how-to-start-a-community-garden)."
         }
-      ]
+      ],
+      "hero": {
+        "type": "image",
+        "src": "/images/guides/raised-bed-vegetables.jpg",
+        "alt": "Rows of leafy vegetables growing in wooden raised garden beds",
+        "width": 960,
+        "height": 639,
+        "caption": "Raised beds are one way to grow food on ground you do not own.",
+        "credit": {
+          "author": "Alabama Extension",
+          "license": "CC0",
+          "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceHref": "https://commons.wikimedia.org/wiki/File:Leafy_Greens_in_Raised_Garden_Beds_(49199571568).jpg"
+        }
+      }
     },
     {
       "slug": "share-your-yard-as-a-garden-host",
@@ -419,7 +433,21 @@
           "title": "Frequently asked questions",
           "body": "Do I need to charge anything? No. Many hosts ask for a share of the harvest or some help in the yard, and some ask for nothing. If money is involved, write it down.\n\nWhat if it does not work out? That is why you agreed on notice up front. Use the notice you both agreed to and end it kindly.\n\nCan I share a rented yard? Only with your landlord's permission, ideally in writing.\n\nWhere can I find a gardener? Ask neighbors and local clubs, or look for gardeners near you in an app like Growers Ground. If you are a gardener looking for space, read [how to find a place to grow vegetables](/guides/how-to-find-a-place-to-grow-vegetables)."
         }
-      ]
+      ],
+      "hero": {
+        "type": "image",
+        "src": "/images/guides/backyard-corn-garden.jpg",
+        "alt": "Corn and other vegetables growing in a fenced backyard garden",
+        "width": 960,
+        "height": 565,
+        "caption": "A small backyard plot is often all a gardener needs.",
+        "credit": {
+          "author": "Tomwsulcer",
+          "license": "CC0",
+          "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceHref": "https://commons.wikimedia.org/wiki/File:Corn_growing_in_a_backyard_garden_in_New_Jersey.jpg"
+        }
+      }
     },
     {
       "slug": "gardening-with-neighbors",
@@ -540,7 +568,21 @@
           "title": "Finding neighbors who garden",
           "body": "If you do not know who nearby gardens, look for clues: raised beds, trellises, compost bins. Check a local community board, a library, a school, or a nearby community garden, which often have notice boards and workdays. Apps can help too. Growers Ground is a map-first app where gardeners and hosts appear as pins and you can message before agreeing to anything; it is rolling out city by city, and you can join the waitlist on the [home page](/). To see community gardens already mapped near you, browse the [city directory](/cities), and for the formal route see [how to find a community garden near you](/guides/how-to-find-a-community-garden)."
         }
-      ]
+      ],
+      "hero": {
+        "type": "image",
+        "src": "/images/guides/school-garden-raised-beds.jpg",
+        "alt": "Raised garden beds with a shed and seating in a shared garden in Lafayette, Colorado",
+        "width": 960,
+        "height": 720,
+        "caption": "Shared beds, a tool shed, and a place to sit make a garden a place to meet.",
+        "credit": {
+          "author": "Mikepascoe",
+          "license": "CC0",
+          "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceHref": "https://commons.wikimedia.org/wiki/File:Peak_to_Peak_Charter_School_educational_garden_with_raised_beds_and_shed,_Lafayette,_Colorado,_USA_-_2025.jpg"
+        }
+      }
     },
     {
       "slug": "benefits-of-community-gardening",
@@ -677,7 +719,21 @@
           "label": "Teig et al. (2009), Health & Place, collective efficacy in Denver gardens (PubMed)",
           "href": "https://pubmed.ncbi.nlm.nih.gov/19577947/"
         }
-      ]
+      ],
+      "hero": {
+        "type": "image",
+        "src": "/images/guides/community-garden-michigan.jpg",
+        "alt": "Gardeners tending plots at a community garden in Northville Township, Michigan",
+        "width": 960,
+        "height": 640,
+        "caption": "Plots at a community garden in Northville Township, Michigan.",
+        "credit": {
+          "author": "Dwight Burdette",
+          "license": "CC BY 3.0",
+          "licenseHref": "https://creativecommons.org/licenses/by/3.0/",
+          "sourceHref": "https://commons.wikimedia.org/wiki/File:Thayer's_Corner_Nature_Area_Community_Garden_Northville_Township_Michigan.JPG"
+        }
+      }
     },
     {
       "slug": "seed-swaps",
@@ -777,27 +833,43 @@
         {
           "title": "When swaps happen, and how to find one",
           "body": "Swaps often run from January to March, ahead of spring planting, and are usually held at libraries, markets, garden festivals, and community gardens. National Seed Swap Day falls on the last Saturday of January, and Seed Savers Exchange points to its events page for upcoming swaps. Other places to look:\n\n- Your public library, which often has a seed library or hosts swaps.\n- Your local extension or Master Gardener program.\n- A nearby community garden, which may hold a swap or know of one. See [how to find a community garden near you](/guides/how-to-find-a-community-garden).\n- The Seed Library Network's map of seed libraries.\n- In Canada, the Seeds of Diversity events listing, which you can filter by province. Local volunteers run the individual Seedy Saturday and Seedy Sunday events.\n- Neighbors who garden. See [gardening with neighbors](/guides/gardening-with-neighbors).",
-          "visual": {
-            "type": "timeline",
-            "items": [
-              {
-                "label": "Late summer to fall",
-                "text": "Harvest and save seed from your best plants. Dry it fully before storing."
-              },
-              {
-                "label": "Winter",
-                "text": "Sort and label your seed, and look for swaps near you."
-              },
-              {
-                "label": "January to March",
-                "text": "Peak swap season, including National Seed Swap Day in late January."
-              },
-              {
-                "label": "Spring",
-                "text": "Plant what you traded and keep notes to share next year."
+          "visual": [
+            {
+              "type": "image",
+              "src": "/images/guides/new-orleans-seed-library.jpg",
+              "alt": "A wooden card-catalog cabinet with labelled drawers used as a seed library at a New Orleans public library",
+              "width": 960,
+              "height": 1280,
+              "caption": "Many public libraries lend seed from old card-catalog cabinets.",
+              "credit": {
+                "author": "Quincylvania",
+                "license": "CC0",
+                "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "sourceHref": "https://commons.wikimedia.org/wiki/File:Cita_Dennis_Hubbell_Library_seed_library.jpg"
               }
-            ]
-          }
+            },
+            {
+              "type": "timeline",
+              "items": [
+                {
+                  "label": "Late summer to fall",
+                  "text": "Harvest and save seed from your best plants. Dry it fully before storing."
+                },
+                {
+                  "label": "Winter",
+                  "text": "Sort and label your seed, and look for swaps near you."
+                },
+                {
+                  "label": "January to March",
+                  "text": "Peak swap season, including National Seed Swap Day in late January."
+                },
+                {
+                  "label": "Spring",
+                  "text": "Plant what you traded and keep notes to share next year."
+                }
+              ]
+            }
+          ]
         },
         {
           "title": "Start a small swap with your neighbors",
@@ -833,7 +905,21 @@
           "label": "Seeds of Diversity: events",
           "href": "https://seeds.ca/events/"
         }
-      ]
+      ],
+      "hero": {
+        "type": "image",
+        "src": "/images/guides/toronto-seed-library.jpg",
+        "alt": "A table of labelled seed jars and handouts at the Toronto Seed Library",
+        "width": 960,
+        "height": 720,
+        "caption": "Labelled jars at the Toronto Seed Library, a community seed-sharing table.",
+        "credit": {
+          "author": "Coljo17",
+          "license": "CC BY-SA 4.0",
+          "licenseHref": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceHref": "https://commons.wikimedia.org/wiki/File:Toronto_Seed_Library_at_Riverdale_Hub.jpg"
+        }
+      }
     }
   ]
 }

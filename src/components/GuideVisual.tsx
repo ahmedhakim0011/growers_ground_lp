@@ -7,7 +7,7 @@ function Caption({ text }: { text?: string }) {
 }
 
 /** Inline, text-first visuals for guides: accessible HTML + CSS, no external images required. */
-export function GuideVisual({ visual }: { visual: GuideVisualData }) {
+export function GuideVisual({ visual, priority = false }: { visual: GuideVisualData; priority?: boolean }) {
   switch (visual.type) {
     case "compare":
       return (
@@ -119,12 +119,40 @@ export function GuideVisual({ visual }: { visual: GuideVisualData }) {
           <GuideRichText body={visual.text} />
         </aside>
       );
-    case "image":
+    case "image": {
+      const portrait = visual.height > visual.width;
+      const credit = visual.credit;
       return (
-        <figure className="guide-visual guide-visual-image">
-          <Image src={visual.src} alt={visual.alt} width={visual.width} height={visual.height} sizes="(max-width: 700px) 100vw, 640px" />
-          <Caption text={visual.caption} />
+        <figure className={`guide-visual guide-visual-image${portrait ? " guide-visual-image-portrait" : ""}`}>
+          <Image
+            src={visual.src}
+            alt={visual.alt}
+            width={visual.width}
+            height={visual.height}
+            sizes={portrait ? "(max-width: 700px) 100vw, 420px" : "(max-width: 700px) 100vw, 640px"}
+            priority={priority}
+          />
+          {visual.caption || credit ? (
+            <figcaption className="guide-visual-caption">
+              {visual.caption}
+              {credit ? (
+                <>
+                  {visual.caption ? " " : ""}
+                  Photo: {credit.author} (
+                  <a href={credit.licenseHref} rel="noopener noreferrer license" target="_blank">
+                    {credit.license}
+                  </a>
+                  ), via{" "}
+                  <a href={credit.sourceHref} rel="noopener noreferrer" target="_blank">
+                    {credit.sourceLabel ?? "Wikimedia Commons"}
+                  </a>
+                  .
+                </>
+              ) : null}
+            </figcaption>
+          ) : null}
         </figure>
       );
+    }
   }
 }

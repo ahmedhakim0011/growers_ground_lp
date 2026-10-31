@@ -32,6 +32,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: path,
       type: "article",
       ...(guide.publishedAt ? { publishedTime: guide.publishedAt } : {}),
+      ...(guide.hero
+        ? { images: [{ url: guide.hero.src, width: guide.hero.width, height: guide.hero.height, alt: guide.hero.alt }] }
+        : {}),
     },
   };
 }
@@ -59,12 +62,17 @@ export default async function GuidePage({ params }: PageProps) {
           </p>
           <h1>{guide.title}</h1>
           <p className="guide-article-summary">{guide.summary}</p>
+          {guide.hero ? <GuideVisual visual={guide.hero} priority /> : null}
 
           {guide.sections.map((section) => (
             <section key={section.title} className="guide-article-section">
               <h2>{section.title}</h2>
               <GuideRichText body={section.body} />
-              {section.visual ? <GuideVisual visual={section.visual} /> : null}
+              {section.visual
+                ? (Array.isArray(section.visual) ? section.visual : [section.visual]).map((v, i) => (
+                    <GuideVisual key={i} visual={v} />
+                  ))
+                : null}
             </section>
           ))}
 

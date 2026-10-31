@@ -9,7 +9,16 @@ export type GuideVisual =
   | { type: "cards"; items: { title: string; text: string; tag?: string }[]; caption?: string }
   | { type: "timeline"; items: { label: string; text: string }[]; caption?: string }
   | { type: "callout"; tone?: "tip" | "warning"; title?: string; text: string }
-  | { type: "image"; src: string; alt: string; width: number; height: number; caption?: string };
+  | { type: "image"; src: string; alt: string; width: number; height: number; caption?: string; credit?: ImageCredit };
+
+export type ImageCredit = {
+  author: string;
+  license: string;
+  licenseHref: string;
+  /** Page where the image and its license can be verified. */
+  sourceHref: string;
+  sourceLabel?: string;
+};
 
 export type GuideSource = { label: string; href: string };
 
@@ -17,7 +26,7 @@ export type GuideSection = {
   title: string;
   body: string;
   /** Optional visual rendered right after the body. */
-  visual?: GuideVisual;
+  visual?: GuideVisual | GuideVisual[];
 };
 
 export type GrowingGuide = {
@@ -30,6 +39,8 @@ export type GrowingGuide = {
   season?: string;
   readMinutes: number;
   sections: GuideSection[];
+  /** Lead image shown under the summary. */
+  hero?: Extract<GuideVisual, { type: "image" }>;
   /** Outside sources cited in the text; rendered as a list at the end. */
   sources?: GuideSource[];
   /** ISO date of the last substantive edit. */
