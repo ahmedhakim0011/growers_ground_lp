@@ -5572,3 +5572,13 @@ body.lp-calai {
     transform: rotate(15deg);
   }
 }
+
+.city-page-local {
+  margin-top: 48px;
+  max-width: 720px;
+}
+
+.city-page-local p {
+  margin: 12px 0;
+  line-height: 1.6;
+}

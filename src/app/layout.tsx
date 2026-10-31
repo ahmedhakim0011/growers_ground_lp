@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   applicationName: siteConfig.name,
   title: {
-    default: "Growers Ground — Find Garden Space & Local Gardeners Near You",
+    default: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
     template: "%s | Growers Ground",
   },
   description: siteConfig.description,
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Growers Ground — Find Garden Space & Local Gardeners Near You",
+    title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
     description: siteConfig.ogDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growers Ground — Find Garden Space & Local Gardeners Near You",
+    title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
     description: siteConfig.ogDescription,
   },
 };

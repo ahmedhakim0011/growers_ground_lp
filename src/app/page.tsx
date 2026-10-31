@@ -20,13 +20,13 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Growers Ground — Find Garden Space & Local Gardeners Near You",
+    title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
     description: siteConfig.ogDescription,
     url: siteConfig.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growers Ground — Find Garden Space & Local Gardeners Near You",
+    title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
     description: siteConfig.ogDescription,
   },
 };

@@ -7,6 +7,7 @@ import { OsmDataNotice } from "@/components/OsmDataNotice";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { StoreBadges } from "@/components/StoreBadges";
+import cityLocal from "@/data/city-local.json";
 import { loadCityPins } from "@/lib/city-data.server";
 import { getGuidesForCity } from "@/lib/guides";
 import {
@@ -57,6 +58,16 @@ export default async function CityPage({ params }: PageProps) {
   const bundle = loadCityPins(slug);
   const pins = bundle?.pins ?? [];
   const guides = getGuidesForCity(slug);
+  const local = (
+    cityLocal as Record<
+      string,
+      {
+        heading: string;
+        paragraphs: string[];
+        links: { label: string; href: string }[];
+      }
+    >
+  )[slug];
   const countLabel =
     metro.gardenCount === 1
       ? "1 community garden"
@@ -100,6 +111,28 @@ export default async function CityPage({ params }: PageProps) {
             <Link href="/cities">directory</Link> to switch metros.
           </p>
         </div>
+
+        {local ? (
+          <section className="container city-page-local" data-reveal data-motion-y="36">
+            <h2>{local.heading}</h2>
+            {local.paragraphs.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+            <ul className="city-guide-links">
+              {local.links.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href} rel="noopener noreferrer" target="_blank">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="city-page-map-note">
+              Details come from the official pages linked above and can change.
+              Last checked October 2026.
+            </p>
+          </section>
+        ) : null}
 
         {guides.length > 0 ? (
           <div className="container city-page-guides" data-reveal data-motion-y="36">

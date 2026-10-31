@@ -13,10 +13,10 @@ export const siteConfig = {
   ],
   facebook: "https://www.facebook.com/people/Growers-Ground/61595561339790/",
   tiktok: "https://www.tiktok.com/@growersground",
-  alternateNames: ["GrowersGround", "Growers Ground app"],
+  alternateNames: ["GrowersGround", "Growers Ground app", "Growers Ground garden sharing app"],
   supportEmail: "support@growersground.com",
   description:
-    "Growers Ground connects gardeners with hosts who share yard space. Map-first discovery, garden spots, journals, and local growing communities. US & Canada.",
+    "Growers Ground is a garden sharing app: find a yard share or shared yard near you, or share your yard with a local gardener. Map-first discovery across the US & Canada.",
   ogDescription:
     "Find private garden space near you. Connect with local hosts, garden spots, seed swaps, and growing journals.",
   themeColor: "#3D5F49",
