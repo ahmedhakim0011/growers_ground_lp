@@ -65,6 +65,22 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="container footer-bottom footer-bottom-zernio">
+        <div
+          className="trustpilot-widget"
+          data-locale="en-US"
+          data-template-id="56278e9abfbbba0bdcd568bc"
+          data-businessunit-id="6aea46470156593a3440ab85"
+          data-style-height="52px"
+          data-style-width="100%"
+        >
+          <a
+            href="https://www.trustpilot.com/review/growersground.com"
+            target="_blank"
+            rel="noopener"
+          >
+            Trustpilot
+          </a>
+        </div>
         <p>&copy; {year} {siteConfig.name}. All rights reserved.</p>
         <p className="footer-note">
           Privacy-first. Your location is only shared when you choose to connect.

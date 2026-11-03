@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import { PageMotion } from "@/components/motion/PageMotion";
 import { SiteJsonLd } from "@/components/SiteJsonLd";
@@ -62,6 +63,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <head>
+        <Script
+          id="trustpilot-bootstrap"
+          src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body className="lp-calai" suppressHydrationWarning>
         <PageMotion />
         <SiteJsonLd />
