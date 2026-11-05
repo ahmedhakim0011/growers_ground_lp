@@ -8,6 +8,14 @@ export const siteLogoSocialImage = {
   alt: `${siteConfig.name} logo`,
 } as const;
 
+/** Default share image. Pages that set their own openGraph lose the root image, so they pass this. */
+export const defaultSocialImage = {
+  url: "/opengraph-image",
+  width: 1200,
+  height: 630,
+  alt: `${siteConfig.name}: find garden space and local gardeners on a map`,
+} as const;
+
 /** Absolute URL for canonical / JSON-LD (matches live primary host). */
 export function absoluteUrl(path = "/"): string {
   const base = siteConfig.url.replace(/\/$/, "");

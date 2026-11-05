@@ -31,7 +31,7 @@ const features = [
     tab: "Host profiles",
     title: "See land specs before you visit",
     description:
-      "Verified hosts share plot size, sun, water access, and a bio excerpt. Request space or view plot details without exposing exact addresses upfront.",
+      "Hosts share plot size, sun, water access, and a bio excerpt. Request space or view plot details without exposing exact addresses upfront.",
     slot: "host-profile",
     label: "Host profile",
     screenshot: {
@@ -201,7 +201,7 @@ export function AppScreenshotsSection() {
         <div key={`copy-${active}`} className="app-screens-copy app-screens-enter-copy">
           <h3>{panel.title}</h3>
           <p>{panel.description}</p>
-          <a className="btn btn-accent btn-rect" href="#waitlist">
+          <a className="btn btn-accent btn-rect" href="/#waitlist">
             Join the waitlist
           </a>
         </div>

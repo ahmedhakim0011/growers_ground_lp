@@ -4,14 +4,14 @@ const useCases = [
     title: "Urban Gardeners",
     description:
       "Find a backyard plot when apartment life won't let you grow tomatoes.",
-    href: "#waitlist",
+    href: "/#waitlist",
   },
   {
     num: "02",
     title: "Suburban Hosts",
     description:
       "Monetize unused lawn space with vetted gardeners — seasonal rent or harvest share.",
-    href: "#waitlist",
+    href: "/#waitlist",
   },
   {
     num: "03",
@@ -25,7 +25,7 @@ const useCases = [
     title: "First-Time Growers",
     description:
       "Match with experienced hosts, follow public journals, and ask local Q&A.",
-    href: "#waitlist",
+    href: "/#waitlist",
   },
   {
     num: "05",

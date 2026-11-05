@@ -25,7 +25,7 @@ export default function AboutPage() {
   return (
     <LegalPageShell
       title={`About ${siteConfig.name}`}
-      lastUpdated="October 26, 2026"
+      lastUpdated="November 5, 2026"
       eyebrow="Company"
     >
       <script
@@ -37,6 +37,44 @@ export default function AboutPage() {
         that connects people who want to grow food with neighbors who have
         yard space to share. It is built for gardeners and hosts in the United
         States and Canada.
+      </p>
+
+      <p>
+        Our idea fits in one line: <strong>One Map. Everyone Knows Where to
+        Grow.</strong> Urban gardeners without land, homeowners with unused
+        yards, first-time growers, experienced gardeners and garden clubs all
+        look for each other in different places. We want to put them on one map.
+      </p>
+
+      <h2>Who is behind it</h2>
+      <p>
+        Growers Ground was founded by{" "}
+        <a href={siteConfig.founder.url} target="_blank" rel="noopener noreferrer">
+          {siteConfig.founder.name}
+        </a>
+        , a senior software engineer with more than seven years of experience
+        building mobile apps. You can also find Ahmed on{" "}
+        <a href={siteConfig.founder.instagram} target="_blank" rel="noopener noreferrer">
+          Instagram (@ahmedbuildapps)
+        </a>
+        ,{" "}
+        <a href={siteConfig.founder.linkedin} target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>{" "}
+        and{" "}
+        <a href={siteConfig.founder.github} target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        .
+      </p>
+
+      <h2>Where the product is today</h2>
+      <p>
+        The app is not in the app stores yet. We are launching city by city
+        across the US and Canada, and you can{" "}
+        <Link href="/#waitlist">join the waitlist</Link> to hear when your area
+        opens. The community garden maps and guides on this website are free to
+        use now, with no account.
       </p>
 
       <h2>What Growers Ground does</h2>
@@ -51,13 +89,29 @@ export default function AboutPage() {
         </li>
         <li>
           <strong>Your terms.</strong> Hosts and gardeners agree on seasonal
-          rent, harvest share, or barter before anyone gardens.
+          rent, harvest share, or barter before anyone gardens. Growers Ground
+          does not handle payments for plots.
         </li>
         <li>
           <strong>Community places.</strong> Seed swaps, community gardens, and
           other public-good spots sit on their own map layer.
         </li>
       </ul>
+
+      <h2>Where our garden data comes from</h2>
+      <p>
+        Our city maps use OpenStreetMap and, where we can confirm the licence,
+        official open data such as NYC Parks GreenThumb and the Atlanta Regional
+        Commission. Each city page names its sources and the changes we made. We
+        do not add gardens from any other source, and we only index a city page
+        once it has at least 10 mapped gardens.
+      </p>
+      <p>
+        Being on our map does not mean a garden has open plots. Records can be
+        out of date, so contact a garden or its organizer before you visit. To
+        report a mistake, email{" "}
+        <a href={`mailto:${siteConfig.supportEmail}`}>{siteConfig.supportEmail}</a>.
+      </p>
 
       <h2>Explore</h2>
       <ul>

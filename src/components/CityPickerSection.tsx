@@ -16,8 +16,7 @@ export function CityPickerSection() {
           <h2 id="city-picker-heading">Pick your city</h2>
           <p className="section-lead city-picker-lead">
             We mapped community gardens across 60 US &amp; Canadian metros. Choose
-            yours to see pins and counts — then get the app for hosts, gardeners,
-            and community spots.
+            yours to see pins and counts, then join the waitlist for the app.
           </p>
         </div>
         <ul

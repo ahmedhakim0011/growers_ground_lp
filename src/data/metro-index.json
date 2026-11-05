@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-03T21:40:13.265Z",
+  "generatedAt": "2026-11-05T10:38:52.091Z",
   "metros": [
+    {
+      "slug": "new-york",
+      "cityLabel": "New York",
+      "countryCode": "US",
+      "regionCode": "US-NYC",
+      "gardenCount": 644,
+      "bbox": {
+        "south": 40.476578,
+        "west": -74.258843,
+        "north": 40.91763,
+        "east": -73.700233
+      },
+      "dataSources": [
+        "nyc-greenthumb",
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-11-05T09:54:10.328Z",
+      "sourceVersions": {
+        "nyc-greenthumb": "2026-11-04T14:03:06.000Z",
+        "osm": "2026-11-05T09:40:06Z"
+      }
+    },
     {
       "slug": "detroit",
       "cityLabel": "Detroit",
@@ -12,7 +34,11 @@
         "west": -83.287959,
         "north": 42.4503959,
         "east": -82.9104391
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:50:42.033Z"
     },
     {
       "slug": "seattle",
@@ -25,7 +51,11 @@
         "west": -122.459696,
         "north": 47.7341503,
         "east": -122.224433
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:43:54.696Z"
     },
     {
       "slug": "ottawa-gatineau",
@@ -38,7 +68,11 @@
         "west": -76.3555857,
         "north": 45.5376502,
         "east": -75.2465783
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:59:55.177Z"
     },
     {
       "slug": "philadelphia",
@@ -51,7 +85,11 @@
         "west": -75.280266,
         "north": 40.1379593,
         "east": -74.9558314
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:01:15.800Z"
     },
     {
       "slug": "chicago",
@@ -64,7 +102,11 @@
         "west": -87.9400876,
         "north": 42.0230529,
         "east": -87.5241243
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:34:15.822Z"
     },
     {
       "slug": "toronto",
@@ -77,6 +119,32 @@
         "west": -79.6392832,
         "north": 43.8554425,
         "east": -79.1132193
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:03:01.608Z"
+    },
+    {
+      "slug": "atlanta",
+      "cityLabel": "Atlanta",
+      "countryCode": "US",
+      "regionCode": "US-ATL",
+      "gardenCount": 62,
+      "bbox": {
+        "south": 33.6479187,
+        "west": -84.550854,
+        "north": 33.886823,
+        "east": -84.28956
+      },
+      "dataSources": [
+        "osm",
+        "arc-gardens"
+      ],
+      "dataUpdatedAt": "2026-11-05T10:32:30.108Z",
+      "sourceVersions": {
+        "arc-gardens": "dataset dated 2016",
+        "osm": "2026-11-05T09:54:20Z"
       }
     },
     {
@@ -90,7 +158,11 @@
         "west": -73.9741567,
         "north": 45.7047897,
         "east": -73.4742952
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:39:59.108Z"
     },
     {
       "slug": "vancouver",
@@ -103,7 +175,11 @@
         "west": -123.2249611,
         "north": 49.3161714,
         "east": -123.0232419
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:51:34.071Z"
     },
     {
       "slug": "boston",
@@ -116,6 +192,30 @@
         "west": -71.1912442,
         "north": 42.3969775,
         "east": -70.8044881
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:24:46.869Z"
+    },
+    {
+      "slug": "los-angeles",
+      "cityLabel": "Los Angeles",
+      "countryCode": "US",
+      "regionCode": "US-LAX",
+      "gardenCount": 55,
+      "bbox": {
+        "south": 33.659541,
+        "west": -118.6681798,
+        "north": 34.337306,
+        "east": -118.1552983
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-11-05T09:53:42.531Z",
+      "sourceVersions": {
+        "osm": "2026-11-05T09:44:13Z"
       }
     },
     {
@@ -129,7 +229,11 @@
         "west": -76.7112977,
         "north": 39.3719992,
         "east": -76.5296757
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:19:50.368Z"
     },
     {
       "slug": "milwaukee",
@@ -142,7 +246,11 @@
         "west": -88.0710611,
         "north": 43.1949437,
         "east": -87.8627124
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:32:49.411Z"
     },
     {
       "slug": "portland",
@@ -155,7 +263,11 @@
         "west": -122.8367489,
         "north": 45.6528812,
         "east": -122.4720252
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:09:43.515Z"
     },
     {
       "slug": "st-louis",
@@ -168,7 +280,11 @@
         "west": -90.3206525,
         "north": 38.7743018,
         "east": -90.1641941
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:46:59.751Z"
     },
     {
       "slug": "minneapolis-st-paul",
@@ -181,7 +297,11 @@
         "west": -93.329125,
         "north": 45.0512498,
         "east": -93.193859
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:37:13.912Z"
     },
     {
       "slug": "charlotte",
@@ -194,7 +314,11 @@
         "west": -81.0116951,
         "north": 35.4002508,
         "east": -80.6348755
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:32:02.924Z"
     },
     {
       "slug": "san-jose",
@@ -207,7 +331,11 @@
         "west": -122.046227,
         "north": 37.4691477,
         "east": -121.5858438
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:39:48.558Z"
     },
     {
       "slug": "kansas-city",
@@ -220,7 +348,11 @@
         "west": -94.765917,
         "north": 39.356662,
         "east": -94.385522
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:12:28.104Z"
     },
     {
       "slug": "winnipeg",
@@ -233,7 +365,11 @@
         "west": -97.3491505,
         "north": 49.9940075,
         "east": -96.9565293
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:59:33.072Z"
     },
     {
       "slug": "quebec-city",
@@ -246,7 +382,11 @@
         "west": -71.5492175,
         "north": 46.9806797,
         "east": -71.1336606
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:13:52.658Z"
     },
     {
       "slug": "washington",
@@ -259,7 +399,11 @@
         "west": -77.1197949,
         "north": 38.995968,
         "east": -76.909366
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:58:20.534Z"
     },
     {
       "slug": "denver",
@@ -272,7 +416,11 @@
         "west": -105.1098845,
         "north": 39.9142087,
         "east": -104.5996997
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:48:34.110Z"
     },
     {
       "slug": "austin",
@@ -285,19 +433,30 @@
         "west": -97.9367663,
         "north": 30.5166255,
         "east": -97.5605288
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:18:19.089Z"
     },
     {
-      "slug": "los-angeles",
-      "cityLabel": "Los Angeles",
+      "slug": "houston",
+      "cityLabel": "Houston",
       "countryCode": "US",
-      "regionCode": "US-LAX",
-      "gardenCount": 20,
+      "regionCode": "US-HOU",
+      "gardenCount": 23,
       "bbox": {
-        "south": 33.659541,
-        "west": -118.6681798,
-        "north": 34.337306,
-        "east": -118.1552983
+        "south": 29.5370705,
+        "west": -95.9097419,
+        "north": 30.1103506,
+        "east": -95.0120525
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-11-05T09:53:42.566Z",
+      "sourceVersions": {
+        "osm": "2026-11-05T09:45:16Z"
       }
     },
     {
@@ -311,7 +470,11 @@
         "west": -114.3157587,
         "north": 51.2125013,
         "east": -113.8600018
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:30:28.931Z"
     },
     {
       "slug": "kitchener-cambridge-waterloo",
@@ -324,20 +487,11 @@
         "west": -80.5734577,
         "north": 43.5068282,
         "east": -80.3784145
-      }
-    },
-    {
-      "slug": "new-york",
-      "cityLabel": "New York",
-      "countryCode": "US",
-      "regionCode": "US-NYC",
-      "gardenCount": 18,
-      "bbox": {
-        "south": 40.476578,
-        "west": -74.258843,
-        "north": 40.91763,
-        "east": -73.700233
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:13:48.218Z"
     },
     {
       "slug": "san-francisco",
@@ -350,7 +504,11 @@
         "west": -123.173825,
         "north": 37.9296678,
         "east": -122.2814578
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:37:43.832Z"
     },
     {
       "slug": "nashville",
@@ -363,7 +521,11 @@
         "west": -87.054766,
         "north": 36.405496,
         "east": -86.515588
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:44:50.119Z"
     },
     {
       "slug": "salt-lake-city",
@@ -376,7 +538,11 @@
         "west": -112.1013916,
         "north": 40.8533905,
         "east": -111.7404843
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:32:32.263Z"
     },
     {
       "slug": "edmonton",
@@ -389,7 +555,11 @@
         "west": -113.7138411,
         "north": 53.7162646,
         "east": -113.2714783
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:51:58.168Z"
     },
     {
       "slug": "hamilton",
@@ -402,7 +572,11 @@
         "west": -80.2485579,
         "north": 43.4706805,
         "east": -79.6221146
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:56:03.174Z"
     },
     {
       "slug": "cleveland",
@@ -415,7 +589,11 @@
         "west": -81.8790937,
         "north": 41.604436,
         "east": -81.532744
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:39:45.587Z"
     },
     {
       "slug": "cincinnati",
@@ -428,6 +606,30 @@
         "west": -84.71239,
         "north": 39.2210368,
         "east": -84.3695773
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:35:33.731Z"
+    },
+    {
+      "slug": "dallas-fort-worth",
+      "cityLabel": "Dallas-Fort Worth",
+      "countryCode": "US",
+      "regionCode": "US-DFW",
+      "gardenCount": 7,
+      "bbox": {
+        "south": 32.613216,
+        "west": -97.000482,
+        "north": 33.0239366,
+        "east": -96.4636317
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-11-05T09:53:42.600Z",
+      "sourceVersions": {
+        "osm": "2026-11-05T09:47:18Z"
       }
     },
     {
@@ -441,7 +643,11 @@
         "west": -117.3098161,
         "north": 33.114194,
         "east": -116.9057417
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:35:38.343Z"
     },
     {
       "slug": "providence",
@@ -454,7 +660,11 @@
         "west": -71.472667,
         "north": 41.8618007,
         "east": -71.3737355
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:11:45.593Z"
     },
     {
       "slug": "san-antonio",
@@ -467,7 +677,11 @@
         "west": -98.8131865,
         "north": 29.7309623,
         "east": -98.2230029
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:34:05.235Z"
     },
     {
       "slug": "columbus",
@@ -480,7 +694,11 @@
         "west": -83.2101797,
         "north": 40.1573082,
         "east": -82.7713119
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:42:04.598Z"
     },
     {
       "slug": "louisville",
@@ -493,20 +711,11 @@
         "west": -85.9470644,
         "north": 38.3801391,
         "east": -85.4051
-      }
-    },
-    {
-      "slug": "houston",
-      "cityLabel": "Houston",
-      "countryCode": "US",
-      "regionCode": "US-HOU",
-      "gardenCount": 3,
-      "bbox": {
-        "south": 29.5370705,
-        "west": -95.9097419,
-        "north": 30.1103506,
-        "east": -95.0120525
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:17:00.004Z"
     },
     {
       "slug": "phoenix",
@@ -519,7 +728,11 @@
         "west": -112.3240289,
         "north": 33.9183794,
         "east": -111.9255304
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:03:32.210Z"
     },
     {
       "slug": "pittsburgh",
@@ -532,7 +745,11 @@
         "west": -80.095517,
         "north": 40.5012021,
         "east": -79.865728
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:06:02.969Z"
     },
     {
       "slug": "sacramento",
@@ -545,7 +762,11 @@
         "west": -121.56012,
         "north": 38.685506,
         "east": -121.36274
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:30:16.137Z"
     },
     {
       "slug": "buffalo",
@@ -558,7 +779,11 @@
         "west": -78.9223535,
         "north": 42.966449,
         "east": -78.795121
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:29:07.604Z"
     },
     {
       "slug": "riverside-san-bernardino",
@@ -571,7 +796,11 @@
         "west": -117.5237612,
         "north": 34.0194489,
         "east": -117.278804
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:26:20.120Z"
     },
     {
       "slug": "tampa-st-petersburg",
@@ -584,7 +813,11 @@
         "west": -82.64882,
         "north": 28.1713602,
         "east": -82.2538678
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:49:46.725Z"
     },
     {
       "slug": "indianapolis",
@@ -597,7 +830,11 @@
         "west": -86.3281207,
         "north": 39.9275253,
         "east": -85.9380401
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:04:25.304Z"
     },
     {
       "slug": "raleigh",
@@ -610,33 +847,11 @@
         "west": -78.8189744,
         "north": 35.970736,
         "east": -78.4707917
-      }
-    },
-    {
-      "slug": "dallas-fort-worth",
-      "cityLabel": "Dallas-Fort Worth",
-      "countryCode": "US",
-      "regionCode": "US-DFW",
-      "gardenCount": 1,
-      "bbox": {
-        "south": 32.613216,
-        "west": -97.000482,
-        "north": 33.0239366,
-        "east": -96.4636317
-      }
-    },
-    {
-      "slug": "atlanta",
-      "cityLabel": "Atlanta",
-      "countryCode": "US",
-      "regionCode": "US-ATL",
-      "gardenCount": 1,
-      "bbox": {
-        "south": 33.6479187,
-        "west": -84.550854,
-        "north": 33.886823,
-        "east": -84.28956
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:17:39.897Z"
     },
     {
       "slug": "jacksonville",
@@ -649,7 +864,11 @@
         "west": -82.0493895,
         "north": 30.5862095,
         "east": -81.316712
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:08:47.052Z"
     },
     {
       "slug": "oklahoma-city",
@@ -662,7 +881,11 @@
         "west": -97.830948,
         "north": 35.6748662,
         "east": -97.124718
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:52:19.686Z"
     },
     {
       "slug": "memphis",
@@ -675,7 +898,11 @@
         "west": -90.308366,
         "north": 35.263879,
         "east": -89.637089
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T00:21:14.311Z"
     },
     {
       "slug": "richmond",
@@ -688,7 +915,11 @@
         "west": -77.6011728,
         "north": 37.6028099,
         "east": -77.385513
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:22:07.582Z"
     },
     {
       "slug": "hartford",
@@ -701,7 +932,11 @@
         "west": -72.7180372,
         "north": 41.8074191,
         "east": -72.6422873
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:57:43.007Z"
     },
     {
       "slug": "birmingham",
@@ -714,7 +949,11 @@
         "west": -87.1226449,
         "north": 33.6785907,
         "east": -86.5783119
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-03T23:22:55.100Z"
     },
     {
       "slug": "rochester",
@@ -727,7 +966,11 @@
         "west": -77.701505,
         "north": 43.2676496,
         "east": -77.53251
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-10-04T01:27:58.993Z"
     },
     {
       "slug": "miami",
@@ -740,7 +983,11 @@
         "west": -80.31976,
         "north": 25.8557827,
         "east": -80.139157
-      }
+      },
+      "dataSources": [
+        "osm"
+      ],
+      "dataUpdatedAt": "2026-11-05T10:02:34.543Z"
     },
     {
       "slug": "orlando",
@@ -753,7 +1000,10 @@
         "west": -81.5075377,
         "north": 28.614283,
         "east": -81.1241435
-      }
+      },
+      "dataSources": [
+        "osm"
+      ]
     },
     {
       "slug": "virginia-beach-norfolk",
@@ -766,7 +1016,10 @@
         "west": -76.3448722,
         "north": 36.9697231,
         "east": -76.1767248
-      }
+      },
+      "dataSources": [
+        "osm"
+      ]
     },
     {
       "slug": "new-orleans",
@@ -779,7 +1032,10 @@
         "west": -90.1399307,
         "north": 30.1994687,
         "east": -89.6251763
-      }
+      },
+      "dataSources": [
+        "osm"
+      ]
     }
   ]
 }

@@ -31,12 +31,13 @@
           "title": "Frequently asked questions",
           "body": "Do I need to pay to be a host or gardener? Yard-share terms between a host and gardener are agreed between the two of them. Growers Ground itself uses a subscription for Discover and messaging, so check the app for current plan details once it launches in your area.\n\nCan I share just part of a yard? Yes. Many hosts offer a single bed, a corner, or a front strip, and that is often the easiest way to start.\n\nWhat if it is not working out? Agree on a notice period at the start. If you cannot resolve a problem by talking, it is reasonable to end the arrangement at the end of the season."
         }
-      ]
+      ],
+      "metaDescription": "A yard share connects people with unused growing space to people who want to garden. How it works, what to agree on first, and how to start safely."
     },
     {
       "slug": "how-to-find-a-community-garden",
       "title": "How to find a community garden near you",
-      "summary": "A practical way to find community gardens in your area, what to ask before you join, and what to do when the garden you want has a waitlist.",
+      "summary": "To find a community garden near you, search a directory by ZIP code, such as the American Community Gardening Association's, and check your city's parks department. Here is what to ask before you join, and what to do when there is a waitlist.",
       "readMinutes": 6,
       "publishedAt": "2026-10-24",
       "sections": [
@@ -46,7 +47,7 @@
         },
         {
           "title": "Look beyond official lists",
-          "body": "Many gardens are run by a church, school, library, housing complex, or neighborhood association and never appear in a directory. Ask at your local library or community center, check neighborhood message boards, and look at local gardening club pages. On a map, look for fenced green lots with raised beds, then look for a sign with a contact name.\n\nGrowers Ground maps community gardens in 33 US and Canadian metros using OpenStreetMap data. Browse the city pages on this site for a preview. These pins come from public map data, so confirm details with the garden before you visit."
+          "body": "Many gardens are run by a church, school, library, housing complex, or neighborhood association and never appear in a directory. Ask at your local library or community center, check neighborhood message boards, and look at local gardening club pages. On a map, look for fenced green lots with raised beds, then look for a sign with a contact name.\n\nGrowers Ground maps community gardens in 35 US and Canadian metros using OpenStreetMap and official open data. Browse the city pages on this site for a preview. These pins come from public map data, so confirm details with the garden before you visit."
         },
         {
           "title": "What to ask before you join",
@@ -64,12 +65,14 @@
           "title": "Finding people, not just plots",
           "body": "A garden is also a group of people. Growers Ground is a map-first app for finding gardeners and hosts nearby, with local groups, growing journals, and community spots such as seed swaps and compost sites that anyone can add to the map. The app is not yet in the app stores. Join the waitlist on our home page and we will let you know when your area opens. We are launching city by city across the US and Canada."
         }
-      ]
+      ],
+      "metaDescription": "Search a directory by ZIP code, check your city parks department, then ask what to expect before you join. What to do if there is a waitlist.",
+      "updatedAt": "2026-11-05"
     },
     {
       "slug": "how-to-start-a-community-garden",
       "title": "How to start a community garden: a step-by-step guide",
-      "summary": "The main steps to start a community garden, from finding people and land to agreeing on rules and running your first season.",
+      "summary": "To start a community garden, gather a small core group, find land with permission, test the soil, agree on a layout and rules, budget, then run a first season.",
       "readMinutes": 7,
       "publishedAt": "2026-10-24",
       "sections": [
@@ -97,7 +100,8 @@
           "title": "Run your first season",
           "body": "Start small and expand. Build the beds, hold a planting day, and share a simple calendar of workdays. Keep a shared contact list or group chat so everyone hears about watering schedules and workdays. At the end of the season, hold a short review meeting on what worked and what to change.\n\nOnce a garden is running, tools help keep it organized. In Growers Ground, local gardening groups give a garden or club its own feed and chat, growing journals let members track a plot over a season, and garden spots put the site on the community map so nearby people can find it. The app is not yet in the app stores; join the waitlist on our home page to hear when your area opens."
         }
-      ]
+      ],
+      "updatedAt": "2026-11-05"
     },
     {
       "slug": "how-to-find-a-place-to-grow-vegetables",
@@ -268,7 +272,8 @@
           "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/",
           "sourceHref": "https://commons.wikimedia.org/wiki/File:Leafy_Greens_in_Raised_Garden_Beds_(49199571568).jpg"
         }
-      }
+      },
+      "metaDescription": "No yard, a long waitlist, or a lease that says no digging? Compare your real options for growing food and start growing this season anyway."
     },
     {
       "slug": "share-your-yard-as-a-garden-host",
@@ -447,7 +452,8 @@
           "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/",
           "sourceHref": "https://commons.wikimedia.org/wiki/File:Corn_growing_in_a_backyard_garden_in_New_Jersey.jpg"
         }
-      }
+      },
+      "metaDescription": "Thinking of letting a neighbor garden on your unused space? A host checklist: suitability, permissions, what to put in writing, and meeting safely."
     },
     {
       "slug": "gardening-with-neighbors",
@@ -582,7 +588,8 @@
           "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/",
           "sourceHref": "https://commons.wikimedia.org/wiki/File:Peak_to_Peak_Charter_School_educational_garden_with_raised_beds_and_shed,_Lafayette,_Colorado,_USA_-_2025.jpg"
         }
-      }
+      },
+      "metaDescription": "Seven low-effort ways to garden with the people on your street, how to approach a neighbor, and how to keep things friendly when plans change."
     },
     {
       "slug": "benefits-of-community-gardening",
@@ -733,7 +740,8 @@
           "licenseHref": "https://creativecommons.org/licenses/by/3.0/",
           "sourceHref": "https://commons.wikimedia.org/wiki/File:Thayer's_Corner_Nature_Area_Community_Garden_Northville_Township_Michigan.JPG"
         }
-      }
+      },
+      "metaDescription": "What studies found about community gardens and diet, mental health and neighborhoods, how strong the evidence is, and where claims overreach."
     },
     {
       "slug": "seed-swaps",
@@ -919,7 +927,8 @@
           "licenseHref": "https://creativecommons.org/licenses/by-sa/4.0/",
           "sourceHref": "https://commons.wikimedia.org/wiki/File:Toronto_Seed_Library_at_Riverdale_Hub.jpg"
         }
-      }
+      },
+      "metaDescription": "A seed swap is a free way to try new varieties. How a swap runs, what to bring and how to label it, what the rules say, and how to find one near you."
     }
   ]
 }

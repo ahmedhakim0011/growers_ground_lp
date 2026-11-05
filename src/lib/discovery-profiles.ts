@@ -35,17 +35,17 @@ export const discoveryProfiles: DiscoveryProfile[] = [
     verified: true,
     specs: ["2.5 acres", "Water on property", "Flexible setup"],
     bioExcerpt:
-      "We have 2.5 acres inside 410 on the east side of town, with water spigots around the property you can use.",
+      "We have 2.5 acres of land, with water spigots around the property you can use.",
     tags: ["Host", "Verified"],
     amenities: ["water", "full-sun", "large-plot"],
     plotSize: "large",
     mapPosition: { top: "42%", left: "58%" },
     cta: { label: "Connect with host", href: "#waitlist" },
     avatarHue: 128,
-    cardLabel: "Verified Host",
+    cardLabel: "Host",
     cardTitle: "Karen Blue — San Francisco, CA",
     cardSummary:
-      "2.5 acres inside 410 on the east side of town, with water spigots around the property you can use.",
+      "2.5 acres of land, with water spigots around the property you can use.",
     screenshot: {
       src: "/images/app_ss_karen_profile_.png",
       width: 370,

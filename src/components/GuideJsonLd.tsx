@@ -1,5 +1,5 @@
 import type { GrowingGuide } from "@/lib/guides";
-import { absoluteUrl } from "@/lib/seo";
+import { absoluteUrl, defaultSocialImage } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export function GuideJsonLd({ guide }: { guide: GrowingGuide }) {
@@ -20,6 +20,8 @@ export function GuideJsonLd({ guide }: { guide: GrowingGuide }) {
         headline: guide.title,
         description: guide.summary,
         mainEntityOfPage: url,
+        url,
+        image: absoluteUrl(guide.hero?.src ?? defaultSocialImage.url),
         ...(guide.publishedAt
           ? { datePublished: guide.publishedAt, dateModified: guide.updatedAt ?? guide.publishedAt }
           : {}),

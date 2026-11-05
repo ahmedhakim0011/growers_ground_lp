@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 /**
  * Copies metro index + per-city pin bundles from ../launch-content into the LP.
+ * Uses data/<slug>-merged.json (official + OSM, see launch-content/scripts/build-open-data.mjs)
+ * when present, otherwise data/<slug>-osm.json.
  * Run: node scripts/sync-launch-content.mjs
  */
 import fs from "node:fs";
@@ -52,11 +54,53 @@ fs.mkdirSync(outGuidesDir, { recursive: true });
 
 const index = [];
 
+const sourcesPath = path.join(lcRoot, "config/open-data-sources.json");
+if (fs.existsSync(sourcesPath)) {
+  const { checkedAt, sources } = JSON.parse(fs.readFileSync(sourcesPath, "utf8"));
+  const publicSources = Object.fromEntries(
+    Object.entries(sources).map(([id, s]) => [
+      id,
+      {
+        shortName: s.shortName,
+        credit: s.credit,
+        licenseName: s.licenseName,
+        licenseUrl: s.licenseUrl,
+        sourceUrl: s.sourceUrl,
+        modifications: s.modifications,
+        dataDate: s.dataDate,
+      },
+    ]),
+  );
+  fs.writeFileSync(
+    path.join(lpRoot, "src/data/data-sources.json"),
+    JSON.stringify({ checkedAt, sources: publicSources }, null, 2),
+  );
+}
+
 for (const metro of metros) {
   const osmFile = path.join(dataDir, `${metro.slug}-osm.json`);
+  const mergedFile = path.join(dataDir, `${metro.slug}-merged.json`);
   let pins = [];
-  if (fs.existsSync(osmFile)) {
+  let dataSources = ["osm"];
+  let sourceVersions;
+  let dataUpdatedAt;
+  if (fs.existsSync(mergedFile)) {
+    const raw = JSON.parse(fs.readFileSync(mergedFile, "utf8"));
+    dataUpdatedAt = raw.generatedAt;
+    pins = raw.pins.map((p) => ({
+      name: p.name,
+      latitude: p.latitude,
+      longitude: p.longitude,
+      sources: p.sources,
+      refs: p.refs,
+    }));
+    if (pins.length > 0) {
+      dataSources = [...new Set(pins.flatMap((p) => p.sources))];
+      sourceVersions = raw.sourceVersions;
+    }
+  } else if (fs.existsSync(osmFile)) {
     const raw = JSON.parse(fs.readFileSync(osmFile, "utf8"));
+    dataUpdatedAt = raw.fetchedAt;
     pins = (raw.pins ?? []).map((p) => ({
       name: p.name,
       latitude: p.latitude,
@@ -77,6 +121,9 @@ for (const metro of metros) {
     regionCode: metro.regionCode,
     gardenCount: pins.length,
     bbox,
+    dataSources,
+    ...(dataUpdatedAt ? { dataUpdatedAt } : {}),
+    ...(sourceVersions ? { sourceVersions } : {}),
   });
 }
 

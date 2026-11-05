@@ -26,7 +26,20 @@ export function SiteJsonLd() {
         alternateName: siteConfig.alternateNames,
         url: siteRoot,
         description: siteConfig.description,
-        slogan: "Where growers meet ground",
+        slogan: "One Map. Everyone Knows Where to Grow.",
+        founder: {
+          "@type": "Person",
+          "@id": `${siteConfig.url}/#founder`,
+          name: siteConfig.founder.name,
+          url: siteConfig.founder.url,
+          jobTitle: "Founder",
+          sameAs: [
+            siteConfig.founder.url,
+            siteConfig.founder.instagram,
+            siteConfig.founder.linkedin,
+            siteConfig.founder.github,
+          ],
+        },
         areaServed: ["US", "CA"],
         sameAs: siteConfig.sameAs,
         contactPoint: [

@@ -21,11 +21,11 @@ export function CommunityDirectorySection() {
         data-reveal
         data-motion-y="36"
       >
-        <p className="section-kicker">Community directory</p>
-        <h2 id="discovery-heading">Browse hosts &amp; gardeners near you</h2>
+        <p className="section-kicker">Inside the app</p>
+        <h2 id="discovery-heading">See how host and gardener profiles work</h2>
         <p className="section-lead discovery-lead">
-          Real profile previews from early members. Select a member to view
-          their live in-app profile.
+          Preview screens from the app. They show how profiles look, not hosts
+          or gardeners available near you today.
         </p>
       </div>
 

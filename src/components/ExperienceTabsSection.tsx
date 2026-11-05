@@ -76,7 +76,7 @@ export function ExperienceTabsSection() {
                 <li key={step}>{step}</li>
               ))}
             </ol>
-            <a className="btn btn-accent" href="#waitlist">
+            <a className="btn btn-accent" href="/#waitlist">
               Join the waitlist
             </a>
           </div>

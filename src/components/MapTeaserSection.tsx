@@ -30,7 +30,7 @@ export function MapTeaserSection() {
             Community gardens on the map — no login required
           </h2>
           <p className="section-lead">
-            Read-only pins from OpenStreetMap. In the app: host yards, gardener
+            Read-only pins from open map data. In the app: host yards, gardener
             profiles, messaging, and the community spots layer.
           </p>
           <label className="map-teaser-select-wrap">

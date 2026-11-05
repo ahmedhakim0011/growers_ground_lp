@@ -4,13 +4,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { siteConfig } from "@/lib/site";
 import { Logo } from "./Logo";
-import { StoreBadges } from "./StoreBadges";
 
 const links = [
   { href: "/cities", label: "Cities", isRoute: true },
   { href: "/guides", label: "Guides", isRoute: true },
-  { href: "#discover", label: "Directory", isRoute: false },
-  { href: "#faq", label: "FAQ", isRoute: false },
+  { href: "/#discover", label: "Profiles", isRoute: false },
+  { href: "/#faq", label: "FAQ", isRoute: false },
 ] as const;
 
 export function SiteHeader() {
@@ -42,7 +41,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="header-ctas header-ctas-cal">
-          <StoreBadges prominence="header" />
+          <a className="btn btn-accent btn-sm" href="/#waitlist">
+            Join the waitlist
+          </a>
         </div>
 
         <button
@@ -95,7 +96,7 @@ export function SiteHeader() {
         >
           Instagram
         </a>
-        <a href="#waitlist" onClick={() => setMobileOpen(false)}>
+        <a href="/#waitlist" onClick={() => setMobileOpen(false)}>
           Join waitlist
         </a>
       </nav>

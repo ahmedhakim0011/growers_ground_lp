@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-05",
+  "sources": {
+    "osm": {
+      "shortName": "OpenStreetMap",
+      "credit": "OpenStreetMap contributors",
+      "licenseName": "ODbL",
+      "licenseUrl": "https://www.openstreetmap.org/copyright",
+      "sourceUrl": "https://www.openstreetmap.org/copyright",
+      "modifications": "Filtered by garden tags and city boundary; duplicates merged.",
+      "dataDate": null
+    },
+    "nyc-greenthumb": {
+      "shortName": "NYC Parks GreenThumb",
+      "credit": "NYC Parks GreenThumb, via NYC Open Data (GreenThumb Garden Info)",
+      "licenseName": "NYC Open Data",
+      "licenseUrl": "https://nycadmincode.readthedocs.io/t23/c05/index.html",
+      "sourceUrl": "https://data.cityofnewyork.us/d/p78i-pat6",
+      "modifications": "Limited to records with status Active; duplicates merged with OpenStreetMap.",
+      "dataDate": null
+    },
+    "arc-gardens": {
+      "shortName": "Atlanta Regional Commission",
+      "credit": "Atlanta Regional Commission and community partners (Gardens, Farms and Orchards in Atlanta Region)",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.arcgis.com/home/item.html?id=4c73946aa6e6464daf94c9df8046b0f6",
+      "modifications": "Limited to community-garden records with an Atlanta address, leaving out records we could not confirm; duplicates merged with OpenStreetMap.",
+      "dataDate": "2016"
+    }
+  }
+}

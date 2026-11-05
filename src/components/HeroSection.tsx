@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { HeroDeviceScreens } from "./HeroDeviceScreens";
 import { HeroFloatingChip } from "./HeroFloatingChip";
-import { HeroTrustBadge } from "./HeroTrustBadge";
 import { StoreBadges } from "./StoreBadges";
 
 export function HeroSection() {
@@ -16,8 +15,6 @@ export function HeroSection() {
           data-motion-y="36"
           data-motion-duration="1"
         >
-          <HeroTrustBadge />
-
           <h1 id="hero-heading">
             Meet Growers Ground{" "}
             <span className="hero-cal-headline-accent">
@@ -26,13 +23,13 @@ export function HeroSection() {
           </h1>
           <p className="hero-cal-lead">
             Meet Growers Ground, the map-first app for gardeners who need ground
-            and hosts who share yard space. Browse verified profiles, message
+            and hosts who share yard space. Browse profiles, message
             before you commit, and discover community spots on a second layer.
           </p>
 
           <div className="hero-cal-download" id="download">
             <StoreBadges prominence="hero" />
-            <a className="hero-cal-waitlist-link" href="#waitlist">
+            <a className="hero-cal-waitlist-link" href="/#waitlist">
               Join the waitlist for early access →
             </a>
           </div>

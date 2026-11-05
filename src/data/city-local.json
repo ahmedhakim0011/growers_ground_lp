@@ -738,5 +738,18 @@
         "href": "https://nola.gov/next/resilience-sustainability/urban-agriculture/"
       }
     ]
+  },
+  "san-jose": {
+    "heading": "How to get a community garden plot in San José",
+    "paragraphs": [
+      "The City of San José runs community gardens at 21 sites. Residents 18 and older can rent a plot, with one plot allowed per resident. Plots run year to year, from January 1 to December 31, and range from 100 to 600 square feet. The city lists an average registration cost of $150 a year, which includes water and administrative fees. Fees can change, so check the page.",
+      "If the garden you want is full, you can ask the Community Gardens Program to add your name to its waiting list. City gardens must follow organic rules, so pesticides, herbicides and chemical fertilizers are not allowed. ADA accessible plots exist, so contact the program to ask about availability."
+    ],
+    "links": [
+      {
+        "label": "City of San José community gardening",
+        "href": "https://www.sanjoseca.gov/your-government/departments-offices/parks-recreation-neighborhood-services/programs-activities/community-gardening"
+      }
+    ]
   }
 }

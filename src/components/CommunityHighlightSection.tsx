@@ -22,7 +22,7 @@ export function CommunityHighlightSection() {
             seed swaps, compost, and water access. New features rolling out with
             early access cities.
           </p>
-          <a className="btn btn-accent btn-rect" href="#app-screenshots">
+          <a className="btn btn-accent btn-rect" href="/#app-screenshots">
             See app previews
           </a>
         </div>

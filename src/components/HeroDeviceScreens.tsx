@@ -15,7 +15,7 @@ const screens = {
   },
   profile: {
     src: "/images/app_ss_host_landlord_profile_screen.png",
-    alt: "Verified host profile with garden stats, badges, and property imagery",
+    alt: "Host profile with garden stats, badges, and property imagery",
     slot: "hero-profile",
     width: 377,
     height: 661,

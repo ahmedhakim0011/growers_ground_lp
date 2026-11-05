@@ -12,7 +12,7 @@ export function CommunitySection() {
             track seasons in photo journals, join local clubs, and RSVP to seed
             swaps. Two maps, one calm app.
           </p>
-          <a className="btn btn-accent" href="#waitlist">
+          <a className="btn btn-accent" href="/#waitlist">
             Get early access
           </a>
         </div>

@@ -20,7 +20,7 @@ export function SiteFooter() {
             Canada.
           </p>
           <div className="footer-cta-row">
-            <a className="btn btn-accent btn-sm" href="#waitlist">
+            <a className="btn btn-accent btn-sm" href="/#waitlist">
               Join waitlist
             </a>
             <Link className="text-link" href="/support">
@@ -30,17 +30,17 @@ export function SiteFooter() {
         </div>
         <div className="footer-col">
           <h3>Product</h3>
-          <a href="#app-screenshots">Features</a>
+          <a href="/#app-screenshots">Features</a>
           <Link href="/cities">Cities</Link>
           <Link href="/guides">Growing guides</Link>
-          <a href="#discover">Directory</a>
-          <a href="#app-screenshots">Community layer</a>
-          <a href="#faq">FAQ</a>
+          <a href="/#discover">Profiles</a>
+          <a href="/#app-screenshots">Community layer</a>
+          <a href="/#faq">FAQ</a>
         </div>
         <div className="footer-col">
           <h3>Company</h3>
           <Link href="/about">About Growers Ground</Link>
-          <a href="#waitlist">Early access</a>
+          <a href="/#waitlist">Early access</a>
           <a
             href={siteConfig.instagram}
             target="_blank"
@@ -65,22 +65,6 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="container footer-bottom footer-bottom-zernio">
-        <div
-          className="trustpilot-widget"
-          data-locale="en-US"
-          data-template-id="56278e9abfbbba0bdcd568bc"
-          data-businessunit-id="6aea46470156593a3440ab85"
-          data-style-height="52px"
-          data-style-width="100%"
-        >
-          <a
-            href="https://www.trustpilot.com/review/growersground.com"
-            target="_blank"
-            rel="noopener"
-          >
-            Trustpilot
-          </a>
-        </div>
         <p>&copy; {year} {siteConfig.name}. All rights reserved.</p>
         <p className="footer-note">
           Privacy-first. Your location is only shared when you choose to connect.

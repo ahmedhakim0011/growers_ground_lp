@@ -134,7 +134,7 @@ export function MapboxGardenMap({
         popup
           .setLngLat(coords)
           .setHTML(
-            `<strong>${escapeHtml(String(name))}</strong><p style="margin:8px 0 0;font-size:14px;line-height:1.45">Community garden location from OpenStreetMap. Full discovery in the Growers Ground app.</p>`,
+            `<strong>${escapeHtml(String(name))}</strong><p style="margin:8px 0 0;font-size:14px;line-height:1.45">Community garden location from open map data. Full discovery in the Growers Ground app.</p>`,
           )
           .addTo(map);
       });

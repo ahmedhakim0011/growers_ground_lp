@@ -9,11 +9,9 @@ import { FaqSection } from "@/components/FaqSection";
 import { FinalCtaSection } from "@/components/FinalCtaSection";
 import { GuidesTeaserSection } from "@/components/GuidesTeaserSection";
 import { HeroSection } from "@/components/HeroSection";
-import { QuoteCarouselSection } from "@/components/QuoteCarouselSection";
 import { RatingsSection } from "@/components/RatingsSection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { WaitlistSection } from "@/components/WaitlistSection";
 import { siteConfig } from "@/lib/site";
 
@@ -43,14 +41,12 @@ export default function HomePage() {
 
       <main id="main">
         <HeroSection />
-        <QuoteCarouselSection />
         <AppScreenshotsSection />
         <CapabilitiesSection />
         <CityPickerSection />
         <GuidesTeaserSection />
         <MapTeaserSection />
         <CommunityDirectorySection />
-        <TestimonialsSection />
         <RatingsSection />
         <WaitlistSection />
         <FaqSection />

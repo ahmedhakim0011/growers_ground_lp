@@ -5806,3 +5806,59 @@ body.lp-calai {
   margin-left: auto;
   margin-right: auto;
 }
+
+.city-page-gardens,
+.city-page-nearby {
+  margin-top: 3rem;
+}
+
+.city-page-gardens p {
+  max-width: 65ch;
+}
+
+.city-garden-list {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  columns: 3 16rem;
+  column-gap: 2rem;
+}
+
+.city-garden-list li {
+  break-inside: avoid;
+  padding: 0.3rem 0;
+}
+
+.city-nearby-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li + li::before {
+  content: "/";
+  margin-right: 8px;
+}
+
+.breadcrumbs a {
+  color: var(--primary-40);
+}

@@ -1,3 +1,4 @@
+import { defaultSocialImage } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { OsmDataNotice } from "@/components/OsmDataNotice";
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description:
       "Planting times, plot etiquette, and seasonal tips — free on the web.",
     url: "/guides",
+    images: [defaultSocialImage],
   },
 };
 
@@ -70,7 +72,7 @@ export default function GuidesIndexPage() {
         <div className="container guides-index-footer">
           <OsmDataNotice compact />
           <p>
-            <Link href="/#download">Get the app</Link> for journals, messaging,
+            <Link href="/#waitlist">Join the waitlist</Link> for journals, messaging,
             and host discovery beyond community garden pins.
           </p>
         </div>

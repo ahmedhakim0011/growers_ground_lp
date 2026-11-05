@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideJsonLd } from "@/components/GuideJsonLd";
 import { GuideRichText } from "@/components/GuideRichText";
 import { GuideVisual } from "@/components/GuideVisual";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getAllGuides, getGuideBySlug, isGuideIndexable } from "@/lib/guides";
+import { defaultSocialImage } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
+
+function formatGuideDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+}
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -19,22 +31,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const guide = getGuideBySlug(slug);
   if (!guide) return { title: "Guide not found" };
   const path = `/guides/${slug}`;
+  const pageTitle = guide.cityLabel
+    ? `${guide.title} — ${guide.cityLabel} growing guide`
+    : guide.title;
+  const description = guide.metaDescription ?? guide.summary;
+  const shareImage = guide.hero
+    ? { url: guide.hero.src, width: guide.hero.width, height: guide.hero.height, alt: guide.hero.alt }
+    : defaultSocialImage;
   return {
-    title: guide.cityLabel
-      ? `${guide.title} — ${guide.cityLabel} growing guide`
-      : guide.title,
-    description: guide.summary,
+    // Long titles drop the " | Growers Ground" suffix so the words that matter stay visible.
+    title: pageTitle.length > 42 ? { absolute: pageTitle } : pageTitle,
+    description,
     alternates: { canonical: path },
     robots: isGuideIndexable(guide) ? undefined : { index: false, follow: true },
     openGraph: {
       title: guide.title,
-      description: guide.summary,
+      description,
       url: path,
       type: "article",
       ...(guide.publishedAt ? { publishedTime: guide.publishedAt } : {}),
-      ...(guide.hero
-        ? { images: [{ url: guide.hero.src, width: guide.hero.width, height: guide.hero.height, alt: guide.hero.alt }] }
-        : {}),
+      images: [shareImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: guide.title,
+      description,
+      images: [shareImage.url],
     },
   };
 }
@@ -50,6 +72,13 @@ export default async function GuidePage({ params }: PageProps) {
       <SiteHeader />
       <main id="main" className="guide-article-page">
         <article className="container guide-article" data-reveal data-motion-y="40">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Guides", href: "/guides" },
+              { label: guide.title },
+            ]}
+          />
           <p className="guide-article-meta">
             {guide.citySlug ? (
               <>
@@ -61,6 +90,12 @@ export default async function GuidePage({ params }: PageProps) {
             {guide.readMinutes} min read
           </p>
           <h1>{guide.title}</h1>
+          {guide.publishedAt ? (
+            <p className="guide-article-meta">
+              By the <Link href="/about">{siteConfig.name} team</Link> · Updated{" "}
+              {formatGuideDate(guide.updatedAt ?? guide.publishedAt)}
+            </p>
+          ) : null}
           <p className="guide-article-summary">{guide.summary}</p>
           {guide.hero ? <GuideVisual visual={guide.hero} priority /> : null}
 
@@ -95,8 +130,8 @@ export default async function GuidePage({ params }: PageProps) {
             {guide.citySlug ? (
               <>
                 <p>
-                  See mapped community gardens in {guide.cityLabel}, then
-                  discover hosts and plots in the app.
+                  See mapped community gardens in {guide.cityLabel} on our free
+                  map.
                 </p>
                 <Link
                   className="btn btn-accent btn-rect"

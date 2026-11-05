@@ -36,6 +36,8 @@ export type GrowingGuide = {
   publishedAt?: string;
   title: string;
   summary: string;
+  /** Shorter search snippet, when the summary runs past about 160 characters. */
+  metaDescription?: string;
   season?: string;
   readMinutes: number;
   sections: GuideSection[];

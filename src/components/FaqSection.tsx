@@ -13,7 +13,7 @@ export function FaqSection() {
           <p className="section-kicker">FAQ</p>
           <h2 id="faq-heading">Frequently asked questions</h2>
           <p className="section-lead faq-intro-lead">
-            The questions our support team hears most.
+            Finding space to grow, sharing a yard, and how the app works.
           </p>
         </div>
         <div className="faq-list" data-reveal-stagger data-motion-stagger="0.07" data-motion-y="28">
@@ -30,7 +30,16 @@ export function FaqSection() {
                   {item.q}
                   <span aria-hidden="true">{isOpen ? "−" : "+"}</span>
                 </button>
-                {isOpen ? <p className="faq-answer">{item.a}</p> : null}
+                {/* Stay in the HTML when closed, so crawlers and screen readers get every answer. */}
+                <p className="faq-answer" hidden={!isOpen}>
+                  {item.a}
+                  {item.link ? (
+                    <>
+                      {" "}
+                      <a href={item.link.href}>{item.link.label}</a>
+                    </>
+                  ) : null}
+                </p>
               </article>
             );
           })}

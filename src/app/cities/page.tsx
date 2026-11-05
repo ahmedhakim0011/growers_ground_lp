@@ -1,3 +1,4 @@
+import { defaultSocialImage } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { OsmDataNotice } from "@/components/OsmDataNotice";
@@ -9,13 +10,14 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Community gardens by city — US & Canada",
   description:
-    "Browse mapped community gardens and allotment sites in 60 metros. OpenStreetMap data with free map previews — discover hosts and plots in the Growers Ground app.",
+    "Browse mapped community gardens and allotment sites in 60 metros. Open map data with free map previews, from the team behind the Growers Ground garden-sharing app.",
   alternates: { canonical: "/cities" },
   openGraph: {
     title: "Community gardens by city — US & Canada",
     description:
       "Browse mapped community gardens and allotment sites in 60 metros across the US and Canada.",
     url: "/cities",
+    images: [defaultSocialImage],
   },
 };
 

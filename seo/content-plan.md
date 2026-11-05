@@ -2,7 +2,7 @@
 
 **Status of evidence:** No keyword-volume or difficulty tool was used. Priorities are judgments from product fit and a few search-result lists (see `keywords.csv`). Validate the top 10 with Google Search Console / Keyword Planner before writing.
 **Markets:** US and Canada only (the app's launch regions). UK/AU/EU deferred until the app supports them.
-**Rules:** no rental/booking claims; no invented gardens or communities; groups/journals/spots only described once verified live in the app; cities pages only where >=10 mapped gardens AND original local content exists.
+**Rules:** no marketplace, booking or in-app plot-payment claims (hosts and gardeners may agree rent, harvest share or barter themselves); no invented gardens or communities; groups/journals/spots only described once verified live in the app; cities pages only where >=10 mapped gardens AND original local content exists.
 
 ## Pillars → articles (priority order)
 Each article: 800–1,500 words, original, sources cited, one CTA (waitlist now; store links once live), internal links to `/cities/[slug]` and sibling guides, BreadcrumbList + Article JSON-LD.

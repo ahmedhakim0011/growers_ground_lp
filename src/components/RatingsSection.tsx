@@ -5,8 +5,7 @@ export function RatingsSection() {
         <div data-reveal data-motion-y="32">
           <h2 id="ratings-heading">Built for trust from the ground up</h2>
           <p className="ratings-lead">
-            Verified profiles, privacy-first locations, and no swipe decks — designed
-            with growers who told us what they needed.
+            Approximate locations, opt-in sharing, and no swipe decks.
           </p>
         </div>
         <div className="ratings-grid" data-reveal-stagger data-motion-stagger="0.1">
