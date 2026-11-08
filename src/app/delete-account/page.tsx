@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPageShell } from "@/components/LegalPageShell";
 import { legalLastUpdated } from "@/lib/legal-content";
+import { socialMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -8,6 +9,12 @@ export const metadata: Metadata = {
   description:
     "How to permanently delete your Growers Ground account and associated personal data.",
   alternates: { canonical: "/delete-account" },
+  ...socialMetadata({
+    title: `Delete Account | ${siteConfig.name}`,
+    description:
+      "How to permanently delete your Growers Ground account and associated personal data.",
+    path: "/delete-account",
+  }),
 };
 
 export default function DeleteAccountPage() {

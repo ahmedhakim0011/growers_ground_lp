@@ -2,12 +2,18 @@ import type { Metadata } from "next";
 import { LegalDocument } from "@/components/LegalDocument";
 import { LegalPageShell } from "@/components/LegalPageShell";
 import { legalLastUpdated, termsSections } from "@/lib/legal-content";
+import { socialMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: `Terms and conditions for using the ${siteConfig.name} app and website.`,
   alternates: { canonical: "/terms" },
+  ...socialMetadata({
+    title: `Terms of Service | ${siteConfig.name}`,
+    description: `Terms and conditions for using the ${siteConfig.name} app and website.`,
+    path: "/terms",
+  }),
 };
 
 export default function TermsPage() {

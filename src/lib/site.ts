@@ -23,7 +23,7 @@ export const siteConfig = {
     github: "https://github.com/ahmedhakim0011",
   },
   description:
-    "Growers Ground is a garden sharing app: find a yard share or shared yard near you, or share your yard with a local gardener. Map-first discovery across the US & Canada.",
+    "Growers Ground is a garden sharing app: find a yard share near you, or share your yard with a local gardener. Map-first discovery across the US & Canada.",
   ogDescription:
     "Find private garden space near you. Connect with local hosts, garden spots, seed swaps, and growing journals.",
   themeColor: "#3D5F49",

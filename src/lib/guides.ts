@@ -35,6 +35,8 @@ export type GrowingGuide = {
   cityLabel?: string;
   publishedAt?: string;
   title: string;
+  /** Shorter title for search results, when the on-page title runs past about 60 characters. */
+  seoTitle?: string;
   summary: string;
   /** Shorter search snippet, when the summary runs past about 160 characters. */
   metaDescription?: string;

@@ -33,8 +33,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const metro = getMetroBySlug(slug);
   if (!metro) return { title: "City not found" };
   const path = `/cities/${slug}`;
+  const title = metroSeoTitle(metro);
   return {
-    title: metroSeoTitle(metro),
+    // Long titles drop the " | Growers Ground" suffix so the words that matter stay visible.
+    title: title.length > 47 ? { absolute: title } : title,
     description: metroSeoDescription(metro),
     alternates: { canonical: path },
     robots: isMetroIndexable(metro)

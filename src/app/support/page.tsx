@@ -2,12 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPageShell } from "@/components/LegalPageShell";
 import { supportTopics } from "@/lib/legal-content";
+import { socialMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Support",
   description: `Get help with ${siteConfig.name} — contact, account, billing, and safety.`,
   alternates: { canonical: "/support" },
+  ...socialMetadata({
+    title: `Support | ${siteConfig.name}`,
+    description: `Get help with ${siteConfig.name} — contact, account, billing, and safety.`,
+    path: "/support",
+  }),
 };
 
 export default function SupportPage() {

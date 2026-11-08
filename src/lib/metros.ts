@@ -67,7 +67,9 @@ export function metroSeoTitle(metro: MetroSummary): string {
   if (!isMetroIndexable(metro)) {
     return `Community gardens in ${metro.cityLabel}`;
   }
-  return `${metro.gardenCount} Community Gardens in ${metro.cityLabel}: Map & Garden List`;
+  const base = `${metro.gardenCount} Community Gardens in ${metro.cityLabel}`;
+  const full = `${base}: Map & Garden List`;
+  return full.length > 60 ? base : full;
 }
 
 /** Pins that have a real name, cleaned, de-duplicated and sorted. Unnamed OSM pins use "City garden 3" placeholders. */
@@ -110,7 +112,7 @@ export function getNearbyMetros(metro: MetroSummary, limit = 5): MetroSummary[] 
 export function metroSeoDescription(metro: MetroSummary): string {
   const count = metro.gardenCount;
   const n = count === 1 ? "1 mapped garden" : `${count} mapped community gardens`;
-  return `Browse ${n} and allotment-style spaces in ${metro.cityLabel}, by name and on a free map. Find one near you, or look for shared garden space with Growers Ground.`;
+  return `Browse ${n} in ${metro.cityLabel}, by name and on a free map. Find one near you, or join the waitlist for shared yard space.`;
 }
 
 export function isMetroIndexable(metro: MetroSummary): boolean {

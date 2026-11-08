@@ -39,7 +39,6 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: siteConfig.url,
     siteName: siteConfig.name,
     title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
     description: siteConfig.ogDescription,

@@ -1,4 +1,17 @@
 {
+  "nashville": {
+    "heading": "How to find a garden plot in Nashville",
+    "paragraphs": [
+      "The Nashville Food Project, a nonprofit, supports a network of community gardens and orchards with tools, training, volunteers, and resources, so garden leaders can focus on growing food. Its Community Agriculture page lists sites including Growing Together Farm on Haywood Lane, the Community Farm at Mill Ridge Park in Antioch, McGruder Community Garden on 25th Avenue North, Donelson Community Gardens at Heartland Park, and Brooklyn Heights Community Garden on Haynes Street.",
+      "To ask for a plot, use the \"Rent a Garden Plot\" link on that page. The page does not list plot fees, eligibility rules, or sign-up dates, so confirm those before you plan your season. If you already run a garden, the same page has a form for joining the network as a community partner garden."
+    ],
+    "links": [
+      {
+        "label": "The Nashville Food Project: Community Agriculture Network",
+        "href": "https://www.thenashvillefoodproject.org/community-agriculture-network"
+      }
+    ]
+  },
   "detroit": {
     "heading": "Community gardening in Detroit: where to start",
     "paragraphs": [

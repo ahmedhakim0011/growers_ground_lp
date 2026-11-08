@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPageShell } from "@/components/LegalPageShell";
-import { absoluteUrl } from "@/lib/seo";
+import { absoluteUrl, socialMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Growers Ground — the garden-sharing app",
+  title: { absolute: "About Growers Ground: the garden-sharing app" },
   description:
-    "Growers Ground is a map-first app that connects gardeners with hosts who share yard space, across the US and Canada. Learn what it is, how it works, and where to find us.",
+    "Growers Ground is a map-first app that connects gardeners with hosts who share yard space across the US and Canada. Learn how it works and where to find us.",
   alternates: { canonical: "/about" },
+  ...socialMetadata({
+    title: "About Growers Ground: the garden-sharing app",
+    description:
+      "Growers Ground is a map-first app that connects gardeners with hosts who share yard space across the US and Canada.",
+    path: "/about",
+  }),
 };
 
 export default function AboutPage() {

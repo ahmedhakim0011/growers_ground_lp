@@ -16,6 +16,34 @@ export const defaultSocialImage = {
   alt: `${siteConfig.name}: find garden space and local gardeners on a map`,
 } as const;
 
+/** Page-specific share tags. Without these a page inherits the home page's title and description. */
+export function socialMetadata({
+  title,
+  description,
+  path,
+}: {
+  title: string;
+  description: string;
+  path: string;
+}) {
+  return {
+    openGraph: {
+      type: "website" as const,
+      siteName: siteConfig.name,
+      title,
+      description,
+      url: path,
+      images: [defaultSocialImage],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      images: [defaultSocialImage.url],
+    },
+  };
+}
+
 /** Absolute URL for canonical / JSON-LD (matches live primary host). */
 export function absoluteUrl(path = "/"): string {
   const base = siteConfig.url.replace(/\/$/, "");

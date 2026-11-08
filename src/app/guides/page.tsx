@@ -1,4 +1,4 @@
-import { defaultSocialImage } from "@/lib/seo";
+import { socialMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { OsmDataNotice } from "@/components/OsmDataNotice";
@@ -11,17 +11,16 @@ const hasIndexableGuide = getAllGuides().some(isGuideIndexable);
 
 export const metadata: Metadata = {
   robots: hasIndexableGuide ? undefined : { index: false, follow: true },
-  title: "Free regional growing guides",
+  title: "Free community garden and yard sharing guides",
   description:
-    "Planting times, plot etiquette, and seasonal tips from Growers Ground — free on the web. See gardens near you in the app.",
+    "Free guides to finding or starting a community garden, sharing a yard, gardening with neighbors, and running a seed swap, from Growers Ground.",
   alternates: { canonical: "/guides" },
-  openGraph: {
-    title: "Free regional growing guides | Growers Ground",
+  ...socialMetadata({
+    title: "Free community garden and yard sharing guides | Growers Ground",
     description:
-      "Planting times, plot etiquette, and seasonal tips — free on the web.",
-    url: "/guides",
-    images: [defaultSocialImage],
-  },
+      "Free guides to finding or starting a community garden, sharing a yard, gardening with neighbors, and running a seed swap.",
+    path: "/guides",
+  }),
 };
 
 export default function GuidesIndexPage() {

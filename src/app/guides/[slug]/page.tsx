@@ -31,9 +31,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const guide = getGuideBySlug(slug);
   if (!guide) return { title: "Guide not found" };
   const path = `/guides/${slug}`;
-  const pageTitle = guide.cityLabel
-    ? `${guide.title} — ${guide.cityLabel} growing guide`
-    : guide.title;
+  const pageTitle =
+    guide.seoTitle ??
+    (guide.cityLabel
+      ? `${guide.title} — ${guide.cityLabel} growing guide`
+      : guide.title);
   const description = guide.metaDescription ?? guide.summary;
   const shareImage = guide.hero
     ? { url: guide.hero.src, width: guide.hero.width, height: guide.hero.height, alt: guide.hero.alt }
