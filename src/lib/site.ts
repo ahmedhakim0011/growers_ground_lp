@@ -13,7 +13,7 @@ export const siteConfig = {
   ],
   facebook: "https://www.facebook.com/people/Growers-Ground/61595561339790/",
   tiktok: "https://www.tiktok.com/@growersground",
-  alternateNames: ["GrowersGround", "Growers Ground app", "Growers Ground garden sharing app"],
+  alternateNames: ["GrowersGround", "Grow Ground", "Growers Ground app", "Growers Ground garden sharing app"],
   supportEmail: "support@growersground.com",
   founder: {
     name: "Ahmed Hakim Ali",
@@ -23,15 +23,15 @@ export const siteConfig = {
     github: "https://github.com/ahmedhakim0011",
   },
   description:
-    "Growers Ground is a garden sharing app: find a yard share near you, or share your yard with a local gardener. Map-first discovery across the US & Canada.",
+    "Growers Ground is a garden sharing app: find garden space near you, or share your unused backyard with a local gardener. Map-first yard sharing across the US & Canada.",
   ogDescription:
-    "Find private garden space near you. Connect with local hosts, garden spots, seed swaps, and growing journals.",
+    "No yard? Find garden space near you. Have a yard? Share it with a local gardener. Hosts, gardeners, community gardens and seed swaps on one map.",
   themeColor: "#3D5F49",
 } as const;
 
 /** Routes included in sitemap.xml for search indexing. */
 export const indexableRoutes = [
-  { path: "/", lastModified: "2026-11-05", changeFrequency: "weekly" as const, priority: 1 },
+  { path: "/", lastModified: "2026-11-14", changeFrequency: "weekly" as const, priority: 1 },
   { path: "/privacy", lastModified: "2026-09-11", changeFrequency: "monthly" as const, priority: 0.5 },
   { path: "/terms", lastModified: "2026-09-11", changeFrequency: "monthly" as const, priority: 0.5 },
   { path: "/about", lastModified: "2026-11-05", changeFrequency: "monthly" as const, priority: 0.8 },
@@ -44,17 +44,21 @@ export const navLinks = {
     { href: "/", label: "Home" },
     { href: "/cities", label: "Cities" },
     { href: "/guides", label: "Guides" },
+    { href: "/how-it-works", label: "How it works" },
     { href: "/about", label: "About" },
-    { href: "/#discover", label: "Profiles" },
   ],
   dropdown: [
+    { href: "/find-garden-space", label: "Find garden space" },
+    { href: "/share-your-yard", label: "Share your yard" },
     { href: "/#discover", label: "Browse profiles" },
     { href: "/#app-screenshots", label: "Community layer" },
     { href: "/#waitlist", label: "Early access" },
   ],
   mobile: [
-    { href: "/#app-screenshots", label: "Features" },
-    { href: "/#discover", label: "Profiles" },
+    { href: "/how-it-works", label: "How it works" },
+    { href: "/find-garden-space", label: "Find garden space" },
+    { href: "/share-your-yard", label: "Share your yard" },
+    { href: "/cities", label: "Community gardens" },
     { href: "/#app-screenshots", label: "Community layer" },
     { href: "/#faq", label: "FAQ" },
     { href: "/#waitlist", label: "Join Waitlist" },

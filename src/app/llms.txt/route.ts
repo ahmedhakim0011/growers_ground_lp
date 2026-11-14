@@ -1,5 +1,6 @@
 import { getAllGuides, isGuideIndexable } from "@/lib/guides";
 import { getAllMetros, isMetroIndexable } from "@/lib/metros";
+import { landingPages } from "@/lib/landing-pages";
 import { siteConfig } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -12,7 +13,7 @@ export function GET() {
   const lines = [
     `# ${siteConfig.name}`,
     "",
-    `> ${siteConfig.name} is a map-first garden-sharing app and website that connects gardeners with hosts who share yard space, across the US and Canada. It is a software product (not a ground-cover or landscaping supplier). The app is rolling out city by city; a waitlist is open.`,
+    `> ${siteConfig.name} is a map-first garden sharing (yard sharing) app and website that connects people who want garden space with hosts who have an unused backyard, across the US and Canada. It is a software product (not a ground-cover or landscaping supplier). The app is rolling out city by city; a waitlist is open.`,
     "",
     "One Map. Everyone Knows Where to Grow.",
     "",
@@ -30,6 +31,11 @@ export function GET() {
     `- [Community gardens by city](${siteConfig.url}/cities): mapped community gardens in US and Canadian metros`,
     `- [Growing guides](${siteConfig.url}/guides): free guides on finding, sharing and starting gardens`,
     `- [Support](${siteConfig.url}/support): contact and help (${siteConfig.supportEmail})`,
+    "",
+    "## What people use it for",
+    ...landingPages.map(
+      (p) => `- [${p.title}](${siteConfig.url}/${p.slug}): ${p.answer.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")}`,
+    ),
     "",
     "## Guides",
     ...guides.map(

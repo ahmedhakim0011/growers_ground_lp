@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   applicationName: siteConfig.name,
   title: {
-    default: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
+    default: "Growers Ground: Garden Sharing App to Find or Share Garden Space",
     template: "%s | Growers Ground",
   },
   description: siteConfig.description,
@@ -40,12 +40,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: siteConfig.name,
-    title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
+    title: "Growers Ground: Garden Sharing App to Find or Share Garden Space",
     description: siteConfig.ogDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
+    title: "Growers Ground: Garden Sharing App to Find or Share Garden Space",
     description: siteConfig.ogDescription,
   },
 };

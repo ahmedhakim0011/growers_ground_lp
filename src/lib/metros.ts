@@ -67,9 +67,12 @@ export function metroSeoTitle(metro: MetroSummary): string {
   if (!isMetroIndexable(metro)) {
     return `Community gardens in ${metro.cityLabel}`;
   }
-  const base = `${metro.gardenCount} Community Gardens in ${metro.cityLabel}`;
-  const full = `${base}: Map & Garden List`;
-  return full.length > 60 ? base : full;
+  // Canadian searchers say "allotment gardens" as often as "community gardens" (GSC, Nov 2026).
+  const kind = metro.countryCode === "CA" ? "Community & Allotment Gardens" : "Community Gardens";
+  const base = `${metro.gardenCount} ${kind} in ${metro.cityLabel}`;
+  const full = `${base}: Map & Garden Plots`;
+  if (full.length <= 60) return full;
+  return base.length <= 60 ? base : `${metro.gardenCount} Community Gardens in ${metro.cityLabel}`;
 }
 
 /** Pins that have a real name, cleaned, de-duplicated and sorted. Unnamed OSM pins use "City garden 3" placeholders. */
@@ -112,7 +115,8 @@ export function getNearbyMetros(metro: MetroSummary, limit = 5): MetroSummary[] 
 export function metroSeoDescription(metro: MetroSummary): string {
   const count = metro.gardenCount;
   const n = count === 1 ? "1 mapped garden" : `${count} mapped community gardens`;
-  return `Browse ${n} in ${metro.cityLabel}, by name and on a free map. Find one near you, or join the waitlist for shared yard space.`;
+  const plots = metro.countryCode === "CA" ? "allotment and garden plots" : "garden plots";
+  return `Browse ${n} in ${metro.cityLabel}, by name and on a free map. Find ${plots} near you, or shared backyard garden space.`;
 }
 
 export function isMetroIndexable(metro: MetroSummary): boolean {

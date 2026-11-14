@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { landingPages } from "@/lib/landing-pages";
 import { siteConfig } from "@/lib/site";
 
 export function SiteFooter() {
@@ -27,6 +28,14 @@ export function SiteFooter() {
               Contact support
             </Link>
           </div>
+        </div>
+        <div className="footer-col">
+          <h3>Garden sharing</h3>
+          {landingPages.map((p) => (
+            <Link key={p.slug} href={`/${p.slug}`}>
+              {p.navLabel}
+            </Link>
+          ))}
         </div>
         <div className="footer-col">
           <h3>Product</h3>

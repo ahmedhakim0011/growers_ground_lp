@@ -3285,7 +3285,8 @@ body.lp-zernio {
 
 @media (min-width: 768px) {
   .footer-grid-zernio {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    gap: 24px;
   }
 }
 
@@ -5861,4 +5862,97 @@ body.lp-calai {
 
 .breadcrumbs a {
   color: var(--primary-40);
+}
+
+/* Keyword landing pages (src/app/[landing]) */
+.landing-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-40);
+  margin-top: 8px;
+}
+
+.landing-answer {
+  margin: 20px 0 24px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--primary-40);
+  border-radius: 12px;
+  background: var(--primary-95);
+}
+
+.landing-answer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.landing-answer .landing-answer-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-40);
+  margin-bottom: 6px;
+}
+
+.landing-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.landing-faq-item {
+  padding: 14px 0;
+  border-top: 1px solid var(--neutral-90);
+}
+
+.landing-faq-item h3 {
+  font-size: 1rem;
+  margin: 0 0 6px;
+}
+
+.landing-faq-item p {
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+.landing-related ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}
+
+.landing-related li {
+  margin: 0;
+}
+
+.landing-related a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--neutral-90);
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.landing-related a:hover {
+  border-color: var(--primary-40);
+}
+
+.landing-related strong {
+  color: var(--primary-40);
+}
+
+.landing-related span {
+  font-size: 14px;
+  color: var(--ink-muted);
 }

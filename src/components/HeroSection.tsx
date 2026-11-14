@@ -16,15 +16,16 @@ export function HeroSection() {
           data-motion-duration="1"
         >
           <h1 id="hero-heading">
-            Meet Growers Ground{" "}
+            The garden sharing app{" "}
             <span className="hero-cal-headline-accent">
-              Find Garden Space on a Map
+              to find garden space or share your yard
             </span>
           </h1>
           <p className="hero-cal-lead">
-            Meet Growers Ground, the map-first app for gardeners who need ground
-            and hosts who share yard space. Browse profiles, message
-            before you commit, and discover community spots on a second layer.
+            Want to grow vegetables but don&apos;t have a yard? Growers Ground
+            is a yard sharing app that maps hosts with unused backyard space and gardeners looking for a
+            place to grow, plus community gardens and seed swaps near you.
+            Browse profiles and message before you commit.
           </p>
 
           <div className="hero-cal-download" id="download">

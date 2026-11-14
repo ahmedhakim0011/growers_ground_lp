@@ -9,6 +9,7 @@ import { FaqSection } from "@/components/FaqSection";
 import { FinalCtaSection } from "@/components/FinalCtaSection";
 import { GuidesTeaserSection } from "@/components/GuidesTeaserSection";
 import { HeroSection } from "@/components/HeroSection";
+import { GardenSharingHubSection } from "@/components/GardenSharingHubSection";
 import { RatingsSection } from "@/components/RatingsSection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -18,13 +19,13 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
+    title: "Growers Ground: Garden Sharing App to Find or Share Garden Space",
     description: siteConfig.ogDescription,
     url: siteConfig.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growers Ground — Garden Sharing App to Find a Yard Share Near You",
+    title: "Growers Ground: Garden Sharing App to Find or Share Garden Space",
     description: siteConfig.ogDescription,
   },
 };
@@ -41,6 +42,7 @@ export default function HomePage() {
 
       <main id="main">
         <HeroSection />
+        <GardenSharingHubSection />
         <AppScreenshotsSection />
         <CapabilitiesSection />
         <CityPickerSection />

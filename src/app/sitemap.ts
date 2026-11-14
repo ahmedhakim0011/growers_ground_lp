@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllGuides, isGuideIndexable } from "@/lib/guides";
 import { getAllMetros, isMetroIndexable } from "@/lib/metros";
+import { landingPages } from "@/lib/landing-pages";
 import { indexableRoutes, siteConfig } from "@/lib/site";
 
 /** lastModified reflects when each page's content changed, not when the site was built. */
@@ -34,8 +35,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const landings = landingPages.map((p) => ({
+    url: `${base}/${p.slug}`,
+    lastModified: p.updatedAt,
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
   return [
     ...staticEntries,
+    ...landings,
     {
       url: `${base}/cities`,
       lastModified: latest(metros.map((m) => m.dataUpdatedAt)),
