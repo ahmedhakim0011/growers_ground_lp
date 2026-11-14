@@ -100,3 +100,11 @@ Store search uses the title, subtitle and keyword field, not the website.
 
 - City + intent pages only where there is real local information, e.g. "garden space in Toronto": combine the city's community garden data with yard-share guidance. Do not mass-generate city-name swaps.
 - Guides answering the remaining conversational searches: "Is it legal to garden in someone else's yard?", "Garden sharing agreement template" (downloadable), "How much to charge to rent garden space".
+
+## Done on 2026-11-14 (after deploy)
+
+- Merged to `main` (3da2511) and triggered a production deploy (3b0c738); all 7 pages return 200 on www.growersground.com, sitemap lists 58 URLs.
+- Search Console: removed the apex sitemap `https://growersground.com/sitemap.xml`; resubmitted `https://www.growersground.com/sitemap.xml`.
+- Indexing requested (all accepted): `/`, `/find-garden-space`, `/share-your-yard`, `/how-it-works`, `/garden-space-for-rent`, `/gardening-without-a-backyard`, `/local-gardeners`, `/community-garden-app`, and cities Austin, Denver, Calgary, Baltimore, Cincinnati, Cleveland, Edmonton, Hamilton, Kansas City, Kitchener-Cambridge-Waterloo.
+- Backlink plan and ready-to-paste copy: `backlink-kit-2026-11-14.md`.
+- Next check: 2026-11-28. Pages report (indexed count) and queries containing "garden sharing", "yard", "garden space", "allotment".
