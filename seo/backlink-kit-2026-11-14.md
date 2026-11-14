@@ -20,8 +20,8 @@ Rules: only honest claims (the app is not in the stores yet; the website maps an
 | # | Site | Type | Status | Notes |
 |---|---|---|---|---|
 | 1 | ahmedbuildapps.com | Own site | To do | Add a Growers Ground project card linking to the homepage. Easiest strong link. |
-| 2 | AlternativeTo (alternativeto.net) | Directory | Not signed in | Add Growers Ground, then suggest it as an alternative to Shared Earth / YardSharing. |
-| 3 | BetaList (betalist.com) | Pre-launch directory | To do | Made for products with a waitlist. Free queue or paid expedite. |
+| 2 | AlternativeTo (alternativeto.net) | Directory | **Wait for public launch** | Their FAQ rejects "Coming Soon", closed-beta and invite-only apps. Submit the day the app is public or in open beta, then suggest it as an alternative to Shared Earth / YardSharing. Signed in as "gorwersground". |
+| 3 | BetaList (betalist.com) | Pre-launch directory | **Draft saved, payment needed** | Account created with support@growersground.com; draft at betalist.com/submissions/202308. Publishing is paid only: Lite $39 (random day within ~2 weeks), Standard $99, Premium $299. All include a do-follow backlink; full refund if not selected. Description corrected (removed an inaccurate "AI-ranked matches" claim) and off-topic tags removed. |
 | 4 | Product Hunt | Launch | Signed in, **wait** | One launch per product. Launch when the app is in the stores (aim for Feb-Mar, a Tuesday-Thursday). A waitlist-only launch wastes it. |
 | 5 | Indie Hackers (product page + build post) | Community | To do | Post "what I learned building a garden sharing app" with real numbers. |
 | 6 | SaaSHub, Launching Next, StartupBase, Uneed | Directories | To do | Quick, low-value individually; do in one sitting. |
@@ -52,4 +52,5 @@ Record each submission here with date, URL and status. Re-check Search Console's
 
 | Date | Site | Link URL | Status |
 |---|---|---|---|
-| | | | |
+| 2026-11-14 | BetaList | (pending payment) | Draft saved |
+| 2026-11-14 | AlternativeTo | n/a | Held until public launch (FAQ rule) |
