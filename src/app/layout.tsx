@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   verification: {
     google: "Ge2Bp1irNhRHzfAAJUs-Ctkxfkk0VP2H2sq1OEhwm6I",
+    other: {
+      "facebook-domain-verification": "p9efaga1ayuvf6h3ovo4l4a1q5wgd5",
+    },
   },
   robots: {
     index: true,
