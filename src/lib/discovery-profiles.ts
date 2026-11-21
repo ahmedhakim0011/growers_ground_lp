@@ -28,29 +28,28 @@ export type DiscoveryProfile = {
 
 export const discoveryProfiles: DiscoveryProfile[] = [
   {
-    id: "karen",
+    id: "charles",
     role: "host",
-    name: "Karen Blue",
-    location: "Host · San Francisco, CA",
+    name: "Charles",
+    location: "Host · California",
     verified: true,
-    specs: ["2.5 acres", "Water on property", "Flexible setup"],
-    bioExcerpt:
-      "We have 2.5 acres of land, with water spigots around the property you can use.",
+    specs: ["Backyard & raised beds", "By appointment", "Shares tools & seeds"],
+    bioExcerpt: "Happy to share tools, seeds and stories.",
     tags: ["Host", "Verified"],
-    amenities: ["water", "full-sun", "large-plot"],
-    plotSize: "large",
+    amenities: ["full-sun", "large-plot"],
+    plotSize: "medium",
     mapPosition: { top: "42%", left: "58%" },
     cta: { label: "Connect with host", href: "#waitlist" },
     avatarHue: 128,
     cardLabel: "Host",
-    cardTitle: "Karen Blue — San Francisco, CA",
+    cardTitle: "Charles — California",
     cardSummary:
-      "2.5 acres of land, with water spigots around the property you can use.",
+      "A host's own profile: the garden space on offer, how visits work (by appointment), and what they're happy to share.",
     screenshot: {
-      src: "/images/app_ss_karen_profile_.png",
-      width: 370,
-      height: 674,
-      alt: "Karen Blue host profile with garden space details and agreements",
+      src: "/images/app/profile-host.jpg",
+      width: 506,
+      height: 1100,
+      alt: "Charles's host profile with a backyard photo, Host badge, setup by appointment only, and garden space highlights",
     },
   },
   {
@@ -73,10 +72,10 @@ export const discoveryProfiles: DiscoveryProfile[] = [
     cardSummary:
       "Experienced gardener looking for a small plot to grow flowers and herbs. Available 2–3 hours per week.",
     screenshot: {
-      src: "/images/app_ss_timoothy_profile_.png",
-      width: 368,
-      height: 678,
-      alt: "Timoothy gardener profile with experience and garden preferences",
+      src: "/images/app/profile-timothy.jpg",
+      width: 506,
+      height: 1100,
+      alt: "Timoothy's gardener profile: very experienced, 2–3 hours a week, 7 mi away",
     },
   },
   {
@@ -99,10 +98,10 @@ export const discoveryProfiles: DiscoveryProfile[] = [
     cardSummary:
       "New to gardening but eager to learn—about an hour a week, open to shared tools and informal agreements.",
     screenshot: {
-      src: "/images/app_ss_andrea_profile_.png",
-      width: 366,
-      height: 682,
-      alt: "Andrea gardener profile with beginner journey and garden highlights",
+      src: "/images/app/profile-andrea.jpg",
+      width: 506,
+      height: 1100,
+      alt: "Andrea's gardener profile: new to gardening, about an hour a week, 9 mi away",
     },
   },
 ];

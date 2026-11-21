@@ -2,17 +2,17 @@ import Image from "next/image";
 import { AppFeatureScreenshot } from "./AppFeatureScreenshot";
 
 const discoverMap = {
-  src: "/images/app_ss_dicover_first.png",
-  width: 376,
-  height: 663,
-  alt: "Discover map near San Francisco with gardener pins on the map",
+  src: "/images/app/discover-map.jpg",
+  width: 506,
+  height: 1100,
+  alt: "Discover map of San Francisco with gardener photo pins and a 25-mile distance filter",
 } as const;
 
 const discoverList = {
-  src: "/images/app_ss_dicover_second.png",
-  width: 383,
-  height: 652,
-  alt: "Ranked gardeners list with distance, bios, and match chips",
+  src: "/images/app/discover-list.jpg",
+  width: 506,
+  height: 1100,
+  alt: "Four gardeners ranked for you, each with distance, a short bio, and how they like to garden",
 } as const;
 
 export function AppDiscoverMapFlow() {
@@ -25,6 +25,7 @@ export function AppDiscoverMapFlow() {
         screenshot={discoverMap}
         slot="discover-map-primary"
         priority
+        framed
         sizes="(max-width: 1023px) 320px, 320px"
         className="app-screens-host-phone app-screens-host-phone-left app-screens-device-shot--tilt"
       />
@@ -40,6 +41,7 @@ export function AppDiscoverMapFlow() {
       <AppFeatureScreenshot
         screenshot={discoverList}
         slot="discover-map-list"
+        framed
         sizes="(max-width: 1023px) 320px, 320px"
         className="app-screens-host-phone app-screens-host-phone-right"
       />

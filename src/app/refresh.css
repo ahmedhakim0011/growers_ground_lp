@@ -1,0 +1,672 @@
+/* ═══════════════════════════════════════════════════════════════
+   App refresh · Nov 2026
+   Brings the site in line with the new app UI: warm cream page,
+   white cards, soft pastel tiles, moss used sparingly (primary CTA,
+   active states, small icons). Layout is unchanged; this layer only
+   restyles surfaces, colour, radius and depth.
+   Tokens mirror growers_gound_app/lib/app/theme/app_colors.dart.
+   ═══════════════════════════════════════════════════════════════ */
+
+.lp-calai {
+  /* Surfaces */
+  --surface-page: #fcfaf6;
+  --surface-muted: #f3efe8;
+  --surface-card: #ffffff;
+
+  /* Ink (warm, never pure black) */
+  --ink: #2b2721;
+  --ink-muted: #726a5f; /* 5.1:1 on cream */
+  --border-subtle: rgba(43, 39, 33, 0.08);
+  --border-card: rgba(43, 39, 33, 0.07);
+
+  /* Pastels + their paired ink */
+  --pastel-mint: #ddefd9;
+  --pastel-peach: #ffe9d6;
+  --pastel-butter: #fff3d1;
+  --pastel-lavender: #e9e2f5;
+  --pastel-sky: #dceef4;
+  --pastel-sand: #efe6da;
+  --ink-mint: #4f7359;
+  --ink-peach: #a65f47;
+  --ink-butter: #82631f;
+  --ink-lavender: #6b5a8a;
+  --ink-sky: #3f6f85;
+  --ink-sand: #8a6349;
+
+  /* Shape + depth (shadows tinted with moss, one light source from above) */
+  --radius-btn: 999px;
+  --radius-tile: 22px;
+  --radius-card: 20px;
+  --shadow-card: 0 1px 2px rgba(43, 39, 33, 0.04), 0 8px 24px -12px rgba(44, 74, 56, 0.14);
+  --shadow-lift: 0 2px 4px rgba(43, 39, 33, 0.04), 0 20px 40px -16px rgba(44, 74, 56, 0.24);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.lp-calai {
+  background: var(--surface-page);
+  color: var(--ink);
+}
+
+.lp-calai ::selection {
+  background: var(--pastel-mint);
+  color: var(--primary-30);
+}
+
+/* Headlines: match the app's confident-but-calm weight */
+.lp-calai h1,
+.lp-calai h2,
+.lp-calai h3 {
+  text-wrap: balance;
+}
+
+.lp-calai p {
+  text-wrap: pretty;
+}
+
+.lp-calai .hero-cal h1 {
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+
+.lp-calai .hero-cal-lead {
+  color: var(--ink-muted);
+}
+
+.lp-calai .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-mint);
+  background: var(--pastel-mint);
+  border-radius: var(--radius-pill);
+}
+
+/* ── Buttons: full pill, like the app ── */
+.lp-calai .btn,
+.lp-calai .btn-rect,
+.lp-calai .btn-accent,
+.lp-calai .btn-surface {
+  border-radius: var(--radius-btn);
+}
+
+.lp-calai .btn-accent {
+  background: var(--primary-40);
+  transition:
+    background 0.2s var(--ease-out),
+    transform 0.2s var(--ease-out),
+    box-shadow 0.2s var(--ease-out);
+}
+
+.lp-calai .btn-accent:hover {
+  background: var(--primary-30);
+  box-shadow: 0 10px 24px -10px rgba(44, 74, 56, 0.55);
+}
+
+.lp-calai .btn:active,
+.lp-calai .btn-accent:active,
+.lp-calai .btn-surface:active {
+  transform: scale(0.98);
+}
+
+.lp-calai .btn-surface {
+  background: var(--surface-card);
+  border-color: var(--border-card);
+}
+
+.lp-calai :is(a, button, select, input, summary):focus-visible {
+  outline: 2px solid var(--primary-40);
+  outline-offset: 3px;
+}
+
+/* ── Header ── */
+.lp-calai .site-header-cal {
+  background: rgba(252, 250, 246, 0.86);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  box-shadow: 0 1px 0 var(--border-subtle);
+}
+
+.lp-calai .nav-cal > a {
+  border-radius: var(--radius-pill);
+  transition: background 0.2s var(--ease-out), color 0.2s var(--ease-out);
+}
+
+.lp-calai .nav-cal > a:hover {
+  background: var(--pastel-mint);
+  color: var(--primary-30);
+}
+
+/* ── Hero ── */
+.lp-calai .hero-cal {
+  position: relative;
+  background: var(--surface-page);
+  overflow: hidden;
+}
+
+.lp-calai .hero-cal-visual {
+  position: relative;
+  isolation: isolate;
+}
+
+/* A soft pastel "garden bed" wash behind the phones, the same
+   mint → sky blend the app uses on its seasonal hero card. */
+.lp-calai .hero-cal-visual::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 4% -6% 0 4%;
+  border-radius: 48% 52% 44% 56% / 56% 46% 54% 44%;
+  background:
+    radial-gradient(60% 60% at 30% 30%, var(--pastel-mint) 0%, transparent 70%),
+    radial-gradient(55% 55% at 75% 40%, var(--pastel-sky) 0%, transparent 72%),
+    radial-gradient(50% 50% at 50% 85%, var(--pastel-peach) 0%, transparent 70%);
+  filter: blur(8px);
+  opacity: 0.95;
+}
+
+.lp-calai .hero-cal-phones {
+  --hero-phone-h: min(560px, 60vh);
+}
+
+@media (min-width: 1024px) {
+  .lp-calai .hero-cal-phones {
+    --hero-phone-h: min(640px, 70vh);
+  }
+}
+
+@media (max-width: 1023px) {
+  .lp-calai .hero-cal-phones {
+    --hero-phone-h: min(400px, 52vh);
+  }
+}
+
+.lp-calai .hero-phone-right {
+  transform: rotate(3deg) translateY(-4%);
+}
+
+/* ── Device frame: one CSS bezel for every raw app capture ── */
+.lp-calai .device-frame {
+  --frame-pad: 7px;
+  --frame-radius: 46px;
+  position: relative;
+  display: block;
+  padding: var(--frame-pad);
+  line-height: 0;
+  background: #24221e;
+  border-radius: var(--frame-radius);
+  box-shadow:
+    inset 0 0 0 1.5px rgba(255, 255, 255, 0.08),
+    0 0 0 1px rgba(43, 39, 33, 0.12),
+    0 40px 70px -28px rgba(44, 74, 56, 0.45),
+    0 14px 28px -14px rgba(43, 39, 33, 0.3);
+}
+
+.lp-calai .device-frame img {
+  border-radius: calc(var(--frame-radius) - var(--frame-pad));
+  filter: none !important;
+  background: var(--surface-page);
+}
+
+.lp-calai .hero-screen-shot.device-frame {
+  --frame-radius: calc(var(--hero-phone-h) * 0.075);
+  --frame-pad: calc(var(--hero-phone-h) * 0.012);
+}
+
+.lp-calai .hero-screen-shot.device-frame .hero-screen-image {
+  height: calc(var(--hero-phone-h) - var(--frame-pad) * 2);
+  max-height: none;
+  width: auto;
+  /* Keep the capture's true 506×1100 shape; never squeeze it to the frame. */
+  max-width: none;
+  aspect-ratio: 506 / 1100;
+}
+
+/* The legacy .device-frame rule caps width at 280px, which cropped the
+   hero screens on large displays. Hero frames size to their image. */
+.lp-calai .hero-screen-shot.device-frame {
+  width: max-content;
+  max-width: none;
+}
+
+/* Floating chips */
+.lp-calai .hero-float-chip-glass {
+  gap: 8px;
+  padding: 10px 16px 10px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-lift);
+}
+
+.lp-calai .hero-float-chip-icon {
+  width: 16px;
+  height: 16px;
+  padding: 4px;
+  box-sizing: content-box;
+  fill: none;
+  stroke: var(--ink-mint);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  background: var(--pastel-mint);
+  border-radius: 50%;
+}
+
+.lp-calai .hero-float-status-dot {
+  background: var(--ink-mint);
+  box-shadow: 0 0 0 4px var(--pastel-mint);
+}
+
+.lp-calai .hero-float-chip-pointer-left::before,
+.lp-calai .hero-float-chip-pointer-right::after {
+  background: var(--ink);
+}
+
+.lp-calai .hero-float-chip-acres {
+  /* Beside the status area, clear of the phone's top corner */
+  top: 11%;
+  right: -26%;
+}
+
+.lp-calai .hero-float-chip-water {
+  /* Mostly outside the screen so it doesn't cover the Explore tiles */
+  bottom: 24%;
+  left: auto;
+  right: -30%;
+}
+
+/* ── "No yard? Find one" hub: pastel tiles like the app's Explore grid ── */
+.lp-calai .city-picker-section {
+  background: var(--surface-page);
+}
+
+.lp-calai #garden-sharing .city-picker-chip {
+  border: 0;
+  border-radius: 18px;
+  padding: 14px 18px;
+  background: var(--tile-bg, var(--pastel-mint));
+  transition:
+    transform 0.25s var(--ease-out),
+    box-shadow 0.25s var(--ease-out);
+}
+
+.lp-calai #garden-sharing li:nth-child(6n + 1) .city-picker-chip { --tile-bg: var(--pastel-mint); --tile-ink: var(--ink-mint); }
+.lp-calai #garden-sharing li:nth-child(6n + 2) .city-picker-chip { --tile-bg: var(--pastel-peach); --tile-ink: var(--ink-peach); }
+.lp-calai #garden-sharing li:nth-child(6n + 3) .city-picker-chip { --tile-bg: var(--pastel-sky); --tile-ink: var(--ink-sky); }
+.lp-calai #garden-sharing li:nth-child(6n + 4) .city-picker-chip { --tile-bg: var(--pastel-butter); --tile-ink: var(--ink-butter); }
+.lp-calai #garden-sharing li:nth-child(6n + 5) .city-picker-chip { --tile-bg: var(--pastel-lavender); --tile-ink: var(--ink-lavender); }
+.lp-calai #garden-sharing li:nth-child(6n + 6) .city-picker-chip { --tile-bg: var(--pastel-sand); --tile-ink: var(--ink-sand); }
+
+.lp-calai #garden-sharing .city-picker-count {
+  color: var(--tile-ink, var(--ink-muted));
+  font-weight: 500;
+}
+
+.lp-calai #garden-sharing .city-picker-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+/* City + guide chips: white cards on cream, mint on hover */
+.lp-calai #cities .city-picker-chip,
+.lp-calai #guides .city-picker-chip {
+  background: var(--surface-card);
+  border: 1px solid var(--border-card);
+  border-radius: 18px;
+  box-shadow: 0 1px 2px rgba(43, 39, 33, 0.03);
+  transition:
+    background 0.2s var(--ease-out),
+    border-color 0.2s var(--ease-out),
+    transform 0.25s var(--ease-out),
+    box-shadow 0.25s var(--ease-out);
+}
+
+.lp-calai #cities .city-picker-chip:hover,
+.lp-calai #guides .city-picker-chip:hover {
+  background: #f6fbf4;
+  border-color: var(--primary-80);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.lp-calai #cities .city-picker-count {
+  font-variant-numeric: tabular-nums;
+}
+
+.lp-calai .city-picker-more a {
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--primary-80);
+  padding-bottom: 2px;
+  transition: border-color 0.2s var(--ease-out);
+}
+
+.lp-calai .city-picker-more a:hover {
+  border-color: var(--primary-40);
+}
+
+/* ── App screens tabs ── */
+.lp-calai .app-screens-section {
+  background: var(--surface-page);
+}
+
+.lp-calai .app-screens-tab {
+  background: var(--surface-card);
+  border-color: var(--border-card);
+}
+
+.lp-calai .app-screens-tab-indicator {
+  background: var(--pastel-mint);
+  box-shadow: inset 0 0 0 1px rgba(79, 115, 89, 0.18);
+}
+
+.lp-calai .app-screens-tab.is-active {
+  color: var(--primary-30);
+  background: transparent;
+}
+
+.lp-calai .app-screens-device {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Hero art in the app always sits in a circle; the phones do too. */
+.lp-calai .app-screens-device::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: min(520px, 92%);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--pastel-mint), var(--pastel-sky) 70%);
+  opacity: 0.85;
+}
+
+.lp-calai .app-screens-shot.device-frame {
+  width: min(280px, 72vw);
+  --frame-radius: 44px;
+}
+
+.lp-calai .app-screens-shot.device-frame.app-screens-device-shot--tilt {
+  animation: none;
+  transform: rotate(4deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .lp-calai .app-screens-shot.device-frame.app-screens-device-shot--tilt {
+    animation: gg-device-settle 0.7s var(--ease-out) both;
+  }
+}
+
+@keyframes gg-device-settle {
+  from {
+    transform: rotate(9deg) translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(4deg);
+    opacity: 1;
+  }
+}
+
+/* ── Capabilities: pastel tiles with the app's own illustrations ── */
+.lp-calai .capabilities-zernio {
+  background: var(--surface-page);
+}
+
+.lp-calai .cap-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 26px 28px;
+  border: 0;
+  border-radius: var(--radius-tile);
+  background: var(--tile-bg, var(--pastel-mint));
+  box-shadow: none;
+  overflow: hidden;
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+
+.lp-calai .cap-card--mint { --tile-bg: var(--pastel-mint); }
+.lp-calai .cap-card--peach { --tile-bg: var(--pastel-peach); }
+.lp-calai .cap-card--sky { --tile-bg: var(--pastel-sky); }
+
+.lp-calai .cap-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.lp-calai .cap-art {
+  display: grid;
+  place-items: center;
+  height: 150px;
+  margin: 0 0 18px;
+}
+
+.lp-calai .cap-art img {
+  width: auto;
+  height: 150px;
+  max-width: 100%;
+  transition: transform 0.4s var(--ease-out);
+}
+
+.lp-calai .cap-card:hover .cap-art img {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.lp-calai .cap-card h3 {
+  color: var(--ink);
+  font-size: 1.1875rem;
+  letter-spacing: -0.015em;
+}
+
+.lp-calai .cap-card p {
+  color: #5e574d;
+}
+
+/* ── Map teaser ── */
+.lp-calai .map-teaser-section {
+  background: var(--surface-page);
+}
+
+.lp-calai .map-teaser-visual,
+.lp-calai .map-teaser-visual .mapboxgl-map,
+.lp-calai .garden-map-preview {
+  border-radius: var(--radius-tile);
+}
+
+.lp-calai .map-teaser-visual {
+  box-shadow: var(--shadow-card);
+}
+
+.lp-calai .map-teaser-select,
+.lp-calai .waitlist-city-select {
+  border-radius: 14px;
+  border-color: var(--neutral-90);
+  background-color: var(--surface-card);
+}
+
+/* ── Profiles showcase ── */
+.lp-calai .discovery-section {
+  background: var(--surface-page);
+}
+
+.lp-calai .discovery-feature-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: var(--border-card);
+  border-radius: var(--radius-tile);
+}
+
+.lp-calai .discovery-feature-card:hover {
+  transform: translateY(-1px);
+}
+
+.lp-calai .discovery-feature-card.is-active {
+  background: var(--surface-card);
+  border: 1px solid var(--primary-80);
+  box-shadow: 0 0 0 3px var(--pastel-mint), var(--shadow-card);
+}
+
+.lp-calai .discovery-feature-pill {
+  color: var(--ink-sky);
+  background: var(--pastel-sky);
+}
+
+.lp-calai .discovery-feature-pill-host {
+  color: var(--ink-mint);
+  background: var(--pastel-mint);
+}
+
+.lp-calai .discovery-feature-card:nth-child(3) .discovery-feature-pill {
+  color: var(--ink-peach);
+  background: var(--pastel-peach);
+}
+
+/* ── Trust stats: pastel tiles ── */
+.lp-calai .ratings-section {
+  background: var(--surface-page);
+}
+
+.lp-calai .ratings-stat {
+  border: 0;
+  border-radius: var(--radius-tile);
+  background: var(--tile-bg);
+  padding: 32px 20px;
+}
+
+.lp-calai .ratings-stat:nth-child(1) { --tile-bg: var(--pastel-mint); --tile-ink: var(--ink-mint); }
+.lp-calai .ratings-stat:nth-child(2) { --tile-bg: var(--pastel-butter); --tile-ink: var(--ink-butter); }
+.lp-calai .ratings-stat:nth-child(3) { --tile-bg: var(--pastel-sky); --tile-ink: var(--ink-sky); }
+
+.lp-calai .ratings-num {
+  color: var(--tile-ink);
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.lp-calai .ratings-label {
+  color: #5e574d;
+  font-weight: 500;
+}
+
+/* ── Waitlist: an inset pastel card instead of a full-bleed band ── */
+.lp-calai .waitlist-cal {
+  background: var(--surface-page);
+  padding-block: clamp(32px, 5vw, 56px);
+}
+
+.lp-calai .waitlist-cal-shell {
+  position: relative;
+  padding: clamp(48px, 7vw, 88px) clamp(20px, 4vw, 48px);
+  border-radius: 32px;
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--pastel-mint) 0%, transparent 70%),
+    radial-gradient(70% 90% at 100% 100%, var(--pastel-sky) 0%, transparent 70%),
+    #eef6ec;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.lp-calai .waitlist-cal-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.lp-calai .waitlist-cal-art {
+  position: absolute;
+  z-index: 0;
+  width: clamp(150px, 18vw, 230px);
+  height: auto;
+  pointer-events: none;
+}
+
+.lp-calai .waitlist-cal-art--left {
+  left: clamp(8px, 3vw, 48px);
+  bottom: clamp(16px, 3vw, 40px);
+}
+
+.lp-calai .waitlist-cal-art--right {
+  right: clamp(8px, 3vw, 48px);
+  top: clamp(24px, 4vw, 56px);
+}
+
+@media (max-width: 899px) {
+  .lp-calai .waitlist-cal-art {
+    display: none;
+  }
+}
+
+.lp-calai .waitlist-cal .waitlist-form input[type="email"] {
+  background: var(--surface-card);
+  border-color: rgba(43, 39, 33, 0.1);
+}
+
+/* ── FAQ ── */
+.lp-calai .faq-section {
+  background: var(--surface-page);
+}
+
+.lp-calai .faq-item {
+  border-radius: 18px;
+  border-color: var(--border-card);
+  background: var(--surface-card);
+  transition: box-shadow 0.25s var(--ease-out), border-color 0.25s var(--ease-out);
+}
+
+.lp-calai .faq-item:hover {
+  border-color: var(--primary-80);
+}
+
+.lp-calai .faq-item[open],
+.lp-calai .faq-item.is-open {
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Final CTA + footer ── */
+.lp-calai .final-cta-cal {
+  background: var(--surface-muted);
+  border-top: 0;
+}
+
+.lp-calai .final-cta-art {
+  width: clamp(150px, 16vw, 200px);
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+.lp-calai .site-footer-zernio {
+  background: var(--surface-page);
+}
+
+/* ── Store badges: warm ink instead of pure black ── */
+.lp-calai .store-badge {
+  background: #24221e;
+  border-radius: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-calai .cap-card,
+  .lp-calai .cap-art img,
+  .lp-calai .city-picker-chip {
+    transition: none;
+  }
+}
+
+/* Profiles section: raw app capture inside the shared CSS phone frame */
+.lp-calai .discovery-phone-frame.device-frame {
+  width: min(80vw, 300px);
+}
+
+.lp-calai .discovery-phone-frame .discovery-phone-shot {
+  width: 100%;
+  max-height: none;
+}

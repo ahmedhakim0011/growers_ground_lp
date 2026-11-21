@@ -403,10 +403,10 @@
           "body": "In Growers Ground, locations are approximate on the map until you choose to connect with someone, so your exact address is not published. You decide who you message, and the app includes tools to block and report other users. Share your address only when you are comfortable.",
           "visual": {
             "type": "image",
-            "src": "/images/app_ss_host_profile1.png",
+            "src": "/images/app/profile-host.jpg",
             "alt": "A host profile screen in the Growers Ground app",
-            "width": 392,
-            "height": 636,
+            "width": 506,
+            "height": 1100,
             "caption": "A host profile in the Growers Ground app, which is rolling out city by city."
           }
         },

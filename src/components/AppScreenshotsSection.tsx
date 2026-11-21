@@ -8,7 +8,6 @@ import {
 } from "react";
 import { AppFeatureScreenshot } from "./AppFeatureScreenshot";
 import { AppDiscoverMapFlow } from "./AppDiscoverMapFlow";
-import { AppHostProfileFlow } from "./AppHostProfileFlow";
 
 const features = [
   {
@@ -16,71 +15,71 @@ const features = [
     tab: "Discover map",
     title: "Browse hosts and gardeners on one map",
     description:
-      "Teardrop pins with avatars for people — AI-ranked with clear “why this match” chips. Tap a pin, preview a profile, message before you commit.",
+      "Photo pins for the people near you, ranked for you by distance, interests and garden fit. Tap a pin, preview a profile, and message before you commit.",
     slot: "discover-map",
     label: "Discover map",
     screenshot: {
-      src: "/images/app_ss_dicover_first.png",
-      width: 376,
-      height: 663,
-      alt: "Discover map near San Francisco with gardener pins and ranked list",
+      src: "/images/app/discover-map.jpg",
+      width: 506,
+      height: 1100,
+      alt: "Discover map of San Francisco with gardener photo pins and a ranked list",
     },
   },
   {
-    id: "host-profile",
-    tab: "Host profiles",
-    title: "See land specs before you visit",
+    id: "first-season",
+    tab: "Your first season",
+    title: "Tell it what you want, get a plan",
     description:
-      "Hosts share plot size, sun, water access, and a bio excerpt. Request space or view plot details without exposing exact addresses upfront.",
-    slot: "host-profile",
-    label: "Host profile",
+      "Pick grow, share, or community. Growers Ground builds a first-season plan for your zone: what to plant this month, hosts nearby, and events coming up.",
+    slot: "first-season",
+    label: "First-season plan",
     screenshot: {
-      src: "/images/app_ss_host_profile1.png",
-      width: 392,
-      height: 636,
-      alt: "Host profile flow — map preview to full profile",
+      src: "/images/app/first-season.jpg",
+      width: 506,
+      height: 1100,
+      alt: "Your first-season plan: what's worth planting this month in your zone, 14 hosts nearby, and 2 events coming up",
     },
   },
   {
-    id: "community-layer",
-    tab: "Community layer",
-    title: "Square pins for garden spots & swaps",
+    id: "community-hub",
+    tab: "Community hub",
+    title: "What's growing near you, every time you open it",
     description:
-      "A second map layer for seed swaps, compost, water access, and public plots — confirmed by locals, never confused with private listings.",
-    slot: "community-layer",
-    label: "Community map",
+      "A seasonal planting guide tuned to your zone, then one tap to pin a garden spot, ask a question, log growth, or host an event. Community is free for everyone.",
+    slot: "community-hub",
+    label: "Community hub",
     screenshot: {
-      src: "/images/app_ss_groweing_community.png",
-      width: 394,
-      height: 633,
-      alt: "Community hub with garden spots, groups, journals, and local events",
+      src: "/images/app/community-hub.jpg",
+      width: 506,
+      height: 1100,
+      alt: "Community hub with a November planting guide, quick actions, and Explore tiles for garden spots, groups, and journals",
     },
   },
   {
-    id: "journals-chat",
-    tab: "Journals & chat",
-    title: "Message, journal, and grow together",
+    id: "journals-groups",
+    tab: "Journals & groups",
+    title: "Log your season, follow your neighbors'",
     description:
-      "In-app chat, growing journals with photo timelines, and neighborhood groups tied to where you actually garden.",
-    slot: "journals-chat",
-    label: "Journal & messaging",
+      "Season logs with progress and photo timelines, plus neighborhood groups, events, and Q&A tied to where you actually garden.",
+    slot: "journals-groups",
+    label: "Journals",
     screenshot: {
-      src: "/images/app_ss_coverstaion_between_host_and_gardener.png",
-      width: 379,
-      height: 658,
-      alt: "In-app chat between a host and gardener with photos and message thread",
+      src: "/images/app/journals.jpg",
+      width: 506,
+      height: 1100,
+      alt: "Journals screen with season logs, progress bars, and an add journal button",
     },
   },
 ] as const;
 
 const dualPhoneTabs = new Set<(typeof features)[number]["id"]>([
   "discover-map",
-  "host-profile",
 ]);
 
 const tiltedDeviceTabs = new Set<(typeof features)[number]["id"]>([
-  "community-layer",
-  "journals-chat",
+  "first-season",
+  "community-hub",
+  "journals-groups",
 ]);
 
 type TabIndicator = {
@@ -145,8 +144,8 @@ export function AppScreenshotsSection() {
       <div className="container app-screens-header" data-reveal data-motion-y="36">
         <h2 id="app-screens-heading">What&apos;s inside Growers Ground?</h2>
         <p className="section-lead app-screens-lead">
-          The full app experience — real screens from Discover, profiles, layers,
-          and messaging.
+          Real screens from the app: the map, your first-season plan, the
+          community hub, and season journals.
         </p>
       </div>
 
@@ -208,13 +207,12 @@ export function AppScreenshotsSection() {
         <div key={`device-${active}`} className="app-screens-device app-screens-enter-device">
           {active === "discover-map" ? (
             <AppDiscoverMapFlow />
-          ) : active === "host-profile" ? (
-            <AppHostProfileFlow />
           ) : (
             <AppFeatureScreenshot
               screenshot={panel.screenshot}
               slot={panel.slot}
               priority={false}
+              framed
               className={`app-screens-device-shot${tiltedDeviceTabs.has(active) ? " app-screens-device-shot--tilt" : ""}`}
             />
           )}
