@@ -1,38 +1,28 @@
+import Image from "next/image";
+
+/* Illustrations are the app's own flat art (growers_gound_app/assets/illustrations),
+   so the site and app read as one brand. Each card takes one pastel family. */
 const capabilities = [
   {
-    iconClass: "discover",
-    title: "Map-First Discovery",
+    tone: "mint",
+    art: "/images/illustrations/onboarding_discover.svg",
+    title: "Map-first discovery",
     description:
-      "AI-ranked pins surface the most relevant hosts or gardeners near you — with transparent \"why this match\" chips. Tap a pin, view a profile, connect.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />
-        <circle cx="12" cy="10" r="2.5" />
-      </svg>
-    ),
+      "Ranked pins show the most relevant hosts or gardeners near you, with a clear “why this match” on each. Tap a pin, view a profile, connect.",
   },
   {
-    iconClass: "community",
-    title: "Community Garden Spots",
+    tone: "peach",
+    art: "/images/illustrations/hub_spots.svg",
+    title: "Community garden spots",
     description:
-      "Pin seed swaps, compost sites, water access, and community plots — confirmed by local growers. Public-good content, separate from private host listings.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="4" y="4" width="16" height="16" rx="4" />
-        <path d="M9 12h6M12 9v6" />
-      </svg>
-    ),
+      "Pin seed swaps, compost sites, water access, and community plots, confirmed by local growers. Kept apart from private host listings.",
   },
   {
-    iconClass: "connect",
-    title: "Connect & Grow Together",
+    tone: "sky",
+    art: "/images/illustrations/intent_community.svg",
+    title: "Connect and grow together",
     description:
-      "Real-time messaging, growing journals, neighborhood groups, seasonal events, and local Q&A — everything tied to where you actually garden.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" />
-      </svg>
-    ),
+      "Messaging, season journals, neighborhood groups, events, and local Q&A, all tied to where you actually garden.",
   },
 ] as const;
 
@@ -41,19 +31,19 @@ export function CapabilitiesSection() {
     <section className="capabilities capabilities-zernio" aria-labelledby="capabilities-heading">
       <div className="container">
         <div data-reveal data-motion-y="36">
-          <p className="section-kicker">Why choose Growers Ground?</p>
+          <p className="section-kicker">Why Growers Ground</p>
           <h2 id="capabilities-heading">The map-first way to meet ground</h2>
           <p className="section-lead">
-            One calm app for gardeners, hosts, and neighbors — community built in,
-            not bolted on.
+            One calm app for gardeners, hosts, and neighbors, with community
+            built in from day one.
           </p>
         </div>
 
         <div className="cap-grid" data-reveal-stagger data-motion-stagger="0.11">
           {capabilities.map((cap) => (
-            <article key={cap.title} className="cap-card">
-              <div className={`cap-icon ${cap.iconClass}`} aria-hidden="true">
-                {cap.icon}
+            <article key={cap.title} className={`cap-card cap-card--${cap.tone}`}>
+              <div className="cap-art" aria-hidden="true">
+                <Image src={cap.art} alt="" width={160} height={160} />
               </div>
               <h3>{cap.title}</h3>
               <p>{cap.description}</p>

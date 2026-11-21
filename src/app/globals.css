@@ -974,7 +974,7 @@ a {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: #111827;
+  color: #2b2721;
   background: rgba(255, 255, 255, 0.92);
   border-radius: var(--radius-pill);
   box-shadow: 0 2px 8px rgba(17, 24, 39, 0.12);
@@ -1064,7 +1064,7 @@ section h2 {
 }
 
 .spotlight-host {
-  background: #f9fafb;
+  background: #fcfaf6;
 }
 
 .spotlight-split-inner {
@@ -1081,11 +1081,11 @@ section h2 {
 }
 
 .spotlight-copy h2 {
-  color: #111827;
+  color: #2b2721;
 }
 
 .spotlight-copy p {
-  color: #374151;
+  color: #4a443c;
   max-width: 52ch;
 }
 
@@ -1175,7 +1175,7 @@ section h2 {
 }
 
 .spotlight-split .spotlight-copy p {
-  color: #374151;
+  color: #4a443c;
 }
 
 .spotlight-grid.centered p {
@@ -3699,11 +3699,11 @@ body.lp-calai {
   font-size: clamp(12px, 1.5vw, 14px);
   font-weight: 500;
   color: var(--ink-muted);
-  background: rgba(241, 245, 249, 0.85);
+  background: rgba(243, 239, 232, 0.85);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(226, 232, 240, 0.95);
+  border: 1px solid rgba(231, 225, 214, 0.95);
   border-radius: var(--radius-pill);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 1px 3px rgba(43, 39, 33, 0.06);
 }
 
 .hero-trust-avatars {
@@ -3717,7 +3717,7 @@ body.lp-calai {
   margin-left: -10px;
   border: 2.5px solid #fff;
   border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 1px 2px rgba(43, 39, 33, 0.12);
 }
 
 .hero-trust-avatar:first-child {
@@ -3725,7 +3725,7 @@ body.lp-calai {
 }
 
 .hero-trust-copy {
-  color: #334155;
+  color: #4a443c;
 }
 
 .hero-trust-star {
@@ -3740,7 +3740,7 @@ body.lp-calai {
   font-weight: 800;
   line-height: 1.08;
   letter-spacing: -0.04em;
-  color: #0f172a;
+  color: #2b2721;
   text-wrap: balance;
 }
 
@@ -3753,7 +3753,7 @@ body.lp-calai {
   max-width: 36rem;
   font-size: clamp(1rem, 1.5vw + 0.5rem, 1.125rem);
   line-height: 1.75;
-  color: #475569;
+  color: #5e574d;
 }
 
 .hero-cal-download {
@@ -3865,13 +3865,13 @@ body.lp-calai {
   padding: 8px 14px;
   font-size: 13px;
   font-weight: 600;
-  color: #0f172a;
+  color: #2b2721;
   background: #fff;
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(43, 39, 33, 0.08);
   border-radius: 999px;
   box-shadow:
-    0 12px 32px rgba(15, 23, 42, 0.14),
-    0 2px 8px rgba(15, 23, 42, 0.06);
+    0 12px 32px rgba(43, 39, 33, 0.14),
+    0 2px 8px rgba(43, 39, 33, 0.06);
   white-space: nowrap;
 }
 
@@ -3883,15 +3883,15 @@ body.lp-calai {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: -0.01em;
-  color: #0f172a;
+  color: #2b2721;
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.95);
+  border: 1px solid rgba(231, 225, 214, 0.95);
   border-radius: var(--radius-pill, 999px);
   box-shadow:
-    0 18px 40px rgba(15, 23, 42, 0.12),
-    0 4px 12px rgba(15, 23, 42, 0.06);
+    0 18px 40px rgba(43, 39, 33, 0.12),
+    0 4px 12px rgba(43, 39, 33, 0.06);
   pointer-events: none;
 }
 
@@ -3928,7 +3928,7 @@ body.lp-calai {
   top: 50%;
   width: 12px;
   height: 1px;
-  background: #0f172a;
+  background: #2b2721;
   opacity: 0.35;
 }
 
@@ -3982,8 +3982,8 @@ body.lp-calai {
   background: #0a0a0a;
   border-radius: 44px;
   box-shadow:
-    0 32px 80px rgba(15, 23, 42, 0.18),
-    0 12px 28px rgba(15, 23, 42, 0.1);
+    0 32px 80px rgba(43, 39, 33, 0.18),
+    0 12px 28px rgba(43, 39, 33, 0.1);
 }
 
 .device-frame-hero {
@@ -4009,7 +4009,7 @@ body.lp-calai {
   padding: 14px 16px 8px;
   font-size: 11px;
   font-weight: 600;
-  color: #0f172a;
+  color: #2b2721;
   background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -4076,11 +4076,11 @@ body.lp-calai {
   font-family: inherit;
   font-size: 12px;
   font-weight: 600;
-  color: #0f172a;
+  color: #2b2721;
   background: #fff;
   border: none;
   border-radius: 999px;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 4px 16px rgba(43, 39, 33, 0.12);
   cursor: default;
 }
 
@@ -4095,7 +4095,7 @@ body.lp-calai {
   background: var(--primary-40);
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.2);
+  box-shadow: 0 2px 6px rgba(43, 39, 33, 0.2);
 }
 
 .hero-map-pin.pin-a {
@@ -4142,7 +4142,7 @@ body.lp-calai {
   padding: 12px 14px 16px;
   background: #fff;
   border-radius: 16px 16px 0 0;
-  box-shadow: 0 -6px 20px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 -6px 20px rgba(43, 39, 33, 0.08);
 }
 
 .hero-screen-sheet .hero-sheet-tag {
@@ -4159,13 +4159,13 @@ body.lp-calai {
 .hero-screen-sheet strong {
   display: block;
   font-size: 12px;
-  color: #0f172a;
+  color: #2b2721;
 }
 
 .hero-screen-sheet p {
   margin: 4px 0 0;
   font-size: 10px;
-  color: #64748b;
+  color: #726a5f;
 }
 
 .hero-screen-profile {
@@ -4196,7 +4196,7 @@ body.lp-calai {
 
 .hero-profile-stats div {
   padding: 8px 10px;
-  background: #f8fafc;
+  background: #fcfaf6;
   border: 1px solid #eef2f6;
   border-radius: 12px;
 }
@@ -4205,7 +4205,7 @@ body.lp-calai {
   display: block;
   font-size: 9px;
   font-weight: 600;
-  color: #64748b;
+  color: #726a5f;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -4215,7 +4215,7 @@ body.lp-calai {
   margin-top: 2px;
   font-size: 13px;
   font-weight: 700;
-  color: #0f172a;
+  color: #2b2721;
 }
 
 .hero-profile-footer {
@@ -4229,7 +4229,7 @@ body.lp-calai {
 .hero-profile-name {
   font-size: 11px;
   font-weight: 600;
-  color: #334155;
+  color: #4a443c;
 }
 
 .hero-profile-actions {
@@ -4248,14 +4248,14 @@ body.lp-calai {
 }
 
 .hero-profile-actions .ghost {
-  color: #0f172a;
+  color: #2b2721;
   background: #fff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e7e1d6;
 }
 
 .hero-profile-actions .solid {
   color: #fff;
-  background: #0f172a;
+  background: #2b2721;
 }
 
 .device-frame-sm {
@@ -4863,15 +4863,15 @@ body.lp-calai {
 
 .discovery-feature-card:hover {
   background: #fff;
-  border-color: #e2e8f0;
+  border-color: #e7e1d6;
 }
 
 .discovery-feature-card.is-active {
   background: #fff;
   border: 2px solid var(--primary-40);
   box-shadow:
-    0 12px 32px rgba(15, 23, 42, 0.08),
-    0 2px 8px rgba(15, 23, 42, 0.04);
+    0 12px 32px rgba(43, 39, 33, 0.08),
+    0 2px 8px rgba(43, 39, 33, 0.04);
 }
 
 .discovery-feature-pill {
@@ -4880,8 +4880,8 @@ body.lp-calai {
   padding: 6px 12px;
   font-size: 12px;
   font-weight: 600;
-  color: #334155;
-  background: #f1f5f9;
+  color: #4a443c;
+  background: #f3efe8;
   border-radius: var(--radius-pill);
 }
 
@@ -4895,7 +4895,7 @@ body.lp-calai {
   font-size: clamp(1.125rem, 1.5vw, 1.25rem);
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: #0f172a;
+  color: #2b2721;
   line-height: 1.25;
 }
 
@@ -4903,7 +4903,7 @@ body.lp-calai {
   margin: 10px 0 0;
   font-size: 15px;
   line-height: 1.6;
-  color: #64748b;
+  color: #726a5f;
 }
 
 /* OSM trust */
@@ -4969,7 +4969,7 @@ body.lp-calai {
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
   background: var(--primary-40);
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.2);
+  box-shadow: 0 2px 6px rgba(43, 39, 33, 0.2);
   pointer-events: none;
 }
 

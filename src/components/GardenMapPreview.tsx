@@ -25,7 +25,17 @@ type GardenMapPreviewProps = {
   maxPins?: number;
 };
 
-/** Fallback when Mapbox is unavailable (no access token). */
+/** Mapbox GL needs WebGL; without it `new mapboxgl.Map` throws and takes the page down. */
+function browserSupportsWebGL(): boolean {
+  try {
+    const canvas = document.createElement("canvas");
+    return Boolean(canvas.getContext("webgl2") ?? canvas.getContext("webgl"));
+  } catch {
+    return false;
+  }
+}
+
+/** Fallback when Mapbox is unavailable (no access token or no WebGL). */
 function GardenMapFallback({
   bbox,
   pins,
@@ -88,6 +98,11 @@ export function GardenMapPreview({
   const hasMapboxToken = Boolean(
     process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN?.trim(),
   );
+  const [hasWebGL, setHasWebGL] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    setHasWebGL(browserSupportsWebGL());
+  }, []);
 
   useEffect(() => {
     if (pinsProp?.length) {
@@ -113,7 +128,7 @@ export function GardenMapPreview({
     };
   }, [slug, pinsProp]);
 
-  if (loading) {
+  if (loading || (hasMapboxToken && hasWebGL === null)) {
     return (
       <div className={`garden-map-preview ${className}`.trim()}>
         <p className="garden-map-loading">Loading gardens…</p>
@@ -121,7 +136,7 @@ export function GardenMapPreview({
     );
   }
 
-  if (hasMapboxToken) {
+  if (hasMapboxToken && hasWebGL) {
     return (
       <MapboxGardenMap
         slug={slug}

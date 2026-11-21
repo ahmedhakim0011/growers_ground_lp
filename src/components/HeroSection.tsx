@@ -45,7 +45,7 @@ export function HeroSection() {
               data-motion-delay="0.22"
               data-motion-duration="0.95"
             >
-              <HeroDeviceScreens variant="discover" />
+              <HeroDeviceScreens variant="intent" />
             </div>
 
             <Image
@@ -69,19 +69,23 @@ export function HeroSection() {
               data-motion-delay="0.28"
               data-motion-duration="0.95"
             >
-              <HeroDeviceScreens variant="profile" />
+              <HeroDeviceScreens variant="community" />
               <HeroFloatingChip
                 className="hero-float-chip-glass hero-float-chip-acres"
                 pointer="left"
               >
-                2.5 Acres Land
+                <svg className="hero-float-chip-icon" viewBox="0 0 24 24" aria-hidden>
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                </svg>
+                Tuned to your zone
               </HeroFloatingChip>
               <HeroFloatingChip
                 className="hero-float-chip-glass hero-float-chip-water"
-                pointer="right"
+                pointer="left"
               >
                 <span className="hero-float-status-dot" aria-hidden />
-                Water Access Confirmed
+                Hosts &amp; gardeners nearby
               </HeroFloatingChip>
             </div>
           </div>

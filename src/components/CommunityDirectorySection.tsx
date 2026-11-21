@@ -40,16 +40,18 @@ export function CommunityDirectorySection() {
           aria-label="Selected profile screen"
         >
           {activeProfile ? (
-            <Image
-              key={activeProfile.id}
-              src={activeProfile.screenshot.src}
-              alt={activeProfile.screenshot.alt}
-              width={activeProfile.screenshot.width}
-              height={activeProfile.screenshot.height}
-              className="discovery-phone-shot"
-              sizes="(max-width: 1023px) min(88vw, 320px), 320px"
-              priority
-            />
+            <div className="discovery-phone-frame device-frame">
+              <Image
+                key={activeProfile.id}
+                src={activeProfile.screenshot.src}
+                alt={activeProfile.screenshot.alt}
+                width={activeProfile.screenshot.width}
+                height={activeProfile.screenshot.height}
+                className="discovery-phone-shot"
+                sizes="(max-width: 1023px) min(80vw, 300px), 300px"
+                priority
+              />
+            </div>
           ) : null}
         </div>
 

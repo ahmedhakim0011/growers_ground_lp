@@ -4,6 +4,7 @@ import { PageMotion } from "@/components/motion/PageMotion";
 import { SiteJsonLd } from "@/components/SiteJsonLd";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
+import "./refresh.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/images/logo-48.png", type: "image/png", sizes: "48x48" },
-      { url: siteConfig.logoPath, type: "image/png", sizes: "500x500" },
+      { url: siteConfig.markPath, type: "image/png", sizes: "512x512" },
     ],
-    apple: [{ url: siteConfig.logoPath, sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/images/apple-icon-180.png", sizes: "180x180", type: "image/png" }],
     shortcut: "/images/logo-48.png",
   },
   openGraph: {

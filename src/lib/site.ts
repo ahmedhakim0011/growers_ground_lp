@@ -2,6 +2,8 @@ export const siteConfig = {
   name: "Growers Ground",
   /** Square logo for favicon, Open Graph, and JSON-LD (min 48×48 for Google). */
   logoPath: "/images/logo.png",
+  /** Pin + plant mark only (no wordmark): favicon, header logo, small sizes. */
+  markPath: "/images/logo-mark.png",
   /** Canonical origin — must match Vercel primary domain (apex redirects to www). */
   url: "https://www.growersground.com",
   instagram: "https://www.instagram.com/growersgroundapp/",
@@ -26,7 +28,7 @@ export const siteConfig = {
     "Growers Ground is a garden sharing app: find garden space near you, or share your unused backyard with a local gardener. Map-first yard sharing across the US & Canada.",
   ogDescription:
     "No yard? Find garden space near you. Have a yard? Share it with a local gardener. Hosts, gardeners, community gardens and seed swaps on one map.",
-  themeColor: "#3D5F49",
+  themeColor: "#fcfaf6",
 } as const;
 
 /** Routes included in sitemap.xml for search indexing. */

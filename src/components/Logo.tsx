@@ -7,7 +7,7 @@ export function Logo() {
     <Link className="logo logo-cal" href="/" aria-label="Growers Ground home">
       <span className="logo-mark" aria-hidden="true">
         <Image
-          src={siteConfig.logoPath}
+          src={siteConfig.markPath}
           alt=""
           width={28}
           height={28}

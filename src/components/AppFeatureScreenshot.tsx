@@ -13,6 +13,8 @@ type AppFeatureScreenshotProps = {
   priority?: boolean;
   sizes?: string;
   className?: string;
+  /** Raw app capture: draw the phone bezel in CSS instead of relying on a baked-in frame. */
+  framed?: boolean;
 };
 
 export function AppFeatureScreenshot({
@@ -21,10 +23,11 @@ export function AppFeatureScreenshot({
   priority = false,
   sizes = "(max-width: 1023px) 320px, 320px",
   className = "",
+  framed = false,
 }: AppFeatureScreenshotProps) {
   return (
     <div
-      className={`app-screens-shot ${className}`.trim()}
+      className={`app-screens-shot${framed ? " device-frame" : ""} ${className}`.trim()}
       data-screenshot-slot={slot}
     >
       <Image
