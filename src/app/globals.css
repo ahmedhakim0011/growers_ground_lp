@@ -5956,3 +5956,132 @@ body.lp-calai {
   font-size: 14px;
   color: var(--ink-muted);
 }
+
+/* ── Waitlist: roles, consent, success ── */
+.waitlist-text-input {
+  min-height: 48px;
+  margin-bottom: 16px;
+  padding: 0 14px;
+  font: inherit;
+  font-size: 16px;
+  border: 1px solid var(--neutral-90);
+  border-radius: var(--radius-btn);
+  background: #fff;
+}
+
+.waitlist-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 8px;
+  padding: 0;
+  border: 0;
+}
+
+.waitlist-roles legend {
+  width: 100%;
+}
+
+.waitlist-role {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: 1px solid var(--neutral-90);
+  border-radius: var(--radius-pill);
+  background: #fff;
+  cursor: pointer;
+}
+
+.waitlist-role:has(input:checked) {
+  border-color: var(--primary-40);
+  background: var(--primary-95);
+  color: var(--primary-30);
+  font-weight: 600;
+}
+
+.waitlist-role input {
+  accent-color: var(--primary-40);
+}
+
+.waitlist-consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-muted, var(--neutral-50));
+  text-align: left;
+  cursor: pointer;
+}
+
+.waitlist-consent input {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--primary-40);
+}
+
+.waitlist-hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.waitlist-success {
+  padding: 20px;
+  text-align: left;
+  border-radius: var(--radius-card);
+  background: var(--primary-95);
+}
+
+.waitlist-success-title {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-30);
+}
+
+.waitlist-success-text {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--neutral-20);
+}
+
+.waitlist-progress {
+  height: 10px;
+  margin: 4px 0 16px;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: #fff;
+}
+
+.waitlist-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary-50);
+  transition: width 0.6s ease;
+}
+
+.waitlist-share {
+  display: flex;
+  gap: 8px;
+}
+
+.waitlist-share input {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 12px;
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid var(--neutral-90);
+  border-radius: var(--radius-btn);
+  background: #fff;
+}
